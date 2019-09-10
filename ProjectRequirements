@@ -18,6 +18,12 @@ is someone to develop a proper reservation application. During the course of thi
 sufficiently allow restaurants to manage restaurant seating areas and allow customers to reserve seats and be notified when their table
 is ready for their arrival.
 
+***CHANGE TO WEB APPLICATION
+***ASP.NET pages, C# goes good with it.
+***CSS, HTML, PHP, and C#.
+***xAM on laptop, local host.
+***Kelly has a desktop server at home
+
 #Tools and Technologies
 We will be using the following tools and technologies for this project:
 
@@ -31,11 +37,17 @@ We will be using the following tools and technologies for this project:
 
 #Programming Languages
 
+C#, CSS, PHP, HTML, MySQL
+
 #Server Setup
+
+Deciding between a VM, Kelly's home machine, or something else entirely.
 
 #Development Environment
 
-#Customer Requirements
+Netbeans
+
+#Consumer Requirements
 
 1. The restauraunt will be able to manage the seating area from the project.
 
@@ -47,6 +59,16 @@ We will be using the following tools and technologies for this project:
 
 5. The customer will be able to reserve a table.
 
+6. The customer/restaurant will be able to request/view the current wait time.
+
+**OpenTable
+**Restauraunts have to make accounts
+**Customers DON'T
+**Selena brought up good point, guests just need name, phone number, and number of people then everything is sent to restaurant for
+computation.
+**Extra features: have a kid, want a bar seat or table.
+**Drop down for time.
+
 #System Requirements
 
 1. The system will be able to notify customers that their table is ready via SMS or the application.
@@ -57,7 +79,11 @@ We will be using the following tools and technologies for this project:
 
 4. The system will be able to manage the customer queue.
 
-#Use Case Requirements
+**Needs to be similar to customer walking into the restaurant and asking the hostess how long the wait time is. Hostess can look and find
+accurate wait time.
+**Restaurant needs to be able to change table from "no one there" to "reserved."
+
+#User Stories Requirements
 
 1. As a restauraunt manager, I want to easily manage, configure, and reconfigure a seating area.
 
@@ -65,6 +91,22 @@ We will be using the following tools and technologies for this project:
 
 3. As a restaurant manager, I want to store my restaurant's information in a concise, clean medium.
 
-4. As a customer, I want to easily and accurately reserve a table.
+4. As a customer, I want to easily and accurately reserve a place at the restauraunt.
+
+5. As a customer, I want to swiftly walk into the restaurant and see the wait time.
 
 #The Future
+
+1. Get server setup.
+2. Setup login.
+
+
+
+
+
+
+
+
+
+
+
