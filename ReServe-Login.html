@@ -43,29 +43,22 @@
         <div class="centered" style="top:15%;"><h1>~ ReServe ~</h1></div>
         <div class="centered" style="top:22%;"><p>Your personal restaurant waitime calculator!</p></div>
     </div>
-
-    <!--RICHARD COMPTON CODE -- 9/15/2019 -->
     <div class="container" style="margin-top:30px">
         <div class="row">
             <div class="col-sm-8">
-                <h2>Your Guest Information</h2>
+                <h2>ReServe Login</h2>
                 <div class="menu">
                     <p></p>
-                    <!--The form asks for a user's name, phone number, and number of people-->
-                    <form id="form" method="POST" action="/my-handling-form-page">
-                        <p>Name:</p><input type="name" name="name" required text="text">
+                    <p> <a href="restaurantSignUpPage.html">Click here to sign up!</a></p>
+                    <!--The form asks for a user's email and password-->
+                    <p> Login to your account: </p>
+                    <form id="forms" method="POST" action="/my-handling-form-page">
+                        <p>Email:</p><input type="email" name="email" required text="text">
                         <p></p>
+                        <p>Password:</p><input type="password" name="password" required text="text">
                         <p></p>
-                        <p>Phone Number:</p><input type="phone" name="phone" required text="text">
-                        <div>
-                            <p></p>
-                            <label for="msg">Number of People: </label>
-                            </p><input type="message" name="people" required text="text">
-                        </div>
-                        <p></p>
-                        <input type="submit" value="Submit" id="submit">
+                        <input type="submit" value="Login" id="login">
                     </form>
-                    <p></p>
                     <p></p>
                 </div>
             </div>
