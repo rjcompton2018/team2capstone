@@ -1,5 +1,5 @@
 
-/* Mary Shiner CODE -- 9/24/2019 */
+/* Mary Shiner CODE -- 9/29/2019 */
 
 /* Image Banner */
 .background {
@@ -77,8 +77,13 @@ button {
 	
  }
 
-
- 
+/* Style for Tables */
+.div1 {
+  width: 150px;
+  height: 70px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
  
 
 
