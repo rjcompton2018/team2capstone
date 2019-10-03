@@ -26,3 +26,5 @@ Is there a way to avoid waiting at a restaurant? Develop a system by which resta
 9/15/2019 - we have split into groups and are working on our respective areas of the project.
 
 9/29/2019 - We are in the midst of Sprint 2. Most of it is cell phone functionality and features to do with restaurants.
+
+10/1/2019 - We are deciding to do a deep dive into the restaurant side of our application for Sprint 2.
