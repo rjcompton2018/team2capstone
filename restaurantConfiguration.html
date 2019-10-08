@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<!-- Created by Richard Compton 10/5/2019 -->
+<!-- Edits on 10/8/2019 -->
+
+<html>
+<body>
+
+<h1>ReServe Restauraunt Configuration</h1>
+
+<form action="/action_page.php">
+
+<!-- Restaurant configuration options -->
+
+  Restaurant name:<br>
+  <input type="text" name="restaurantname"><br>
+  Food style:<br>
+  <input type="text" name="foodstyle"><br>
+
+  Hours:<br>
+  <input type="text" name="hours"><br>
+
+  Capacity:<br>
+  <input type="text" name="capacity"><br>
+
+  Total tables:<br>
+  <input type="text" name="totaltables"><br><br>
+
+  <input type="checkbox" name="chairs" value="Chairs"> We have chairs<br>
+  <input type="checkbox" name="booths" value="Booths"> We have booths<br>
+  <input type="checkbox" name="bar" value="Bar" checked> We have a bar<br>
+
+  <h2>Delivery?</h2>
+  <input type="radio" name="delivery" value="Yes" checked> Yes<br>
+  <input type="radio" name="delivery" value="No"> No<br><br>
+
+  Address:<br>
+  <input type="text" name="address"><br>
+
+  Phone Number:<br>
+  <input type="text" name="phonenumber"><br>
+
+  Distance Away Placeholder:<br>
+  <input type="text" name="distanceawayplaceholder"><br>
+
+  Rating Placeholder:<br>
+  <input type="text" name="ratingplaceholder"><br>
+
+  Description:<br>
+  <input type="text" name="description" size="180"><br>
+
+  <h2>Price Range</h2>
+  <input type="radio" name="cost" value="$" checked> Affordable<br>
+  <input type="radio" name="cost" value="$$"> Average<br>
+  <input type="radio" name="cost" value="$$$"> Expensive<br>
+
+  <h2>Vegan Options?</h2>
+  <input type="radio" name="vegan" value="Yes" checked> Yes<br>
+  <input type="radio" name="vegan" value="No"> No<br>
+
+  <h2>Catering Options?</h2>
+  <input type="radio" name="catering" value="Yes" checked> Yes<br>
+  <input type="radio" name="catering" value="No"> No<br>
+
+  <h2>Outdoor Seating?</h2>
+  <input type="radio" name="outdoor" value="Yes" checked> Yes<br>
+  <input type="radio" name="outdoor" value="No"> No<br>
+
+  <h2>Special Concerns</h2>
+  <input type="checkbox" name="ramps" value="Ramps"> We have ramps<br>
+  <input type="checkbox" name="booths" value="Children"> We allow children<br><br>
+
+  <input type="submit" value="Submit Restaurant Configuration">
+
+</form>
+</body>
+</html>
