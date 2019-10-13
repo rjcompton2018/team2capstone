@@ -1,0 +1,12 @@
+
+ReServeAPI_v2.0/bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll
+ReServeAPI_v2.0/bin/roslyn/Microsoft.CodeAnalysis.dll
+ReServeAPI_v2.0/bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll
+ReServeAPI_v2.0/bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll
+ReServeAPI_v2.0/bin/roslyn/System.Collections.Immutable.dll
+ReServeAPI_v2.0/bin/roslyn/System.IO.FileSystem.dll
+ReServeAPI_v2.0/bin/roslyn/System.IO.FileSystem.Primitives.dll
+ReServeAPI_v2.0/bin/roslyn/System.Reflection.Metadata.dll
+ReServeAPI_v2.0/bin/roslyn/System.Security.Cryptography.Primitives.dll
+ReServeAPI_v2.0/bin/roslyn/System.ValueTuple.dll
+ReServeAPI_v2.0/bin/roslyn/VBCSCompiler.exe
