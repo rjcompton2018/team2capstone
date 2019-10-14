@@ -4,6 +4,7 @@
 
     <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,19 +12,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SettingsActivity"
+        <activity
+            android:name=".RestaurantConfig"
+            android:label="@string/title_activity_restaurant_config"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".SettingsActivity"
             android:orientation="vertical">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.alps.alna172991.reserve_gui.MainActivity" /></activity>
-        <activity android:name=".LoginActivity"
+                android:value="com.alps.alna172991.reserve_gui.MainActivity" />
+        </activity>
+        <activity
+            android:name=".LoginActivity"
             android:orientation="vertical">
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value="com.alps.alna172991.reserve_gui.MainActivity" /></activity>
-        <activity android:name=".BrowseActivity"
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.alps.alna172991.reserve_gui.MainActivity" />
+        </activity>
+        <activity
+            android:name=".BrowseActivity"
             android:orientation="vertical" />
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:orientation="vertical">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
