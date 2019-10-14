@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 
-public class BrowseActivity extends AppCompatActivity {
+public class RestaurantConfig extends AppCompatActivity {
 
     Context mContext;
     LinearLayout layoutMain;
