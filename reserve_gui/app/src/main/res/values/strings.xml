@@ -26,4 +26,6 @@
     <string name="preference_password">preference_password</string>
 
     <string name="preference_login_status">preference_login_status</string>
+    <string name="title_activity_restaurant_config">RestaurantConfig</string>
+    <string name="title_activity_restaurant_wait_time">RestaurantWaitTime</string>
 </resources>
