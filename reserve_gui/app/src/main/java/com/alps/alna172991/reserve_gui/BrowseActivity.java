@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.widget.LinearLayout;
 
 public class BrowseActivity extends AppCompatActivity {
+
     Context mContext;
     LinearLayout layoutMain;
 
