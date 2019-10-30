@@ -13,7 +13,7 @@ public class RestaurantConfig extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_browse);
+        setContentView(R.layout.activity_restaurant_config);
         mContext = this;
         layoutMain = findViewById(R.id.layoutMain);
     }
