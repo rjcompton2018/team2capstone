@@ -111,8 +111,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(i);
                 break;
             case R.id.layoutRestSignup:
-//                i = new Intent(this, RestaurantSignup.class);
-//                startActivity(i);
+                i = new Intent(this, RestaurantSignup.class);
+                startActivity(i);
                 break;
             case R.id.layoutReservations:
                 i = new Intent(this, RestaurantReservationList.class);

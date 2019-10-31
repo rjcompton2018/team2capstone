@@ -12,22 +12,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity android:name=".RestaurantSignup"></activity>
         <activity
             android:name=".RestaurantConfig"
             android:label="@string/title_activity_restaurant_config"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".RestaurantWaitTime"
             android:label="@string/title_activity_restaurant_wait_time"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".RestaurantReservationList"
             android:label="@string/title_activity_restaurant_wait_time"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".SettingsActivity"
             android:orientation="vertical">
@@ -35,7 +32,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.alps.alna172991.reserve_gui.MainActivity" />
         </activity>
-
         <activity
             android:name=".LoginActivity"
             android:orientation="vertical">
@@ -43,11 +39,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.alps.alna172991.reserve_gui.MainActivity" />
         </activity>
-
         <activity
             android:name=".BrowseActivity"
             android:orientation="vertical" />
-
         <activity
             android:name=".MainActivity"
             android:orientation="vertical">
