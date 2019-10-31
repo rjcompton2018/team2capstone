@@ -29,7 +29,7 @@
             android:layout_height="32dp"
             android:background="@color/black_overlay"
             android:paddingLeft="5dp"
-            android:text="TextView"
+            android:text="Browse Restaurants"
             android:textColor="@color/White"
             android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout"
@@ -65,13 +65,13 @@
 
     <include
         android:id="@+id/some_id_if_needed"
-        layout="@layout/layout_restaurant_row"
+        layout="@layout/layout_restaurant_row2"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" />
 
     <include
         android:id="@+id/some_id_if_needed"
-        layout="@layout/layout_restaurant_row"
+        layout="@layout/layout_restaurant_row3"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" />
 
