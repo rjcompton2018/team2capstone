@@ -34,7 +34,7 @@
             android:id="@+id/tvDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/olive_garden_description" />
+            android:text="Italian cuisine" />
     </LinearLayout>
 
     <TextView
@@ -43,6 +43,6 @@
         android:layout_height="wrap_content"
         android:layout_weight="0"
         android:paddingRight="6dp"
-        android:text="@string/rating"
+        android:text="4.2/5"
         android:textSize="24sp" />
 </LinearLayout>
