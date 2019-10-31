@@ -6,7 +6,7 @@
     <string name="restaurant">Restaurant</string>
     <string name="restconfig">Restaurant Configuration</string>
     <string name="restconfig2">Manage restaurant information</string>
-    <string name="restsignup">Restaurant Signup</string>
+    <string name="restsignup">Restaurant Sign Up</string>
     <string name="restsignup2">Signup your restaurant</string>
     <string name="waittime">Wait Time</string>
     <string name="waittime2">Calculate current wait time</string>

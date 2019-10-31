@@ -29,7 +29,7 @@
             android:layout_height="32dp"
             android:background="@color/black_overlay"
             android:paddingLeft="5dp"
-            android:text="Restaurant Signup"
+            android:text="Restaurant Sign Up"
             android:textColor="@color/White"
             android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout"
@@ -100,8 +100,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
+                android:hint="Name"
+                android:inputType="textPersonName" />
 
             <TextView
                 android:id="@+id/tvSignupRestPass"
