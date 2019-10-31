@@ -47,129 +47,136 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="0"
-        android:orientation="vertical">
+        android:layout_weight="0">
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="14dp"
-            android:layout_weight="0" />
-
-        // Restaurant Name
-        <TextView
-            android:id="@+id/tvRestName"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0"
-            android:text="Restaurant Name"
-            android:textColor="#000000"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/etRestName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            // Restaurant Name
 
-        // Food Type
-        <TextView
-            android:id="@+id/tvFoodType"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:text="Food Type"
-            android:textColor="#000000"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            // Food Type
 
-        <EditText
-            android:id="@+id/etFoodType"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Food Type" />
+            <TextView
+                android:id="@+id/tvRestName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Restaurant Name"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
-        //Hours
-        <TextView
-            android:id="@+id/tvHours"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:text="Hours"
-            android:textColor="#000000"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            <EditText
+                android:id="@+id/etRestName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name" />
 
-        <EditText
-            android:id="@+id/etHours"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Hours" />
+            <TextView
+                android:id="@+id/tvFoodType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Food Type"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
-        // Capacity
-        <TextView
-            android:id="@+id/tvCapacity"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:text="Capacity"
-            android:textColor="#000000"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            <EditText
+                android:id="@+id/etFoodType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Food Type" />
 
-        <EditText
-            android:id="@+id/etCapacity"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Capacity" />
+            //Hours
 
-        //Number of tables
-        <TextView
-            android:id="@+id/tvTables"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:text="Total Tables"
-            android:textColor="#000000"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvHours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Hours"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/etTables"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:ems="10"
-            android:inputType="number"
-            android:text="Number of tables"/>
+            <EditText
+                android:id="@+id/etHours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Hours" />
 
-        // Table Options - Select all the apply
-        <TextView
-            android:id="@+id/tvTableOptions"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:text="Table Options"
-            android:textColor="#000000"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            // Capacity
+
+            <TextView
+                android:id="@+id/tvCapacity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Capacity"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etCapacity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Capacity" />
+
+            //Number of tables
+
+            <TextView
+                android:id="@+id/tvTables"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Total Tables"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etTables"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:ems="10"
+                android:inputType="number"
+                android:text="Number of tables" />
+
+            // Table Options - Select all the apply
+
+            <TextView
+                android:id="@+id/tvTableOptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Table Options"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             // Table options - Checkboxes to allow for multiple selections
+
             <CheckBox
                 android:id="@+id/cbChairs"
                 android:layout_width="match_parent"
@@ -191,18 +198,20 @@
                 android:layout_weight="0"
                 android:text="We have a bar" />
 
-        // Delivery
-        <TextView
-            android:id="@+id/tvDelivery"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:text="Delivery Available?"
-            android:textColor="#000000"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            // Delivery
+
+            <TextView
+                android:id="@+id/tvDelivery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Delivery Available?"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             //Radio buttons so that user can only select one
+
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -221,78 +230,83 @@
                     android:text="No" />
             </RadioGroup>
 
-        // Address
-        <TextView
-            android:id="@+id/tvAddress"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:text="Address"
-            android:textColor="#000000"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            // Address
 
-        <EditText
-            android:id="@+id/etAddress"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:ems="10"
-            android:inputType="textPostalAddress"
-            android:text="Address" />
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Address"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
-        // Phone number
-        <TextView
-            android:id="@+id/tvPhone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:text="Phone Number"
-            android:textColor="#000000"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            <EditText
+                android:id="@+id/etAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:ems="10"
+                android:inputType="textPostalAddress"
+                android:text="Address" />
 
-        <EditText
-            android:id="@+id/etPhone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:ems="10"
-            android:inputType="phone"
-            android:text="Phone number"/>
+            // Phone number
 
-        // Restaurant description
-        <TextView
-            android:id="@+id/tvDescription"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:text="Description"
-            android:textColor="#000000"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Phone Number"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/etDescription"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:ems="10"
-            android:gravity="start|top"
-            android:inputType="textMultiLine" />
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:ems="10"
+                android:inputType="phone"
+                android:text="Phone number" />
 
-        // Price range
-        <TextView
-            android:id="@+id/tvPriceRange"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:text="Price Range"
-            android:textColor="#000000"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            // Restaurant description
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Description"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine" />
+
+            // Price range
+
+            <TextView
+                android:id="@+id/tvPriceRange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Price Range"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             //Radio buttons so that user can only select one
+
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -317,18 +331,20 @@
                     android:text="Expensive" />
             </RadioGroup>
 
-        // Vegan options
-        <TextView
-            android:id="@+id/tvVegan"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:text="Vegan Options?"
-            android:textColor="#000000"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            // Vegan options
+
+            <TextView
+                android:id="@+id/tvVegan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Vegan Options?"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             //Radio buttons so that user can only select one
+
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -347,18 +363,20 @@
                     android:text="No" />
             </RadioGroup>
 
-        // Catering available
-        <TextView
-            android:id="@+id/tvCatering"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:text="Catering Available?"
-            android:textColor="#000000"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            // Catering available
+
+            <TextView
+                android:id="@+id/tvCatering"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Catering Available?"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             //Radio buttons so that user can only select one
+
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -375,20 +393,22 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="No" />
-        </RadioGroup>
+            </RadioGroup>
 
-        // Outdoor seating option
-        <TextView
-            android:id="@+id/tvCatering"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:text="Outdoor Seating?"
-            android:textColor="#000000"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            // Outdoor seating option
+
+            <TextView
+                android:id="@+id/tvCatering"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Outdoor Seating?"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             //Radio buttons so that user can only select one
+
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -405,20 +425,22 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="No" />
-        </RadioGroup>
+            </RadioGroup>
 
-        // Special concerns
-        <TextView
-            android:id="@+id/tvSpecialConcerns"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:text="Special Concerns"
-            android:textColor="#000000"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            // Special concerns
+
+            <TextView
+                android:id="@+id/tvSpecialConcerns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Special Concerns"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             // Special concerns - Checkboxes to allow for multiple selections
+
             <CheckBox
                 android:id="@+id/cbRamps"
                 android:layout_width="match_parent"
@@ -433,6 +455,14 @@
                 android:layout_weight="0"
                 android:text="We allow children" />
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Submit" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

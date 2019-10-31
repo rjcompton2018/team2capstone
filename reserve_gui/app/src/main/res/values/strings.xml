@@ -3,6 +3,14 @@
     <string name="app_version">Version: 0.0.1 - Oct. 30th, 2018</string>
     <string name="browse">Browse</string>
     <string name="browse_description">Search for restaurants</string>
+    <string name="restaurant">Restaurant</string>
+    <string name="restconfig">Restaurant Configuration</string>
+    <string name="restconfig2">Manage restaurant information</string>
+    <string name="restsignup">Restaurant Signup</string>
+    <string name="restsignup2">Signup your restaurant</string>
+    <string name="waittime">Wait Time</string>
+    <string name="waittime2">Calculate current wait time</string>
+    <string name="customer">Customer</string>
     <string name="reservations">Reservations</string>
     <string name="employee">Employee</string>
     <string name="not_ready">Not Ready</string>

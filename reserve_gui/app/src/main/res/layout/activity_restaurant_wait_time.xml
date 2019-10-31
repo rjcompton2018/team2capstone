@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".RestaurantWaitTime">
+    tools:context=".RestaurantConfig">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -29,7 +29,7 @@
             android:layout_height="32dp"
             android:background="@color/black_overlay"
             android:paddingLeft="5dp"
-            android:text="Current Wait Time"
+            android:text="Calculate Wait Time"
             android:textColor="@color/White"
             android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout"
@@ -47,34 +47,41 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="0"
-        android:orientation="vertical">
+        android:layout_weight="0">
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="17dp" />
-
-        <TextView
-            android:id="@+id/tvPeople"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Number of people:" />
+            android:layout_weight="0"
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/etPeople"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="number" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="17dp" />
 
-        <Button
-            android:id="@+id/btnCalc"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Calculate" />
+            <TextView
+                android:id="@+id/tvPeople"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Number of people:" />
 
-    </LinearLayout>
+            <EditText
+                android:id="@+id/etPeople"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/btnCalc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calculate" />
+
+        </LinearLayout>
+    </ScrollView>
+
 </LinearLayout>
