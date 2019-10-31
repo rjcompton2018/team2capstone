@@ -10,9 +10,9 @@ import android.hardware.Sensor;
 import android.hardware.SensorManager;
 import android.net.Uri;
 import android.os.Handler;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -22,7 +22,7 @@ import cn.pedant.SweetAlert.SweetAlertDialog;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, ShakeDetector.OnShakeListener{
 
     SettingsManager settingsManager;
-    LinearLayout layoutBrowse, layoutReservations, layoutEmployee, layoutSettings;
+    LinearLayout layoutBrowse, layoutReservations, layoutWaitTime, layoutSettings, layoutRestConfig, layoutRestSignup;
     private Context mContext;
     public final static int APP_PERMISSION = 2;
     private ShakeDetector mShakeDetector;
@@ -35,14 +35,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mContext = this;
         settingsManager = SettingsManager.getInstance();
         requestPermission();
+
         layoutBrowse = findViewById(R.id.layoutBrowse);
-        layoutEmployee = findViewById(R.id.layoutEmployee);
+        layoutWaitTime = findViewById(R.id.layoutWaitTime);
         layoutSettings = findViewById(R.id.layoutSettings);
         layoutReservations = findViewById(R.id.layoutReservations);
+        layoutRestConfig = findViewById(R.id.layoutRestConfig);
+        layoutRestSignup = findViewById(R.id.layoutRestSignup);
+
         layoutBrowse.setOnClickListener(this);
-        layoutEmployee.setOnClickListener(this);
+        layoutWaitTime.setOnClickListener(this);
         layoutSettings.setOnClickListener(this);
         layoutReservations.setOnClickListener(this);
+        layoutRestConfig.setOnClickListener(this);
+        layoutRestSignup.setOnClickListener(this);
+
         settingsManager.updateSettings(this);
         mSensorManager = (SensorManager)getSystemService(Context.SENSOR_SERVICE);
         mAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
@@ -91,13 +98,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 i = new Intent(this, BrowseActivity.class);
                 startActivity(i);
                 break;
-            case R.id.layoutEmployee:
+            case R.id.layoutWaitTime:
+                i = new Intent(this, RestaurantWaitTime.class);
+                startActivity(i);
                 break;
             case R.id.layoutSettings:
                 i = new Intent(this, SettingsActivity.class);
                 startActivity(i);
                 break;
+            case R.id.layoutRestConfig:
+                i = new Intent(this, RestaurantConfig.class);
+                startActivity(i);
+                break;
+            case R.id.layoutRestSignup:
+//                i = new Intent(this, RestaurantSignup.class);
+//                startActivity(i);
+                break;
             case R.id.layoutReservations:
+                i = new Intent(this, RestaurantReservationList.class);
+                startActivity(i);
                 break;
         }
     }
