@@ -22,6 +22,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
+	
+	
     <!--Navbar -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
         <li style="list-style-type: none; text-decoration:none;"><a href="ReServe-Main.html"><img src="images/tea-time-72-292243.png"></a></li>
@@ -38,6 +40,8 @@
             </ul>
         </div>
     </nav>
+	
+	
     <!-- HTML -->
     <!--Background Image Bar -->
     <div class="background">
@@ -49,7 +53,7 @@
     <div class="container" style="margin-top:30px">
         <div class="row">
             <div class="col-sm-8">
-                <h2>Guest Info</h2>
+                <h2>Guest Account Info</h2> <!-- NEEDS TO PULL FROM DATABASE HERE!!!!! -->
 				Name: 
 				<p></p>
                 <p></p>
@@ -66,7 +70,7 @@
 				<p></p>
                 <p></p>
             </div>
-				<button type="button" class="btn btn-primary">Edit</button>
+				<button type="button" class="btn btn-primary">Edit</button> <!--CAN EDIT FIELDS -->
 				<p></p>
                 <p></p>
 				<button type="button" class="btn btn-success">Submit</button>
@@ -78,6 +82,9 @@
         </div>
     </div>
     <p></p>
+	
+	
+	
     <!--This is the footer, it gives the address and copyright information of the website-->
     <div class="text-center" style="padding-top:12px; padding-bottom:12px; background-color:#ED6C06; color:white;">
         &copy; Copyright 2019 ~ ReServe ~

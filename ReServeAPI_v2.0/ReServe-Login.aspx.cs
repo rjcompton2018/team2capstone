@@ -18,7 +18,7 @@ namespace ReServeAPI_v2._0
 
         protected void btnSubmit_OnClick(object sender, EventArgs e)
         {
-            getReader("SELECT Email, Password FROM Restaurant WHERE Email=@value1", txtEmail.Value);
+            getReader("SELECT Email, Password FROM User WHERE Email=@value1", txtEmail.Value);
             if (!reader.HasRows)
             {
                 return;
