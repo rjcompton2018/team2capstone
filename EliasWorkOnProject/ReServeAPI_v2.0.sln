@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29326.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReServeAPI_v2.0", "ReServeAPI_v2.0.csproj", "{0B375048-4087-476C-BE64-9E86B1324BB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReServeAccess_v2.0", "..\ReServeAccess_v2.0\ReServeAccess_v2.0.csproj", "{0AC26FD9-8434-421F-AB80-1C37F3BF4074}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B375048-4087-476C-BE64-9E86B1324BB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B375048-4087-476C-BE64-9E86B1324BB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B375048-4087-476C-BE64-9E86B1324BB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B375048-4087-476C-BE64-9E86B1324BB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AC26FD9-8434-421F-AB80-1C37F3BF4074}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AC26FD9-8434-421F-AB80-1C37F3BF4074}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AC26FD9-8434-421F-AB80-1C37F3BF4074}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AC26FD9-8434-421F-AB80-1C37F3BF4074}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {26FD2278-F440-4996-8207-0665EDE1C03B}
+	EndGlobalSection
+EndGlobal
