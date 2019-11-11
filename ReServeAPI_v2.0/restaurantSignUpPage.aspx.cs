@@ -22,7 +22,8 @@ namespace ReServeAPI_v2._0
             {
                 reader.Close();
                 object[] parameters = { txtEmail.Text, txtName.Value, txtPassword.Value };
-                executeVoidSQLQuery("INSERT INTO Restaurant (Email, Restaurant_Name, Password) VALUES(@value1, @value2, @value3)", parameters);
+                executeVoidSQLQuery("INSERT INTO User (Email, Password) VALUES(@value1, @value3)", parameters);
+
             }
             Console.WriteLine("Hello world");
         }
