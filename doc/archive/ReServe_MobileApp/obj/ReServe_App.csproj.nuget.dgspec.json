@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\p1nkp\\OneDrive\\Documents\\GitHub\\csi4999-capstone\\team2capstone\\ReServe_MobileApp\\ReServe_App.csproj": {}
+    "C:\\Users\\p1nkp\\Projects\\team2capstone\\ReServe_MobileApp\\ReServe_App.csproj": {}
   },
   "projects": {
-    "C:\\Users\\p1nkp\\OneDrive\\Documents\\GitHub\\csi4999-capstone\\team2capstone\\ReServe_MobileApp\\ReServe_App.csproj": {
+    "C:\\Users\\p1nkp\\Projects\\team2capstone\\ReServe_MobileApp\\ReServe_App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\p1nkp\\OneDrive\\Documents\\GitHub\\csi4999-capstone\\team2capstone\\ReServe_MobileApp\\ReServe_App.csproj",
+        "projectUniqueName": "C:\\Users\\p1nkp\\Projects\\team2capstone\\ReServe_MobileApp\\ReServe_App.csproj",
         "projectName": "ReServe_App",
-        "projectPath": "C:\\Users\\p1nkp\\OneDrive\\Documents\\GitHub\\csi4999-capstone\\team2capstone\\ReServe_MobileApp\\ReServe_App.csproj",
+        "projectPath": "C:\\Users\\p1nkp\\Projects\\team2capstone\\ReServe_MobileApp\\ReServe_App.csproj",
         "packagesPath": "C:\\Users\\p1nkp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\p1nkp\\OneDrive\\Documents\\GitHub\\csi4999-capstone\\team2capstone\\ReServe_MobileApp\\obj\\",
+        "outputPath": "C:\\Users\\p1nkp\\Projects\\team2capstone\\ReServe_MobileApp\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
