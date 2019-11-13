@@ -1,0 +1,62 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\alna172991\\Documents\\GitHub\\team2capstone\\WebApplication3\\WebApplication1\\ReServe_App\\ReServe_App.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\alna172991\\Documents\\GitHub\\team2capstone\\WebApplication3\\WebApplication1\\ReServe_App\\ReServe_App.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\alna172991\\Documents\\GitHub\\team2capstone\\WebApplication3\\WebApplication1\\ReServe_App\\ReServe_App.csproj",
+        "projectName": "ReServe_App",
+        "projectPath": "C:\\Users\\alna172991\\Documents\\GitHub\\team2capstone\\WebApplication3\\WebApplication1\\ReServe_App\\ReServe_App.csproj",
+        "packagesPath": "C:\\Users\\alna172991\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alna172991\\Documents\\GitHub\\team2capstone\\WebApplication3\\WebApplication1\\ReServe_App\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\ProgramData\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\alna172991\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid81"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid81": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid81": {
+          "dependencies": {
+            "Xamarin.Android.Support.Core.Utils": {
+              "target": "Package",
+              "version": "[28.0.0.1, )"
+            },
+            "Xamarin.Android.Support.CustomTabs": {
+              "target": "Package",
+              "version": "[28.0.0.1, )"
+            },
+            "Xamarin.Android.Support.Design": {
+              "target": "Package",
+              "version": "[28.0.0.1, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            }
+          }
+        }
+      }
+    }
+  }
+}
