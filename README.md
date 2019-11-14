@@ -15,7 +15,7 @@ Mary Shiner: meshiner@oakland.edu
 
 Elias Qumsieh: equmsieh@oakland.edu
 
-Seth Logan: smlogan@oakland.edu
+~~Seth Logan: smlogan@oakland.edu~~
 
 We will be working on Project #2, which has this description or overall end goal:
 
