@@ -28,17 +28,26 @@ namespace ReServeAPI_v2._0
                 DropDownList1.DataValueField = "Id";
                 DropDownList1.DataBind();
             }
-
-            
-
-           
         }
 
         protected void Display_Click(object sender, EventArgs e)
         {
-            ID = Convert.ToInt32(DropDownList1.SelectedValue);
 
-            Response.Redirect("ReServe-MakeReservation.aspx?ID=" + ID);
+            SqlConnection con = new SqlConnection(connectingString);
+            string restaurantNameFromDropDown = DropDownList1.SelectedItem.Text;
+            string com = "Select Restaurant_ID, Address, Name, FoodStyle, Hours, PhoneNumber, Description from Restaurant where Name = '" + restaurantNameFromDropDown + "'";
+            con.Open();
+            SqlCommand command = new SqlCommand(com, con);
+            SqlDataReader reader = command.ExecuteReader();
+
+            reader.Read();
+            restaurantName.Text = reader["Name"].ToString();
+            restaurantAddress.Text = reader["Address"].ToString();
+            restaurantHours.Text = reader["Hours"].ToString();
+            restaurantPhoneNumber.Text = reader["PhoneNumber"].ToString();
+            restaurantFoodStyle.Text = reader["FoodStyle"].ToString();
+            restaurantDescription.Text = reader["Description"].ToString();
         }
+
     }
 }

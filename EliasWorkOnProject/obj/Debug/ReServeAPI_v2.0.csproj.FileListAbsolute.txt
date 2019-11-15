@@ -257,3 +257,5 @@ C:\Users\Eq_94\Desktop\Oakland University\ReServeAPI_v2.0\obj\Debug\ReServeAPI_v
 C:\Users\Eq_94\Desktop\Oakland University\ReServeAPI_v2.0\obj\Debug\ReServeAPI_v2.0.csproj.CopyComplete
 C:\Users\Eq_94\Desktop\Oakland University\ReServeAPI_v2.0\obj\Debug\ReServeAPI_v2.0.dll
 C:\Users\Eq_94\Desktop\Oakland University\ReServeAPI_v2.0\obj\Debug\ReServeAPI_v2.0.pdb
+C:\team2capstone\EliasWorkOnProject\obj\Debug\ReServeAPI_v2.0.dll
+C:\team2capstone\EliasWorkOnProject\obj\Debug\ReServeAPI_v2.0.pdb

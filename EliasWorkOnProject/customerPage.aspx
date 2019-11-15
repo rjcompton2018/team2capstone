@@ -53,6 +53,7 @@
 
             <asp:Button ID="Display" width="200px" runat="server" Text="Display Details" OnClick="Display_Click" />
             <br />
+            
             <br>
 <div class="dropdown-content">
 
@@ -63,6 +64,17 @@
 </div>
 		<br>
 		<br>
+        <asp:Label ID="restaurantName" runat="server"></asp:Label>
+        <br>
+        <asp:Label ID="restaurantAddress" runat="server"></asp:Label>
+        <br>
+        <asp:Label ID="restaurantFoodStyle" runat="server"></asp:Label>
+        <br>
+        <asp:Label ID="restaurantDescription" runat="server"></asp:Label>
+        <br>
+        <asp:Label ID="restaurantHours" runat="server"></asp:Label>
+        <br>
+        <asp:Label ID="restaurantPhoneNumber" runat="server"></asp:Label>
 		<br>
 		<br>
 		<br>
