@@ -259,5 +259,3 @@ C:\Users\Eq_94\Desktop\Oakland University\ReServeAPI_v2.0\obj\Debug\ReServeAPI_v
 C:\Users\Eq_94\Desktop\Oakland University\ReServeAPI_v2.0\obj\Debug\ReServeAPI_v2.0.pdb
 C:\team2capstone\EliasWorkOnProject\obj\Debug\ReServeAPI_v2.0.dll
 C:\team2capstone\EliasWorkOnProject\obj\Debug\ReServeAPI_v2.0.pdb
-C:\Users\Mary\Documents\GitHub\team2capstone\EliasWorkOnProject\obj\Debug\ReServeAPI_v2.0.dll
-C:\Users\Mary\Documents\GitHub\team2capstone\EliasWorkOnProject\obj\Debug\ReServeAPI_v2.0.pdb
