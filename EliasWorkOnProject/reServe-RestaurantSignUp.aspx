@@ -7,64 +7,62 @@
     <title></title>
 </head>
 <body>
-
+    
     <form id="form1" runat="server">
         <div>
-            <asp:Label ID="restaurantSignUpTitle" runat="server" Text="Restaurant SignUp"></asp:Label>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
+            <asp:Label ID="RestaurantSignUp" runat="server" Text="Restaurant SignUp"></asp:Label>
+            
+        </div><br/>
+        <div><asp:Label ID="AdminEmail" runat="server" Text="Admin Email"></asp:Label>
 
+            <div><asp:TextBox ID="AdminEmailEntry" runat="server"></asp:TextBox></div>
+            <br/>
         </div>
-        <br />
-        <div>
-            <asp:Label ID="adminEmailLbl" runat="server" Text="Admin Email"></asp:Label>
+            <div><asp:Label ID="AdminPassword" runat="server" Text="Password"></asp:Label>
+                
+            <div><asp:TextBox ID="AdminPasswordEntry" runat="server"></asp:TextBox></div><br/>
+                <div><asp:Label ID="RepeatPassword" runat="server" Text="Repeat Password"></asp:Label>
+                
+            <div><asp:TextBox ID="RepeatPasswordEntry" runat="server"></asp:TextBox></div><br/>
+                    <div><asp:Label ID="RestaurantName" runat="server" Text="Restaurant Name"></asp:Label>
+                
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:TextBox ID="RestaurantNameEntry" runat="server"></asp:TextBox>
+                        <div><asp:Label ID="RestaurantAddress" runat="server" Text="Address"></asp:Label>
+                
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+            <asp:TextBox ID="RestaurantAddressEntry" runat="server"></asp:TextBox>
+                            <div><asp:Label ID="RestaurantPhoneNumber" runat="server" Text="Phone Number"></asp:Label>
+                
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+            <asp:TextBox ID="RestaurantPhoneNumberEntry" runat="server"></asp:TextBox>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <asp:Label ID="Description" runat="server" Text="Description"></asp:Label>
 
-            <div>
-                <asp:TextBox ID="adminEmailTxt" runat="server" ></asp:TextBox></div>
-            <br />
+                                <div><asp:Label ID="RestaurantHours" runat="server" Text="Hours"></asp:Label>
+                
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+            <asp:TextBox ID="RestaurantHoursEntry" runat="server"></asp:TextBox>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                <asp:TextBox ID="DescriptionEntry" runat="server" Height="41px" Width="159px"></asp:TextBox>
+
+                                    <div><asp:Label ID="RestaurantTypeofFood" runat="server" Text="Type of Food"></asp:Label>
+                
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+            <asp:TextBox ID="RestaurantTypeofFoodEntry" runat="server"></asp:TextBox>
+                                        
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        
+                                        <asp:Button ID="NextBtn" runat="server" Text="Next" />
         </div>
-        <div>
-            <asp:Label ID="adminPassLbl" runat="server" Text="Password"></asp:Label>
-
-            <div>
-                <asp:TextBox ID="adminPassTxt" runat="server"></asp:TextBox></div>
-            <br />
-            <div>
-                <asp:Label ID="repeatPassLbl" runat="server" Text="Repeat Password"></asp:Label>
-
-                <div>
-                    <asp:TextBox ID="adminRepeatPassTxt" runat="server"></asp:TextBox></div>
-                <br />
-                <div>
-                    <asp:Label ID="restNameLbl" runat="server" Text="Restaurant Name"></asp:Label>
-                    <asp:TextBox ID="restNameTxt" runat="server" Width="335px"></asp:TextBox>
-                    <div>
-                        <asp:Label ID="restAddressLbl" runat="server" Text="Address"></asp:Label>
-
-
-                        <asp:TextBox ID="restAddressTxt" runat="server"></asp:TextBox>
-                        <div>
-                            <asp:Label ID="restNumberLbl" runat="server" Text="Phone Number"></asp:Label>
-
-
-                            <asp:TextBox ID="restNumberTxt" runat="server"></asp:TextBox>
-                            <asp:Label ID="descriptionLbl" runat="server" Text="Description"></asp:Label>
-
-                            <div>
-                                <asp:Label ID="restHoursLbl" runat="server" Text="Hours"></asp:Label>
-
-
-                                <asp:TextBox ID="restHoursTxt" runat="server"></asp:TextBox>
-
-                                <asp:TextBox ID="descriptionTxt" runat="server" Height="41px" Width="159px"></asp:TextBox>
-
-                                <div>
-                                    <asp:Label ID="restFoodTypeLbl" runat="server" Text="Type of Food"></asp:Label>
-
-
-                                    <asp:TextBox ID="restFoodTypeTxt" runat="server"></asp:TextBox>
-
-
-                                    <asp:Button ID="nextBtn" runat="server" Text="Next" OnClick="NextBtn_Click" />
-                                </div>
+        
     </form>
 </body>
 </html>
