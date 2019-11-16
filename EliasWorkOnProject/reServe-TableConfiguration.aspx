@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ReServe-Drag&Drop.aspx.cs" Inherits="ReServeAPI_v2._0.ReServe_Drag_Drop" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="reServe-TableConfiguration.aspx.cs" Inherits="ReServeAPI_v2._0.ReServe_Drag_Drop" %>
 
 <!DOCTYPE HTML>
 <html>
