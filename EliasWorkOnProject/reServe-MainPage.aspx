@@ -28,6 +28,6 @@
         </div>
     </div>
 
-    <!--#include file="header.inc"-->
+    <!--#include file="footer.inc"-->
 </body>
 </html>
