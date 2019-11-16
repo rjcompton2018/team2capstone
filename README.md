@@ -15,7 +15,7 @@ Mary Shiner: meshiner@oakland.edu
 
 Elias Qumsieh: equmsieh@oakland.edu
 
-~Seth Logan: smlogan@oakland.edu~
+Seth Logan: smlogan@oakland.edu
 
 We will be working on Project #2, which has this description or overall end goal:
 
@@ -32,5 +32,3 @@ Is there a way to avoid waiting at a restaurant? Develop a system by which resta
 10/29/2019 - We are currently at the end of Sprint 4, trying to combine all of our solutions into a single one. We have converted all of the html pages to aspx and are soon going to create the correct formula for the restaurant wait time calculations.
 
 10/29/2019 - Finished cleaning up the repository.
-
-11/14/2019 - Scrapped phone app; reassigned mobile dev people to front end stuff so that we focus on making the website amazing
