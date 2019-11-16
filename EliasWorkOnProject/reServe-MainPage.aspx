@@ -7,7 +7,7 @@
     <!--#include file="header.inc"-->
 </head>
 <body>
-    <!--#include file="header.inc"-->
+    <!--#include file="navbar-main.inc"-->
 
     <!--Background Image Bar -->
     <div id="rs-topper" class="jumbotron text-center align-middle">
@@ -28,6 +28,6 @@
         </div>
     </div>
 
-    <!--#include file="header.inc"-->
+    <!--#include file="footer.inc"-->
 </body>
 </html>

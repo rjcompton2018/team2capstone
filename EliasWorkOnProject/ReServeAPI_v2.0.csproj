@@ -302,6 +302,10 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="css\custom.css" />
+    <Content Include="footer.inc" />
+    <Content Include="header.inc" />
+    <Content Include="navbar-main.inc" />
     <Content Include="reServe-CustomerSignUp.aspx" />
     <Content Include="customerPage.aspx" />
     <Content Include="favicon.ico" />
