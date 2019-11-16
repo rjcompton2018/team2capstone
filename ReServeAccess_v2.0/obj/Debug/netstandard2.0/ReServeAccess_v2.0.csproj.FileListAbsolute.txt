@@ -6,3 +6,11 @@ C:\team2capstone\ReServeAccess_v2.0\obj\Debug\netstandard2.0\ReServeAccess_v2.0.
 C:\team2capstone\ReServeAccess_v2.0\obj\Debug\netstandard2.0\ReServeAccess_v2.0.AssemblyInfo.cs
 C:\team2capstone\ReServeAccess_v2.0\obj\Debug\netstandard2.0\ReServeAccess_v2.0.dll
 C:\team2capstone\ReServeAccess_v2.0\obj\Debug\netstandard2.0\ReServeAccess_v2.0.pdb
+C:\Users\Eq_94\OneDrive\Documents\GitHub\team2capstone\ReServeAccess_v2.0\bin\Debug\netstandard2.0\ReServeAccess_v2.0.deps.json
+C:\Users\Eq_94\OneDrive\Documents\GitHub\team2capstone\ReServeAccess_v2.0\bin\Debug\netstandard2.0\ReServeAccess_v2.0.dll
+C:\Users\Eq_94\OneDrive\Documents\GitHub\team2capstone\ReServeAccess_v2.0\bin\Debug\netstandard2.0\ReServeAccess_v2.0.pdb
+C:\Users\Eq_94\OneDrive\Documents\GitHub\team2capstone\ReServeAccess_v2.0\obj\Debug\netstandard2.0\ReServeAccess_v2.0.csprojAssemblyReference.cache
+C:\Users\Eq_94\OneDrive\Documents\GitHub\team2capstone\ReServeAccess_v2.0\obj\Debug\netstandard2.0\ReServeAccess_v2.0.AssemblyInfoInputs.cache
+C:\Users\Eq_94\OneDrive\Documents\GitHub\team2capstone\ReServeAccess_v2.0\obj\Debug\netstandard2.0\ReServeAccess_v2.0.AssemblyInfo.cs
+C:\Users\Eq_94\OneDrive\Documents\GitHub\team2capstone\ReServeAccess_v2.0\obj\Debug\netstandard2.0\ReServeAccess_v2.0.dll
+C:\Users\Eq_94\OneDrive\Documents\GitHub\team2capstone\ReServeAccess_v2.0\obj\Debug\netstandard2.0\ReServeAccess_v2.0.pdb
