@@ -9,25 +9,9 @@
 <body>
     <form id="form1" runat="server">
         <div>
-
-<h2>Add Employee</h2>
-
-            <p>
-                <asp:Label ID="nameLbl" runat="server" Text="Full Name: "></asp:Label>
-                <asp:TextBox ID="nameTxt" runat="server"></asp:TextBox> </p>
-
-            <p>
-                <asp:Label ID="emailLbl" runat="server" Text="Email: "></asp:Label>
-                <asp:TextBox ID="emailTxt" runat="server"></asp:TextBox> </p>
-
-            <p>
-                <asp:Label ID="passwordLbl" runat="server" Text="Password: "></asp:Label>
-                <asp:TextBox ID="passwordTxt" runat="server"></asp:TextBox> </p>
-
-            <p>
-                <asp:Label ID="titleLbl" runat="server" Text="Title: "></asp:Label>
-                <asp:TextBox ID="titleTxt" runat="server"></asp:TextBox> </p>
-
+            <input id="submitTxt" type="text" />
+            <input id="submitTxt" type="text" />
+            <input id="submitTxt" type="text" />
         </div>
     </form>
 </body>
