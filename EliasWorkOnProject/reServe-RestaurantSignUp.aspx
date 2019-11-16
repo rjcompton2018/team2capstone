@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="restaurantSignUpPage.aspx.cs" Inherits="ReServeAPI_v2._0.restaurantSignUpPage" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="reServe-RestaurantSignUp.aspx.cs" Inherits="ReServeAPI_v2._0.restaurantSignUpPage" %>
 
 
 <!DOCTYPE html>

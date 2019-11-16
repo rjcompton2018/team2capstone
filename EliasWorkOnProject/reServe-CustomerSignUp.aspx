@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="customerForm.aspx.cs" Inherits="ReServeAPI_v2._0.customerForm" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="reServe-CustomerSignUp.aspx.cs" Inherits="ReServeAPI_v2._0.customerForm" %>
 
 
 <!DOCTYPE html>
