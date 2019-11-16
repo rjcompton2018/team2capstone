@@ -313,8 +313,12 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <!--<<<<<<< HEAD-->
     <Content Include="css\custom.css" />
+    <Content Include="includes\footer.inc" />
+    <Content Include="includes\header.inc" />
+    <Content Include="includes\navbar-main.inc" />
+    <Content Include="includes\navbar.inc" />
+    <!--<<<<<<< HEAD-->
     <Content Include="reServe-AddEmployee.aspx" />
     <Content Include="reServe-CustomerAccountInfo.aspx" />
     <Content Include="reServe-CustomerMainPage.aspx" />
