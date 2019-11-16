@@ -179,24 +179,43 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\selena\\.nuget\\packages\\": {},
+=======
+    "C:\\Users\\p1nkp\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+>>>>>>> bbaf8af6e191fbf1db6cec82c81b0d45d6dac2ba
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\selena\\team2capstone\\ReServeAccess_v2.0\\ReServeAccess_v2.0.csproj",
       "projectName": "ReServeAccess_v2.0",
       "projectPath": "C:\\Users\\selena\\team2capstone\\ReServeAccess_v2.0\\ReServeAccess_v2.0.csproj",
       "packagesPath": "C:\\Users\\selena\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\selena\\team2capstone\\ReServeAccess_v2.0\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\p1nkp\\Projects\\CSI4999\\ReServeAccess_v2.0\\ReServeAccess_v2.0.csproj",
+      "projectName": "ReServeAccess_v2.0",
+      "projectPath": "C:\\Users\\p1nkp\\Projects\\CSI4999\\ReServeAccess_v2.0\\ReServeAccess_v2.0.csproj",
+      "packagesPath": "C:\\Users\\p1nkp\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\p1nkp\\Projects\\CSI4999\\ReServeAccess_v2.0\\obj\\",
+>>>>>>> bbaf8af6e191fbf1db6cec82c81b0d45d6dac2ba
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\selena\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+=======
+        "C:\\Users\\p1nkp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+>>>>>>> bbaf8af6e191fbf1db6cec82c81b0d45d6dac2ba
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
