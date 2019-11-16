@@ -173,12 +173,22 @@
     <Compile Include="reServe-CustomerMainPage.aspx.designer.cs">
       <DependentUpon>reServe-CustomerMainPage.aspx</DependentUpon>
     </Compile>
+    <!--<<<<<<< HEAD-->
     <Compile Include="reServe-CustomerSignUp.aspx.cs">
       <DependentUpon>reServe-CustomerSignUp.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="reServe-CustomerSignUp.aspx.designer.cs">
       <DependentUpon>reServe-CustomerSignUp.aspx</DependentUpon>
+      <!--=======-->
+    </Compile>
+    <Compile Include="customerForm.aspx.cs">
+      <DependentUpon>customerForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customerForm.aspx.designer.cs">
+      <DependentUpon>customerForm.aspx</DependentUpon>
+      <!-->>>>>>> dffe0ff859a3ac3d9a24dc59c95f504f60016c72-->
     </Compile>
     <Compile Include="customerPage.aspx.cs">
       <DependentUpon>customerPage.aspx</DependentUpon>
@@ -200,6 +210,7 @@
     <Compile Include="Reservation.cs">
       <DependentUpon>ReServeModel.tt</DependentUpon>
     </Compile>
+    <!--<<<<<<< HEAD-->
     <Compile Include="reServe-CustomerAccountInfo.aspx.cs">
       <DependentUpon>reServe-CustomerAccountInfo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -214,6 +225,13 @@
     <Compile Include="reServe-AddEmployee.aspx.designer.cs">
       <DependentUpon>reServe-AddEmployee.aspx</DependentUpon>
     </Compile>
+    <Compile Include="reServe-RedoTableConfiguration.aspx.cs">
+      <DependentUpon>reServe-RedoTableConfiguration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reServe-RedoTableConfiguration.aspx.designer.cs">
+      <DependentUpon>reServe-RedoTableConfiguration.aspx</DependentUpon>
+    </Compile>
     <Compile Include="reServe-RestaurantAccountInfo.aspx.cs">
       <DependentUpon>reServe-RestaurantAccountInfo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -223,45 +241,28 @@
     </Compile>
     <Compile Include="reServe-TableConfiguration.aspx.cs">
       <DependentUpon>reServe-TableConfiguration.aspx</DependentUpon>
+      <!--=======-->
+    </Compile>
+    <Compile Include="ReServe-Login.aspx.cs">
+      <DependentUpon>ReServe-Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="reServe-TableConfiguration.aspx.designer.cs">
-      <DependentUpon>reServe-TableConfiguration.aspx</DependentUpon>
+    <Compile Include="ReServe-Login.aspx.designer.cs">
+      <DependentUpon>ReServe-Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="reServe-HostessPage.aspx.cs">
-      <DependentUpon>reServe-HostessPage.aspx</DependentUpon>
+    <Compile Include="ReServe-MakeReservation.aspx.cs">
+      <DependentUpon>ReServe-MakeReservation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="reServe-HostessPage.aspx.designer.cs">
-      <DependentUpon>reServe-HostessPage.aspx</DependentUpon>
+    <Compile Include="ReServe-MakeReservation.aspx.designer.cs">
+      <DependentUpon>ReServe-MakeReservation.aspx</DependentUpon>
     </Compile>
-    <Compile Include="reServe-Login.aspx.cs">
-      <DependentUpon>reServe-Login.aspx</DependentUpon>
+    <Compile Include="reServe-ViewReservation.aspx.cs">
+      <DependentUpon>reServe-ViewReservation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="reServe-Login.aspx.designer.cs">
-      <DependentUpon>reServe-Login.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="reServe-MainPage.aspx.cs">
-      <DependentUpon>reServe-MainPage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="reServe-MainPage.aspx.designer.cs">
-      <DependentUpon>reServe-MainPage.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="reServe-MakeReservation.aspx.cs">
-      <DependentUpon>reServe-MakeReservation.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="reServe-MakeReservation.aspx.designer.cs">
-      <DependentUpon>reServe-MakeReservation.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ReServe-ViewReservations.aspx.cs">
-      <DependentUpon>ReServe-ViewReservations.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ReServe-ViewReservations.aspx.designer.cs">
-      <DependentUpon>ReServe-ViewReservations.aspx</DependentUpon>
+    <Compile Include="reServe-ViewReservation.aspx.designer.cs">
+      <DependentUpon>reServe-ViewReservation.aspx</DependentUpon>
     </Compile>
     <Compile Include="ReServeModel.Context.cs">
       <AutoGen>True</AutoGen>
@@ -288,19 +289,22 @@
     <Compile Include="restaurantConfiguration.aspx.designer.cs">
       <DependentUpon>restaurantConfiguration.aspx</DependentUpon>
     </Compile>
+    <!--<<<<<<< HEAD-->
     <Compile Include="reServe-RestaurantMainPage.aspx.cs">
       <DependentUpon>reServe-RestaurantMainPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="reServe-RestaurantMainPage.aspx.designer.cs">
       <DependentUpon>reServe-RestaurantMainPage.aspx</DependentUpon>
+      <!--=======-->
     </Compile>
-    <Compile Include="reServe-RestaurantSignUp.aspx.cs">
-      <DependentUpon>reServe-RestaurantSignUp.aspx</DependentUpon>
+    <Compile Include="RestaurantMainPage.aspx.cs">
+      <DependentUpon>RestaurantMainPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="reServe-RestaurantSignUp.aspx.designer.cs">
-      <DependentUpon>reServe-RestaurantSignUp.aspx</DependentUpon>
+    <Compile Include="RestaurantMainPage.aspx.designer.cs">
+      <DependentUpon>RestaurantMainPage.aspx</DependentUpon>
+      <!-->>>>>>> dffe0ff859a3ac3d9a24dc59c95f504f60016c72-->
     </Compile>
     <Compile Include="Restaurant_Table.cs">
       <DependentUpon>ReServeModel.tt</DependentUpon>
@@ -316,15 +320,16 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-<<<<<<< Updated upstream
+    <!--<<<<<<< HEAD-->
     <Content Include="css\custom.css" />
     <Content Include="footer.inc" />
     <Content Include="header.inc" />
     <Content Include="navbar-main.inc" />
-=======
     <Content Include="reServe-CustomerMainPage.aspx" />
->>>>>>> Stashed changes
     <Content Include="reServe-CustomerSignUp.aspx" />
+    <!--=======-->
+    <Content Include="customerForm.aspx" />
+    <!-->>>>>>> dffe0ff859a3ac3d9a24dc59c95f504f60016c72-->
     <Content Include="customerPage.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -382,15 +387,19 @@
     <Content Include="images\tea-time-57-292243.png" />
     <Content Include="images\tea-time-64-292243.png" />
     <Content Include="images\tea-time-72-292243.png" />
+    <!--<<<<<<< HEAD-->
     <Content Include="reServe-CustomerAccountInfo.aspx" />
     <Content Include="reServe-AddEmployee.aspx" />
+    <Content Include="reServe-RedoTableConfiguration.aspx" />
     <Content Include="reServe-RestaurantAccountInfo.aspx" />
     <Content Include="reServe-TableConfiguration.aspx" />
     <Content Include="reServe-HostessPage.aspx" />
     <Content Include="reServe-Login.aspx" />
     <Content Include="reServe-MainPage.aspx" />
     <Content Include="reServe-MakeReservation.aspx" />
-    <Content Include="ReServe-ViewReservations.aspx" />
+    <Content Include="reServe-ViewReservation.aspx" />
+    <!--=======-->
+    <!-->>>>>>> dffe0ff859a3ac3d9a24dc59c95f504f60016c72-->
     <Content Include="ReServeModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>ReServeModel.Context.cs</LastGenOutput>
@@ -402,8 +411,12 @@
       <LastGenOutput>ReServeModel.cs</LastGenOutput>
     </Content>
     <Content Include="restaurantConfiguration.aspx" />
+    <!--<<<<<<< HEAD-->
     <Content Include="reServe-RestaurantMainPage.aspx" />
     <Content Include="reServe-RestaurantSignUp.aspx" />
+    <!--=======-->
+    <Content Include="RestaurantMainPage.aspx" />
+    <!-->>>>>>> dffe0ff859a3ac3d9a24dc59c95f504f60016c72-->
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
