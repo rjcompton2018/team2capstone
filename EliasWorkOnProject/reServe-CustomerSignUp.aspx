@@ -4,6 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!--Mary Shiner CODE -- 11/16/2019 -->
     <!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -43,19 +44,22 @@
 <div class="container" style="margin-top:30px">
   <div class="row">
     <div class="col-sm-8">
-      <h2>Your Guest Information</h2>
+      <h2>Customer Sign Up</h2>
 	  <div class="menu">
 		</br>
 		 <!--The form asks for a user's name and phone nubmer and number of people-->
 			<form id="form" method="POST" action="/my-handling-form-page">
-			<p>Name:</p><input type="name" name="name" required text="text">
+			<p>Email:</p>&nbsp;<input type="email" name="email" required text="text"></br>
 			</br>
-			</br>
-			<p>Phone Number:</p><input type="phone" name="phone" required text="text">
-			  <div>
-			  </br>
-				<label for="msg">Number of People: </label>
-				</p><input type="message" name="people" required text="text">
+			Password: </p><input type="password" name="password" required text="text"><br />
+                <br />
+&nbsp;Repeat Password: 
+                <br />
+                <br />
+                <input type="password" name="password" required text="text"><br />
+&nbsp;<div>
+				<label for="msg">Phone Number: </label>
+				</p><input type="phonenumber" name="phonenumber" required text="text">
 			  </div>
 			  </br>
 			<input type="submit" value="Submit" id="submit">
