@@ -9,6 +9,9 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <input id="submitTxt" type="text" />
+            <input id="submitTxt" type="text" />
+            <input id="submitTxt" type="text" />
         </div>
     </form>
 </body>
