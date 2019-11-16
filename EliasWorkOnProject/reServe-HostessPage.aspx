@@ -7,8 +7,25 @@
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="hostessForm" runat="server">
         <div>
+
+            <h2>Hostess Page</h2>
+
+            <p>Quickly access current reservations and make new ones!</p>
+
+            <p>
+                <asp:Button ID="viewBtn" runat="server" Text="View Current Reservations" /> </p>
+
+            <p>
+                <asp:Button ID="makeBtn" runat="server" Text="Make a New Reservation" /> </p>
+
+
+
+
+
+
+
         </div>
     </form>
 </body>
