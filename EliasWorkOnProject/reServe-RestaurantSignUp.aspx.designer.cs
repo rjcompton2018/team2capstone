@@ -24,183 +24,183 @@ namespace ReServeAPI_v2._0
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// RestaurantSignUp control.
+        /// restaurantSignUpTitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label RestaurantSignUp;
+        protected global::System.Web.UI.WebControls.Label restaurantSignUpTitle;
 
         /// <summary>
-        /// AdminEmail control.
+        /// adminEmailLbl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label AdminEmail;
+        protected global::System.Web.UI.WebControls.Label adminEmailLbl;
 
         /// <summary>
-        /// AdminEmailEntry control.
+        /// adminEmailTxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox AdminEmailEntry;
+        protected global::System.Web.UI.WebControls.TextBox adminEmailTxt;
 
         /// <summary>
-        /// AdminPassword control.
+        /// adminPassLbl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label AdminPassword;
+        protected global::System.Web.UI.WebControls.Label adminPassLbl;
 
         /// <summary>
-        /// AdminPasswordEntry control.
+        /// adminPassTxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox AdminPasswordEntry;
+        protected global::System.Web.UI.WebControls.TextBox adminPassTxt;
 
         /// <summary>
-        /// RepeatPassword control.
+        /// repeatPassLbl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label RepeatPassword;
+        protected global::System.Web.UI.WebControls.Label repeatPassLbl;
 
         /// <summary>
-        /// RepeatPasswordEntry control.
+        /// adminRepeatPassTxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox RepeatPasswordEntry;
+        protected global::System.Web.UI.WebControls.TextBox adminRepeatPassTxt;
 
         /// <summary>
-        /// RestaurantName control.
+        /// restNameLbl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label RestaurantName;
+        protected global::System.Web.UI.WebControls.Label restNameLbl;
 
         /// <summary>
-        /// RestaurantNameEntry control.
+        /// restNameTxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox RestaurantNameEntry;
+        protected global::System.Web.UI.WebControls.TextBox restNameTxt;
 
         /// <summary>
-        /// RestaurantAddress control.
+        /// restAddressLbl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label RestaurantAddress;
+        protected global::System.Web.UI.WebControls.Label restAddressLbl;
 
         /// <summary>
-        /// RestaurantAddressEntry control.
+        /// restAddressTxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox RestaurantAddressEntry;
+        protected global::System.Web.UI.WebControls.TextBox restAddressTxt;
 
         /// <summary>
-        /// RestaurantPhoneNumber control.
+        /// restNumberLbl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label RestaurantPhoneNumber;
+        protected global::System.Web.UI.WebControls.Label restNumberLbl;
 
         /// <summary>
-        /// RestaurantPhoneNumberEntry control.
+        /// restNumberTxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox RestaurantPhoneNumberEntry;
+        protected global::System.Web.UI.WebControls.TextBox restNumberTxt;
 
         /// <summary>
-        /// Description control.
+        /// descriptionLbl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Description;
+        protected global::System.Web.UI.WebControls.Label descriptionLbl;
 
         /// <summary>
-        /// RestaurantHours control.
+        /// restHoursLbl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label RestaurantHours;
+        protected global::System.Web.UI.WebControls.Label restHoursLbl;
 
         /// <summary>
-        /// RestaurantHoursEntry control.
+        /// restHoursTxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox RestaurantHoursEntry;
+        protected global::System.Web.UI.WebControls.TextBox restHoursTxt;
 
         /// <summary>
-        /// DescriptionEntry control.
+        /// descriptionTxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox DescriptionEntry;
+        protected global::System.Web.UI.WebControls.TextBox descriptionTxt;
 
         /// <summary>
-        /// RestaurantTypeofFood control.
+        /// restFoodTypeLbl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label RestaurantTypeofFood;
+        protected global::System.Web.UI.WebControls.Label restFoodTypeLbl;
 
         /// <summary>
-        /// RestaurantTypeofFoodEntry control.
+        /// restFoodTypeTxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox RestaurantTypeofFoodEntry;
+        protected global::System.Web.UI.WebControls.TextBox restFoodTypeTxt;
 
         /// <summary>
-        /// NextBtn control.
+        /// nextBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button NextBtn;
+        protected global::System.Web.UI.WebControls.Button nextBtn;
     }
 }
