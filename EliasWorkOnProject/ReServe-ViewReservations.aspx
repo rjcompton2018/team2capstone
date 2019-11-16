@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!--Mary Shiner CODE -- 10/22/2019 -->
+    <!--Mary Shiner CODE -- 11/16/2019 -->
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -50,59 +50,41 @@
         <div class="row">
             <div class="col-sm-8">
                 <h2>Reservations</h2>
-				Table:
+				Restaurant:
 				<p></p>
                 <p></p>
-				Name: 
+				Date: 
 				<p></p>
                 <p></p>
-				Number of People:
+				Time:
 				<p></p>
                 <p></p>
-				Waitime:
+				Reservation Name:
 				<p></p>
                 <p></p>
-
+                Phone Number:
+                <p></p>
+                <p></p>
+                Number of People:
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <input id="Submit1" type="submit" value="Edit" />
+				<input id="Button1" type="button" value="Remove" />
+				<p></p>
+                <p></p>
 
             </div>
-				<button type="button" class="btn btn-primary">Edit</button>
-				<p></p>
-                <p></p>
-				<button type="button" class="btn btn-success">Submit</button>
-				<p></p>
-                <p></p>
-				<button type="button" class="btn btn-danger">Cancel</button>
-				<p></p>
-                <p></p>
+
         </div>
     </div>
     <p></p>
 	<div class="container" style="margin-top:30px">
         <div class="row">
             <div class="col-sm-8">
-				Table:
-				<p></p>
-                <p></p>
-				Name: 
-				<p></p>
-                <p></p>
-				Number of People:
-				<p></p>
-                <p></p>
-				Waitime:
-				<p></p>
-                <p></p>
 
             </div>
-				<button type="button" class="btn btn-primary">Edit</button>
-				<p></p>
-                <p></p>
-				<button type="button" class="btn btn-success">Submit</button>
-				<p></p>
-                <p></p>
-				<button type="button" class="btn btn-danger">Cancel</button>
-				<p></p>
-                <p></p>
         </div>
     </div>
     <p></p>
@@ -111,4 +93,6 @@
         &copy; Copyright 2019 ~ ReServe ~
     </div>
 </body>
+</html>
+
 </html>
