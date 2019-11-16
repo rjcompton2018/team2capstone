@@ -166,13 +166,6 @@
     <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
-    <Compile Include="reServe-CustomerMainPage.aspx.cs">
-      <DependentUpon>reServe-CustomerMainPage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="reServe-CustomerMainPage.aspx.designer.cs">
-      <DependentUpon>reServe-CustomerMainPage.aspx</DependentUpon>
-    </Compile>
     <Compile Include="reServe-CustomerSignUp.aspx.cs">
       <DependentUpon>reServe-CustomerSignUp.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -213,13 +206,6 @@
     </Compile>
     <Compile Include="reServe-AddEmployee.aspx.designer.cs">
       <DependentUpon>reServe-AddEmployee.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="reServe-RestaurantAccountInfo.aspx.cs">
-      <DependentUpon>reServe-RestaurantAccountInfo.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="reServe-RestaurantAccountInfo.aspx.designer.cs">
-      <DependentUpon>reServe-RestaurantAccountInfo.aspx</DependentUpon>
     </Compile>
     <Compile Include="reServe-TableConfiguration.aspx.cs">
       <DependentUpon>reServe-TableConfiguration.aspx</DependentUpon>
@@ -288,12 +274,12 @@
     <Compile Include="restaurantConfiguration.aspx.designer.cs">
       <DependentUpon>restaurantConfiguration.aspx</DependentUpon>
     </Compile>
-    <Compile Include="reServe-RestaurantMainPage.aspx.cs">
-      <DependentUpon>reServe-RestaurantMainPage.aspx</DependentUpon>
+    <Compile Include="reServe-RestaurantMain.aspx.cs">
+      <DependentUpon>reServe-RestaurantMain.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="reServe-RestaurantMainPage.aspx.designer.cs">
-      <DependentUpon>reServe-RestaurantMainPage.aspx</DependentUpon>
+    <Compile Include="reServe-RestaurantMain.aspx.designer.cs">
+      <DependentUpon>reServe-RestaurantMain.aspx</DependentUpon>
     </Compile>
     <Compile Include="reServe-RestaurantSignUp.aspx.cs">
       <DependentUpon>reServe-RestaurantSignUp.aspx</DependentUpon>
@@ -316,14 +302,10 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-<<<<<<< Updated upstream
     <Content Include="css\custom.css" />
     <Content Include="footer.inc" />
     <Content Include="header.inc" />
     <Content Include="navbar-main.inc" />
-=======
-    <Content Include="reServe-CustomerMainPage.aspx" />
->>>>>>> Stashed changes
     <Content Include="reServe-CustomerSignUp.aspx" />
     <Content Include="customerPage.aspx" />
     <Content Include="favicon.ico" />
@@ -384,7 +366,6 @@
     <Content Include="images\tea-time-72-292243.png" />
     <Content Include="reServe-CustomerAccountInfo.aspx" />
     <Content Include="reServe-AddEmployee.aspx" />
-    <Content Include="reServe-RestaurantAccountInfo.aspx" />
     <Content Include="reServe-TableConfiguration.aspx" />
     <Content Include="reServe-HostessPage.aspx" />
     <Content Include="reServe-Login.aspx" />
@@ -402,7 +383,7 @@
       <LastGenOutput>ReServeModel.cs</LastGenOutput>
     </Content>
     <Content Include="restaurantConfiguration.aspx" />
-    <Content Include="reServe-RestaurantMainPage.aspx" />
+    <Content Include="reServe-RestaurantMain.aspx" />
     <Content Include="reServe-RestaurantSignUp.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
