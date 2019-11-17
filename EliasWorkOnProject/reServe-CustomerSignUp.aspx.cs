@@ -112,6 +112,7 @@ namespace ReServeAPI_v2._0
                  cmd.Parameters.AddWithValue("@phoneNumber", phoneNumtxt.Text);
                  cmd.ExecuteNonQuery();
                  conn.Close();
+                Response.Redirect("reServe-Login.aspx");
              }
          
         }
