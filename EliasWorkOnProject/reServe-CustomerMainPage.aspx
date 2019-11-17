@@ -9,6 +9,8 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <h2>YOU ARE A CUSTOMER</h2>
+            <p>This is what a customer will see on the main page, after they login.</p>
         </div>
     </form>
 </body>
