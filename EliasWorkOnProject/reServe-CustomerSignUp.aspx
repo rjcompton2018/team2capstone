@@ -69,7 +69,7 @@
     <asp:TextBox ID="phoneNumtxt" runat="server"></asp:TextBox>&nbsp;</p>
 
 			  </div>
-			    <asp:Label ID="errorlbl" runat="server" Text=""></asp:Label>
+			    <asp:Label Style="color:red" ID="errorlbl" runat="server" Text=""></asp:Label>
                 <br />
 			  <br/>
 			
