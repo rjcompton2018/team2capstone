@@ -3,7 +3,7 @@
     #627894 = slate blue
     #A0AEC1 = gray
     #466289 = dark blue
-    #DBE8F9 = poder blue
+    #DBE8F9 = powder blue
     #FA6121 = orange
     #FFB739 = yellow orange
     #FFFFFF = white
@@ -64,20 +64,18 @@ body {
     text-align: center;
 }
 
-#rs-main-buttons {
-
+#rs-main-signupbtn {
+    background-color: #FFFFFF;
+    border-color: #466289;
+    color: #466289;
+    font-family: Impact;
+    font-size: xx-large;
 }
 
-#SubmitBtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-}
+    #rs-main-signupbtn:hover {
+        background-color: #A0AEC1;
+    }
 
-#SubmitBtn:hover {
-        background-color: #45a049;
+#rs-main-singup {
+    align-content: center;
 }
