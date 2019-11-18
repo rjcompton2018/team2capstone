@@ -67,3 +67,17 @@ body {
 #rs-main-buttons {
 
 }
+
+#SubmitBtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+#SubmitBtn:hover {
+        background-color: #45a049;
+}

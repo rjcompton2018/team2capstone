@@ -316,8 +316,10 @@
     <Content Include="css\custom.css" />
     <Content Include="includes\footer.inc" />
     <Content Include="includes\header.inc" />
+    <Content Include="includes\navbar-restaurant.inc" />
     <Content Include="includes\navbar-main.inc" />
-    <Content Include="includes\navbar.inc" />
+    <Content Include="includes\navbar-customer.inc" />
+    <Content Include="includes\imagebar.inc" />
     <!--<<<<<<< HEAD-->
     <Content Include="reServe-AddEmployee.aspx" />
     <Content Include="reServe-CustomerAccountInfo.aspx" />
