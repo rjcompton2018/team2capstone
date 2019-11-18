@@ -38,7 +38,7 @@ namespace ReServeAPI_v2._0
                 errorlbl.Visible = false;
                 if (myOutput == 0)
                 {
-                    if(str.Length != 10)
+                    if (str.Length != 10)
                     {
                         errorlbl.Text = "* Please enter 10 digits phone number";
                         errorlbl.Visible = true;
@@ -56,7 +56,7 @@ namespace ReServeAPI_v2._0
                     errorlbl.Visible = true;
                 }
             }
-         
+
         }
         protected void checkIfEmailExist()
         {
@@ -101,20 +101,20 @@ namespace ReServeAPI_v2._0
         }
         protected void DataInsert()
         {
-             using (SqlConnection conn = new SqlConnection(connectionString))
-             {
-                 conn.Open();
-                 SqlCommand cmd = new SqlCommand("INSERT INTO [dbo].[User] (Email, Password, PhoneNumber) VALUES(@email, @password, @phoneNumber)", conn);
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("INSERT INTO [dbo].[User] (Email, Password, PhoneNumber) VALUES(@email, @password, @phoneNumber)", conn);
 
 
-                 cmd.Parameters.AddWithValue("@email", emailtxt.Text);
-                 cmd.Parameters.AddWithValue("@password", Passwordtxt.Text);
-                 cmd.Parameters.AddWithValue("@phoneNumber", phoneNumtxt.Text);
-                 cmd.ExecuteNonQuery();
-                 conn.Close();
+                cmd.Parameters.AddWithValue("@email", emailtxt.Text);
+                cmd.Parameters.AddWithValue("@password", Passwordtxt.Text);
+                cmd.Parameters.AddWithValue("@phoneNumber", phoneNumtxt.Text);
+                cmd.ExecuteNonQuery();
+                conn.Close();
                 Response.Redirect("reServe-Login.aspx");
-             }
-         
+            }
+
         }
     }
 }

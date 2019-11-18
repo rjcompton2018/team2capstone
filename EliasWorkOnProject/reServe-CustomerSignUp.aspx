@@ -14,51 +14,61 @@
 
     <!-- Page content -->
 
+    <!--The form asks for a user's name and phone nubmer and number of people-->
     <div class="container">
         <div class="row">
-            <div class="col-sm-8">
-                <div class="menu">
-                    <p>
-                        <h2>Customer Sign Up</h2>
-                    </p>
+            <h2>Customer Sign Up</h2>
+        </div>
 
-                    <!--The form asks for a user's name and phone nubmer and number of people-->
-                    <form id="form" method="POST" runat="server">
+        <form id="form" method="POST" runat="server">
 
-                        <p>
-                            Email:
-                            <asp:TextBox ID="emailtxt" runat="server"></asp:TextBox>
-                        </p>
-
-                        <p>
-                            Password:
-                            <asp:TextBox ID="Passwordtxt" type="password" runat="server"></asp:TextBox>
-                        </p>
-
-                        <p>
-                            Repeat Password:
-                            <asp:TextBox ID="rePasswordtxt" type="password" runat="server"></asp:TextBox>
-                        </p>
-
-                        <p>
-                            Phone Number:
-                            <asp:TextBox ID="phoneNumtxt" runat="server"></asp:TextBox>
-                        </p>
-
-                        <p>
-                            <asp:Label Style="color: red" ID="errorlbl" runat="server" Text=""></asp:Label>
-
-
-                            <asp:Button ID="SubmitBtn" runat="server" Text="Submit" OnClick="SubmitBtn_Click" />
-                        </p>
-                    </form>
-                </div>
-
+        <div class="row">
+            <div class="col-25">
+                <label>E-mail Address:</label>
+            </div>
+            <div class="col-75">
+                <asp:TextBox ID="emailtxt" runat="server"></asp:TextBox>
             </div>
         </div>
-    </div>
-    </div>
 
+        <div class="row">
+            <div class="col-25">
+                <label>Password:</label>
+            </div>
+            <div class="col-75">
+                <asp:TextBox ID="Passwordtxt" type="password" runat="server"></asp:TextBox>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label>Repeat Password:</label>
+            </div>
+            <div class="col-75">
+                <asp:TextBox ID="rePasswordtxt" type="password" runat="server"></asp:TextBox>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label>Phone Number:</label>
+            </div>
+            <div class="col-75">
+                <asp:TextBox ID="phoneNumtxt" runat="server"></asp:TextBox>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <asp:Label Style="color: red" ID="errorlbl" runat="server" Text=""></asp:Label>
+            </div>
+            <div class="col-75 right">
+                <asp:Button ID="SubmitBtn" runat="server" Text="Submit" OnClick="SubmitBtn_Click" />
+            </div>
+        </div>
+                    
+        </form>
+    </div>
 
     <!--#include file="includes/footer.inc"-->
 </body>

@@ -6,6 +6,7 @@
     <!--Links to CSS (Bootstrap)-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="css/forms-style.css">
 
     <!--Creates Icon in Tab-->
     <link rel="shortcut icon" href="images/tea-time-24-292243.png">
