@@ -47,7 +47,7 @@ namespace ReServeAPI_v2._0
                     {
 
                         errorlbl.Visible = false;
-                        DataInsert();
+                        checkIfEmailExist();
                     }
                 }
                 else
@@ -57,6 +57,47 @@ namespace ReServeAPI_v2._0
                 }
             }
          
+        }
+        protected void checkIfEmailExist()
+        {
+
+
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM [dbo].[User]  WHERE ([Email] = @user)", conn);
+
+                cmd.Parameters.AddWithValue("@user", emailtxt.Text);
+                conn.Open();
+                int UserExist = (int)cmd.ExecuteScalar();
+
+
+
+                if (UserExist > 0)
+                {
+                    //Username exist
+                    errorlbl.Text = "* Email is not availabe";
+                    errorlbl.Visible = true;
+                }
+                else
+                {
+                    //Username doesn't exist.
+                    SqlCommand cmd2 = new SqlCommand("SELECT COUNT(*) FROM [dbo].[ResturantInformation]  WHERE ([Email] = @user)", conn);
+
+                    cmd2.Parameters.AddWithValue("@user", emailtxt.Text);
+                    int Exist = (int)cmd2.ExecuteScalar();
+                    if (Exist > 0)
+                    {
+                        errorlbl.Text = "* Email is not availabe";
+                        errorlbl.Visible = true;
+                    }
+                    else
+                    {
+                        conn.Close();
+                        DataInsert();
+                    }
+                }
+            }
         }
         protected void DataInsert()
         {
@@ -71,6 +112,7 @@ namespace ReServeAPI_v2._0
                  cmd.Parameters.AddWithValue("@phoneNumber", phoneNumtxt.Text);
                  cmd.ExecuteNonQuery();
                  conn.Close();
+                Response.Redirect("reServe-Login.aspx");
              }
          
         }
