@@ -22,15 +22,15 @@
     </div>
 
     <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-4" align="center">
-            <a href="#" id="rs-main-signupbtn" class="btn btn-info" role="button">Restaurant Sign Up</a>
-        </div>
-        <div class="col-4" align="center">
-            <a href="#" id="rs-main-signupbtn" class="btn btn-info" role="button">Customer Sign Up</a>
+        <div class="row justify-content-center">
+            <div class="col-4" align="center">
+                <a href="#" id="rs-main-signupbtn" class="btn btn-info" role="button">Restaurant Sign Up</a>
+            </div>
+            <div class="col-4" align="center">
+                <a href="#" id="rs-main-signupbtn" class="btn btn-info" role="button">Customer Sign Up</a>
+            </div>
         </div>
     </div>
-        </div>
 
     <!--#include file="includes/footer.inc"-->
 </body>

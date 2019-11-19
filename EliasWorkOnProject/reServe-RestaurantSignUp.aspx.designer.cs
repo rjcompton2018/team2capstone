@@ -24,15 +24,6 @@ namespace ReServeAPI_v2._0
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// RestaurantSignUp control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label RestaurantSignUp;
-
-        /// <summary>
         /// AdminEmail control.
         /// </summary>
         /// <remarks>
@@ -69,13 +60,13 @@ namespace ReServeAPI_v2._0
         protected global::System.Web.UI.WebControls.TextBox AdminPasswordEntry;
 
         /// <summary>
-        /// RepeatPassword control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label RepeatPassword;
+        protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
         /// RepeatPasswordEntry control.
@@ -150,6 +141,15 @@ namespace ReServeAPI_v2._0
         protected global::System.Web.UI.WebControls.Label Description;
 
         /// <summary>
+        /// DescriptionEntry control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox DescriptionEntry;
+
+        /// <summary>
         /// RestaurantHours control.
         /// </summary>
         /// <remarks>
@@ -166,15 +166,6 @@ namespace ReServeAPI_v2._0
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox RestaurantHoursEntry;
-
-        /// <summary>
-        /// DescriptionEntry control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox DescriptionEntry;
 
         /// <summary>
         /// RestaurantTypeofFood control.

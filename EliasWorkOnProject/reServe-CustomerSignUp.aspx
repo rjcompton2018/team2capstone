@@ -15,12 +15,12 @@
     <!-- Page content -->
 
     <!--The form asks for a user's name and phone nubmer and number of people-->
+    <form id="form" method="POST" runat="server">
+
     <div class="container">
         <div class="row">
             <h2>Customer Sign Up</h2>
         </div>
-
-        <form id="form" method="POST" runat="server">
 
         <div class="row">
             <div class="col-25">
@@ -67,8 +67,9 @@
             </div>
         </div>
                     
-        </form>
     </div>
+    
+    </form>
 
     <!--#include file="includes/footer.inc"-->
 </body>
