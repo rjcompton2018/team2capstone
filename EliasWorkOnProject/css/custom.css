@@ -1,0 +1,81 @@
+﻿/* Color pallette:
+
+    #627894 = slate blue
+    #A0AEC1 = gray
+    #466289 = dark blue
+    #DBE8F9 = powder blue
+    #FA6121 = orange
+    #FFB739 = yellow orange
+    #FFFFFF = white
+    #000000 = black
+
+*/
+
+body {
+    background-color: #DBE8F9;
+}
+
+#navbardrop {
+    color: #FA6121;
+}
+
+.dropdown-menu {
+    background-color: #DBE8F9;
+}
+
+.dropdown-item {
+    color: #FA6121;
+}
+
+#rs-footer {
+    background-color: #FA6121;
+    color: #FFFFFF;
+    height: 25px;
+    margin-bottom: 0;
+}
+
+#rs-main-nav {
+    background-color: #466289;
+    color: #DBE8F9;
+}
+
+#rs-topper {
+    height: 300px;
+    background-image: url('../images/architecture-chairs-design-2894275.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% 100%;
+    margin-bottom: 0px;
+}
+
+#rs-topper-logo {
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 5px;
+    color: #FFFFFF;
+}
+
+#rs-about {
+    padding: 50px;
+    color: #466289;
+    font-size: x-large;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+}
+
+#rs-main-signupbtn {
+    background-color: #FFFFFF;
+    border-color: #466289;
+    color: #466289;
+    font-family: Impact;
+    font-size: xx-large;
+}
+
+    #rs-main-signupbtn:hover {
+        background-color: #A0AEC1;
+    }
+
+#rs-main-singup {
+    align-content: center;
+}

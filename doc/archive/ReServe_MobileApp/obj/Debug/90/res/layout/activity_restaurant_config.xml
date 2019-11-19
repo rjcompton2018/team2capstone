@@ -1,0 +1,87 @@
+<LinearLayout android:id="@+id/layoutMain" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" tools:context=".RestaurantConfig" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android"><androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="160dp" android:layout_weight="0"><ImageView android:id="@+id/ivLogo" android:layout_width="wrap_content" android:layout_height="164dp" android:layout_weight="0" android:scaleType="fitXY" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/restaurant" /><TextView android:id="@+id/tvSelectVehicle" android:layout_width="match_parent" android:layout_height="32dp" android:background="@color/black_overlay" android:paddingLeft="5dp" android:text="Restaurant Configuration" android:textColor="@color/White" android:textSize="20sp" app:layout_constraintBottom_toTopOf="@+id/linearLayout" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" /><LinearLayout android:id="@+id/linearLayout" android:layout_width="match_parent" android:layout_height="3dp" android:background="@color/colorPrimary" android:orientation="vertical" app:layout_constraintBottom_toBottomOf="@+id/ivLogo"></LinearLayout></androidx.constraintlayout.widget.ConstraintLayout><ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="0"><LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:orientation="vertical">
+
+            // Restaurant Name
+
+            // Food Type
+
+            <TextView android:id="@+id/tvRestName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:text="Restaurant Name" android:textColor="#000000" android:textSize="18sp" android:textStyle="bold" /><EditText android:id="@+id/etRestName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:ems="10" android:inputType="textPersonName" android:text="Name" /><TextView android:id="@+id/tvFoodType" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:text="Food Type" android:textColor="#000000" android:textSize="18sp" android:textStyle="bold" /><EditText android:id="@+id/etFoodType" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:ems="10" android:inputType="textPersonName" android:text="Food Type" />
+
+            //Hours
+
+            <TextView android:id="@+id/tvHours" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:text="Hours" android:textColor="#000000" android:textSize="18sp" android:textStyle="bold" /><EditText android:id="@+id/etHours" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:ems="10" android:inputType="textPersonName" android:text="Hours" />
+
+            // Capacity
+
+            <TextView android:id="@+id/tvCapacity" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:text="Capacity" android:textColor="#000000" android:textSize="18sp" android:textStyle="bold" /><EditText android:id="@+id/etCapacity" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:ems="10" android:inputType="textPersonName" android:text="Capacity" />
+
+            //Number of tables
+
+            <TextView android:id="@+id/tvTables" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:text="Total Tables" android:textColor="#000000" android:textSize="18sp" android:textStyle="bold" /><EditText android:id="@+id/etTables" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:ems="10" android:inputType="number" android:text="Number of tables" />
+
+            // Table Options - Select all the apply
+
+            <TextView android:id="@+id/tvTableOptions" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:text="Table Options" android:textColor="#000000" android:textSize="18sp" android:textStyle="bold" />
+
+            // Table options - Checkboxes to allow for multiple selections
+
+            <CheckBox android:id="@+id/cbChairs" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:text="We have chairs" /><CheckBox android:id="@+id/cbBooths" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:text="We have booths" /><CheckBox android:id="@+id/cbBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:text="We have a bar" />
+
+            // Delivery
+
+            <TextView android:id="@+id/tvDelivery" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:text="Delivery Available?" android:textColor="#000000" android:textSize="18sp" android:textStyle="bold" />
+
+            //Radio buttons so that user can only select one
+
+            <RadioGroup android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0"><RadioButton android:id="@+id/rbDeliveryYes" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Yes" /><RadioButton android:id="@+id/rbDeliveryNo" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="No" /></RadioGroup>
+
+            // Address
+
+            <TextView android:id="@+id/tvAddress" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:text="Address" android:textColor="#000000" android:textSize="18sp" android:textStyle="bold" /><EditText android:id="@+id/etAddress" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:ems="10" android:inputType="textPostalAddress" android:text="Address" />
+
+            // Phone number
+
+            <TextView android:id="@+id/tvPhone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:text="Phone Number" android:textColor="#000000" android:textSize="18sp" android:textStyle="bold" /><EditText android:id="@+id/etPhone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:ems="10" android:inputType="phone" android:text="Phone number" />
+
+            // Restaurant description
+
+            <TextView android:id="@+id/tvDescription" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:text="Description" android:textColor="#000000" android:textSize="18sp" android:textStyle="bold" /><EditText android:id="@+id/etDescription" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:ems="10" android:gravity="start|top" android:inputType="textMultiLine" />
+
+            // Price range
+
+            <TextView android:id="@+id/tvPriceRange" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:text="Price Range" android:textColor="#000000" android:textSize="18sp" android:textStyle="bold" />
+
+            //Radio buttons so that user can only select one
+
+            <RadioGroup android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0"><RadioButton android:id="@+id/rbPriceAffordable" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Affordable" /><RadioButton android:id="@+id/rbPriceAverage" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Average" /><RadioButton android:id="@+id/rbPriceExpensive" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Expensive" /></RadioGroup>
+
+            // Vegan options
+
+            <TextView android:id="@+id/tvVegan" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:text="Vegan Options?" android:textColor="#000000" android:textSize="18sp" android:textStyle="bold" />
+
+            //Radio buttons so that user can only select one
+
+            <RadioGroup android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0"><RadioButton android:id="@+id/rbVeganYes" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Yes" /><RadioButton android:id="@+id/rbVeganNo" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="No" /></RadioGroup>
+
+            // Catering available
+
+            <TextView android:id="@+id/tvCatering" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:text="Catering Available?" android:textColor="#000000" android:textSize="18sp" android:textStyle="bold" />
+
+            //Radio buttons so that user can only select one
+
+            <RadioGroup android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0"><RadioButton android:id="@+id/rbCateringYes" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Yes" /><RadioButton android:id="@+id/rbCateringNo" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="No" /></RadioGroup>
+
+            // Outdoor seating option
+
+            <TextView android:id="@+id/tvCatering" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:text="Outdoor Seating?" android:textColor="#000000" android:textSize="18sp" android:textStyle="bold" />
+
+            //Radio buttons so that user can only select one
+
+            <RadioGroup android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0"><RadioButton android:id="@+id/rbOutdoorYes" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Yes" /><RadioButton android:id="@+id/rbOutdoorNo" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="No" /></RadioGroup>
+
+            // Special concerns
+
+            <TextView android:id="@+id/tvSpecialConcerns" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:text="Special Concerns" android:textColor="#000000" android:textSize="18sp" android:textStyle="bold" />
+
+            // Special concerns - Checkboxes to allow for multiple selections
+
+            <CheckBox android:id="@+id/cbRamps" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:text="We have accessible ramps" /><CheckBox android:id="@+id/cbChildren" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:text="We allow children" /><Button android:id="@+id/btnSubmit" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:text="Submit" /></LinearLayout></ScrollView></LinearLayout>

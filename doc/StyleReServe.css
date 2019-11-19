@@ -1,0 +1,235 @@
+
+/* Mary Shiner CODE -- 9/29/2019 */
+
+/* Image Banner */
+.background {
+  box-sizing: border-box;
+  width: 100%;
+  height: 230px;
+  background-size: 100% 100%;
+  box-shadow: 2px 2px 40px rgba(0, 0, 0, .4),-2px 2px 20px rgba(0, 0, 0, .4);
+}
+
+/* Banner Text */
+.centered {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  padding: 3px;
+  padding-top: 30px;
+  color: white;
+  transform: translate(-50%, -50%);
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+
+}
+
+ @media screen and (max-width: 1000px) {
+/* Banner Text */	
+h1{
+  top: 0%; 
+  left: 0%; 
+  padding: 0px;
+  color: white;
+  transform: translate(-0%, -0%);
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size:24px;
+
+}	
+
+/* Banner Text */
+.centered {
+   padding-top:110px;
+   font-size:12px;
+	
+	
+} 
+	
+/* SET BUTTON STYLE */
+button {
+
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 510%;
+	opacity: 0.9;
+}
+
+
+/* BUTTONS FLOAT + WIDTH */
+.cancelbtn, .signupbtn {
+
+	float: left;
+	width: 5%;
+
+}
+
+/* CONTAINER PADDING */
+.container {
+
+	padding-top:100px;
+
+}	
+	
+ }
+
+/* Style for Tables */
+.div1 {
+  width: 150px;
+  height: 70px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+ 
+
+
+/* RICHARD COMPTON CODE -- 9/15/2019 */
+
+.dropbtn {
+    background-color: orange;
+    color: white;
+    padding: 26px;
+    font-size: 26px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightgrey;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: white;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: grey;}
+
+/* BACKGROUND COLOR DURING FOCUS */
+input[type=text]:focus, input[type=password]:focus {
+
+	background-color: #ddd;
+	outline: none;
+
+}
+
+/* SET BUTTON STYLE */
+button {
+
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	opacity: 0.9;
+}
+
+/* SET HOVER OPACITY */
+button:hover {
+
+	opacity:1;
+
+}
+
+/* CANCEL BUTTON STYLE */
+.cancelbtn {
+
+	padding: 14px 20px;
+	background-color: #f44336;
+
+}
+
+/* BUTTONS FLOAT + WIDTH */
+.cancelbtn, .signupbtn {
+
+	float: left;
+	width: 50%;
+
+}
+
+/* CONTAINER PADDING */
+.container {
+
+	padding: 16px;
+
+}
+
+/* THE BACKGROUND */
+.modal {
+
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: #474e5d;
+	padding-top: 50px;
+
+}
+
+/* BACKGROUND CONTENT */
+.modal-content {
+
+	background-color: #fefefe;
+	margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+
+}
+
+/* HORIZONTAL RULER */
+hr {
+
+	border: 1px solid #f1f1f1;
+	margin-bottom: 25px;
+}
+ 
+/* CLOSE BUTTON (x) */
+.close {
+
+	position: absolute;
+	right: 35px;
+	top: 15px;
+	font-size: 40px;
+	font-weight: bold;
+	color: #f1f1f1;
+
+}
+
+/* CLOSE HOVER */
+.close:hover,
+.close:focus {
+
+	color: #f44336;
+	cursor: pointer;
+}
+
+/* CLEAR FLOATS */
+.clearfix::after {
+
+	content: "";
+	clear: both;
+	display: table;
+
+}
