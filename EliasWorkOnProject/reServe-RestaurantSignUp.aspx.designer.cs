@@ -60,13 +60,13 @@ namespace ReServeAPI_v2._0
         protected global::System.Web.UI.WebControls.TextBox AdminPasswordEntry;
 
         /// <summary>
-        /// Label1 control.
+        /// repeatPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label repeatPassword;
 
         /// <summary>
         /// RepeatPasswordEntry control.
@@ -184,6 +184,15 @@ namespace ReServeAPI_v2._0
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox RestaurantTypeofFoodEntry;
+
+        /// <summary>
+        /// errorLbl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label errorLbl;
 
         /// <summary>
         /// NextBtn control.
