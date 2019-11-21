@@ -13,12 +13,7 @@
     <!--#include file="includes/imagebar.inc"-->
 
     <!-- Page content -->
-    <form id="form1" runat="server">
-        <div class="container">
-            <div class="row">
-                <h2>Restaurant Table Configuration</h2>
-            </div>
-    </form>
+    
     <div class="container">
             <h2>YOU ARE A CUSTOMER</h2>
             <p>This is what a customer will see on the main page, after they login.</p>

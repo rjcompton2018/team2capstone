@@ -22,12 +22,3 @@ C:\Users\p1nkp\Projects\CSI4999\ReServeAccess_v2.0\obj\Debug\netstandard2.0\ReSe
 C:\Users\p1nkp\Projects\CSI4999\ReServeAccess_v2.0\obj\Debug\netstandard2.0\ReServeAccess_v2.0.AssemblyInfo.cs
 C:\Users\p1nkp\Projects\CSI4999\ReServeAccess_v2.0\obj\Debug\netstandard2.0\ReServeAccess_v2.0.dll
 C:\Users\p1nkp\Projects\CSI4999\ReServeAccess_v2.0\obj\Debug\netstandard2.0\ReServeAccess_v2.0.pdb
-C:\Users\Mary\Documents\GitHub\team2capstone\ReServeAccess_v2.0\bin\Debug\netstandard2.0\ReServeAccess_v2.0.deps.json
-C:\Users\Mary\Documents\GitHub\team2capstone\ReServeAccess_v2.0\bin\Debug\netstandard2.0\ReServeAccess_v2.0.dll
-C:\Users\Mary\Documents\GitHub\team2capstone\ReServeAccess_v2.0\bin\Debug\netstandard2.0\ReServeAccess_v2.0.pdb
-C:\Users\Mary\Documents\GitHub\team2capstone\ReServeAccess_v2.0\obj\Debug\netstandard2.0\ReServeAccess_v2.0.csprojAssemblyReference.cache
-C:\Users\Mary\Documents\GitHub\team2capstone\ReServeAccess_v2.0\obj\Debug\netstandard2.0\ReServeAccess_v2.0.csproj.CoreCompileInputs.cache
-C:\Users\Mary\Documents\GitHub\team2capstone\ReServeAccess_v2.0\obj\Debug\netstandard2.0\ReServeAccess_v2.0.AssemblyInfoInputs.cache
-C:\Users\Mary\Documents\GitHub\team2capstone\ReServeAccess_v2.0\obj\Debug\netstandard2.0\ReServeAccess_v2.0.AssemblyInfo.cs
-C:\Users\Mary\Documents\GitHub\team2capstone\ReServeAccess_v2.0\obj\Debug\netstandard2.0\ReServeAccess_v2.0.dll
-C:\Users\Mary\Documents\GitHub\team2capstone\ReServeAccess_v2.0\obj\Debug\netstandard2.0\ReServeAccess_v2.0.pdb
