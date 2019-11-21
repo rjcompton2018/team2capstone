@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+//This page will show restaurant's their account information and allow them to edit it.
+
 namespace ReServeAPI_v2._0
 {
     public partial class reServe_RestaurantAccountInfo : System.Web.UI.Page

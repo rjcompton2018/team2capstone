@@ -179,24 +179,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Mary\\.nuget\\packages\\": {},
+    "C:\\Users\\richa\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mary\\Documents\\GitHub\\team2capstone\\ReServeAccess_v2.0\\ReServeAccess_v2.0.csproj",
+      "projectUniqueName": "C:\\Users\\richa\\Documents\\GitHub\\team2capstone\\ReServeAccess_v2.0\\ReServeAccess_v2.0.csproj",
       "projectName": "ReServeAccess_v2.0",
-      "projectPath": "C:\\Users\\Mary\\Documents\\GitHub\\team2capstone\\ReServeAccess_v2.0\\ReServeAccess_v2.0.csproj",
-      "packagesPath": "C:\\Users\\Mary\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mary\\Documents\\GitHub\\team2capstone\\ReServeAccess_v2.0\\obj\\",
+      "projectPath": "C:\\Users\\richa\\Documents\\GitHub\\team2capstone\\ReServeAccess_v2.0\\ReServeAccess_v2.0.csproj",
+      "packagesPath": "C:\\Users\\richa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\richa\\Documents\\GitHub\\team2capstone\\ReServeAccess_v2.0\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Mary\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\richa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
@@ -227,10 +230,16 @@
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

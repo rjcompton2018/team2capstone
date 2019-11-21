@@ -7,6 +7,12 @@ using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Data;
 
+//This page allows users to login to ReServe.
+//It includes:
+// -- a login name which is an email
+// -- a password
+// -- the ability to go to the two sign up pages
+
 namespace ReServeAPI_v2._0
 {
     public partial class reServe_Login : System.Web.UI.Page

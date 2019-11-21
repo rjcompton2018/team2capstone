@@ -7,6 +7,12 @@ using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Data;
 
+//This page allows a customer to sign up for ReServe.
+//They enter:
+// -- an email
+// -- a password
+// -- a phone number
+
 namespace ReServeAPI_v2._0
 {
     public partial class reServe_CustomerSignUp : System.Web.UI.Page
