@@ -1,26 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\p1nkp\\Projects\\CSI4999\\ReServeAccess_v2.0\\ReServeAccess_v2.0.csproj": {}
+    "C:\\Users\\Mary\\Documents\\GitHub\\team2capstone\\ReServeAccess_v2.0\\ReServeAccess_v2.0.csproj": {}
   },
   "projects": {
-    "C:\\Users\\p1nkp\\Projects\\CSI4999\\ReServeAccess_v2.0\\ReServeAccess_v2.0.csproj": {
+    "C:\\Users\\Mary\\Documents\\GitHub\\team2capstone\\ReServeAccess_v2.0\\ReServeAccess_v2.0.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\p1nkp\\Projects\\CSI4999\\ReServeAccess_v2.0\\ReServeAccess_v2.0.csproj",
+        "projectUniqueName": "C:\\Users\\Mary\\Documents\\GitHub\\team2capstone\\ReServeAccess_v2.0\\ReServeAccess_v2.0.csproj",
         "projectName": "ReServeAccess_v2.0",
-        "projectPath": "C:\\Users\\p1nkp\\Projects\\CSI4999\\ReServeAccess_v2.0\\ReServeAccess_v2.0.csproj",
-        "packagesPath": "C:\\Users\\p1nkp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\p1nkp\\Projects\\CSI4999\\ReServeAccess_v2.0\\obj\\",
+        "projectPath": "C:\\Users\\Mary\\Documents\\GitHub\\team2capstone\\ReServeAccess_v2.0\\ReServeAccess_v2.0.csproj",
+        "packagesPath": "C:\\Users\\Mary\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mary\\Documents\\GitHub\\team2capstone\\ReServeAccess_v2.0\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\p1nkp\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Mary\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -51,16 +49,10 @@
             }
           },
           "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
+            "net461"
           ],
           "assetTargetFallback": true,
-          "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "warn": true
         }
       }
     }
