@@ -57,6 +57,7 @@
 
          <div class="row">
             <div class="col-25">
+                <asp:Label Style="color: red" ID="errorlbl" runat="server" Text=""></asp:Label>
             </div>
             <div class="col-75 right">
                 <asp:Button ID="createBtn" runat="server" Text="Create Employee" />
