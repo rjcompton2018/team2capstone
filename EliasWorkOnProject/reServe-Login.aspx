@@ -37,6 +37,10 @@
                 </div>
                 <div class="col-75">
                     <asp:TextBox ID="passwordTxt" runat="server"></asp:TextBox>
+                    <br />
+                    <br />
+                    <asp:Label ID="errorlbl" runat="server" Text=""></asp:Label>
+                    <br />
                 </div>
             </div>
                         
@@ -45,7 +49,7 @@
                     <asp:CheckBox ID="rememberCbx" runat="server" Text="Remember me!" />
                 </div>
                 <div class="col-75 right">
-                    <asp:Button ID="submitBtn" runat="server" Text="Submit" />
+                    <asp:Button ID="submitBtn" runat="server" Text="Submit" OnClick="submitBtn_Click" />
                 </div>
             </div>
 

@@ -35,16 +35,16 @@
                 <asp:Label ID="AdminPassword" runat="server" Text="Password"></asp:Label>
             </div>
             <div class="col-75">
-                <asp:TextBox ID="AdminPasswordEntry" runat="server"></asp:TextBox>
+                <asp:TextBox ID="AdminPasswordEntry" runat="server" type="password"></asp:TextBox>
             </div>
         </div>
             
         <div class="row">
             <div class="col-25">
-                <asp:Label ID="Label1" runat="server" Text="Repeat Password"></asp:Label>
+                <asp:Label ID="repeatPassword" runat="server" Text="Repeat Password" ></asp:Label>
             </div>
             <div class="col-75">
-                <asp:TextBox ID="RepeatPasswordEntry" runat="server"></asp:TextBox>
+                <asp:TextBox ID="RepeatPasswordEntry" runat="server" type="password"></asp:TextBox>
             </div>
         </div>
 
@@ -104,9 +104,10 @@
 
         <div class="row">
             <div class="col-25">
+                <asp:Label Style="color: red" ID="errorLbl" runat="server" Text=""></asp:Label>
             </div>
             <div class="col-75 right">
-                <asp:Button ID="NextBtn" runat="server" Text="Next" />
+                <asp:Button ID="NextBtn" runat="server" Text="Next" OnClick="NextBtn_Click"/>
             </div>
         </div>
     </div>

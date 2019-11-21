@@ -96,6 +96,15 @@ namespace ReServeAPI_v2._0
         protected global::System.Web.UI.WebControls.TextBox titleTxt;
 
         /// <summary>
+        /// errorlbl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label errorlbl;
+
+        /// <summary>
         /// createBtn control.
         /// </summary>
         /// <remarks>
