@@ -17,5 +17,20 @@ namespace ReServeAPI_v2._0
         {
 
         }
+
+        protected void accbtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("reServe-CustomerAccountInfo.aspx");
+        }
+
+        protected void viewbtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("reServe-ViewReservation.aspx");
+        }
+
+        protected void makebtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("reServe-MakeReservation.aspx");
+        }
     }
 }

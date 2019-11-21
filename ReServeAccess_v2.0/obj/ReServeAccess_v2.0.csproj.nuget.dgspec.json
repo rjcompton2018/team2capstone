@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\richa\\Documents\\GitHub\\team2capstone\\ReServeAccess_v2.0\\ReServeAccess_v2.0.csproj": {}
+    "C:\\Users\\Eq_94\\OneDrive\\Documents\\GitHub\\team2capstone\\ReServeAccess_v2.0\\ReServeAccess_v2.0.csproj": {}
   },
   "projects": {
-    "C:\\Users\\richa\\Documents\\GitHub\\team2capstone\\ReServeAccess_v2.0\\ReServeAccess_v2.0.csproj": {
+    "C:\\Users\\Eq_94\\OneDrive\\Documents\\GitHub\\team2capstone\\ReServeAccess_v2.0\\ReServeAccess_v2.0.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\richa\\Documents\\GitHub\\team2capstone\\ReServeAccess_v2.0\\ReServeAccess_v2.0.csproj",
+        "projectUniqueName": "C:\\Users\\Eq_94\\OneDrive\\Documents\\GitHub\\team2capstone\\ReServeAccess_v2.0\\ReServeAccess_v2.0.csproj",
         "projectName": "ReServeAccess_v2.0",
-        "projectPath": "C:\\Users\\richa\\Documents\\GitHub\\team2capstone\\ReServeAccess_v2.0\\ReServeAccess_v2.0.csproj",
-        "packagesPath": "C:\\Users\\richa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\richa\\Documents\\GitHub\\team2capstone\\ReServeAccess_v2.0\\obj\\",
+        "projectPath": "C:\\Users\\Eq_94\\OneDrive\\Documents\\GitHub\\team2capstone\\ReServeAccess_v2.0\\ReServeAccess_v2.0.csproj",
+        "packagesPath": "C:\\Users\\Eq_94\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Eq_94\\OneDrive\\Documents\\GitHub\\team2capstone\\ReServeAccess_v2.0\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\richa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Eq_94\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],

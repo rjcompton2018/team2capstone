@@ -35,5 +35,20 @@ namespace ReServeAPI_v2._0
         {
 
         }
+
+        protected void makeBtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("reServe-MakeReservation.aspx");
+        }
+
+        protected void editBtn_Click1(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void currentBtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("reServe-ViewReservation.aspx");
+        }
     }
 }

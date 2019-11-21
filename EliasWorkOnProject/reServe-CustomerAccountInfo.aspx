@@ -6,8 +6,9 @@
     <title>ReServe - Customer Account Information</title>
     <!--#include file="includes/header.inc"-->
 </head>
-
+   
 <body>
+    <form runat="server" ID="myForm">
     <!--#include file="includes/navbar-customer.inc"-->
 
     <!--#include file="includes/imagebar.inc"-->
@@ -52,21 +53,25 @@
             <div class="col-25">
             </div>
             <div class="col-75 right">
-                <asp:Button ID="editBtn" runat="server" Text="Edit Account" />
+              
             </div>
         </div>
 
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-4" align="center">
-                    <asp:Button ID="makeBtn" runat="server" Text="Make Reservation" />
-                </div>
-                <div class="col-4" align="center">
-                    <asp:Button ID="currentBtn" runat="server" Text="View Current Reservation" />
-                </div>
+                
+                    <asp:Button ID="makeBtn" runat="server" Text="Make Reservation" OnClick="makeBtn_Click" />
+              
+                
+                  &nbsp;<asp:Button ID="editBtn" runat="server" Text="Edit Account" OnClick="editBtn_Click1" />
+                
+                
+                    &nbsp;<asp:Button ID="currentBtn" runat="server" Text="View Current Reservation" OnClick="currentBtn_Click" />
+                
             </div>
         </div>
-
+        </div>
     <!--#include file="includes/footer.inc"-->
+        </form>
 </body>
 </html>
