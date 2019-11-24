@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Globalization;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -59,8 +60,39 @@ namespace ReServeAPI_v2._0
 
             string partyName = nameTxt.Text;
             string phoneNum = phoneTxt.Text;
-            
 
+            // TODO: CHANGE TO DROPDOWN
+            string occasion = occasionTxt.Text;
+
+            string date = Calendar1.SelectedDate.ToShortDateString();
+            string time = timeDdl.SelectedItem.Text;
+
+            string datetime = date + " " + time;
+            DateTime datetimeDT = DateTime.ParseExact(datetime, "M/d/yyyy h:mm", null);
+
+            using (SqlConnection con = new SqlConnection(connectingString))
+            {
+                string com = "INSERT INTO Reservation (Name, PartyNum, Phone_Number, Restaurant, Occasion, DateTime)" +
+                    " VALUES (@Name, @PartyNum, @Phone_Number, @Restaurant, @Occasion, @DateTime)";
+
+                SqlCommand cmd = new SqlCommand(com, con);
+
+                cmd.Parameters.AddWithValue("@Name", partyName);
+                cmd.Parameters.AddWithValue("@PartyNum", partyNumInt);
+                cmd.Parameters.AddWithValue("@Phone_Number", phoneNum);
+                cmd.Parameters.AddWithValue("@Restaurant", restaurantDdl.SelectedItem.Text);
+                cmd.Parameters.AddWithValue("@Occasion", occasion);
+                cmd.Parameters.AddWithValue("@DateTime", datetimeDT);
+
+                con.Open();
+
+                cmd.ExecuteNonQuery();
+
+                con.Close();
+
+            }
+
+            Response.Redirect("reServe-ViewReservation.aspx?ID=" + ID);
 
         }
 

@@ -92,7 +92,29 @@
                 <div class="col-75 right">
 
                     <asp:Label ID="TimeLbl" runat="server" Text="Time"></asp:Label>
+
                     <asp:DropDownList ID="timeDdl" runat="server">
+                        <asp:ListItem>12:00</asp:ListItem>
+                        <asp:ListItem>12:30</asp:ListItem>
+                        <asp:ListItem>1:00</asp:ListItem>
+                        <asp:ListItem>1:30</asp:ListItem>
+                        <asp:ListItem>2:00</asp:ListItem>
+                        <asp:ListItem>2:30</asp:ListItem>
+                        <asp:ListItem>3:00</asp:ListItem>
+                        <asp:ListItem>3:30</asp:ListItem>
+                        <asp:ListItem>4:00</asp:ListItem>
+                        <asp:ListItem>4:30</asp:ListItem>
+                        <asp:ListItem>5:00</asp:ListItem>
+                        <asp:ListItem>5:30</asp:ListItem>
+                        <asp:ListItem>6:00</asp:ListItem>
+                        <asp:ListItem>6:30</asp:ListItem>
+                        <asp:ListItem>7:30</asp:ListItem>
+                        <asp:ListItem>8:00</asp:ListItem>
+                        <asp:ListItem>8:30</asp:ListItem>
+                        <asp:ListItem>9:00</asp:ListItem>
+                        <asp:ListItem>9:30</asp:ListItem>
+                        <asp:ListItem>10:00</asp:ListItem>
+                        <asp:ListItem>10:30</asp:ListItem> 
                     </asp:DropDownList>
                 </div>
             </div>
