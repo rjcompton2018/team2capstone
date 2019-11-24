@@ -25,19 +25,30 @@
 
             <div class="row">
                 <div class="col-25">
-                    <asp:Label ID="restaurantsLbl" runat="server" Text="Restaurants"></asp:Label>
+                    <asp:Label ID="restaurantsLbl" runat="server" Text="Restaurant:"></asp:Label>
                 </div>
                 <div class="col-75">
-                    <asp:DropDownList ID="restaurantDdl" runat="server"></asp:DropDownList>
+                    <asp:DropDownList ID="restaurantDdl" runat="server" AutoPostBack="true" OnSelectedIndexChanged="selectionChanged">
+                        <Items>
+                            <asp:ListItem Text="<Select Restaurant>" Value=" "></asp:ListItem>
+                        </Items>
+                    </asp:DropDownList>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-150">
+                    <asp:Label ID="restInfo" runat="server"></asp:Label><br />
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-25">
-                    <asp:Label ID="numberLbl" runat="server" Text="Number in Party: "></asp:Label>
+                    <asp:Label ID="partyNum" runat="server" Text="Number in Party: "></asp:Label>
                 </div>
                 <div class="col-75">
-                    <asp:TextBox ID="numberTxt" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="partyNumTxt" runat="server"></asp:TextBox>
                 </div>
             </div>
 
@@ -71,15 +82,30 @@
             <div class="row">
                 <div class="col-25">
 
+                    <asp:Label ID="DateLbl" runat="server" Text="Date"></asp:Label>
+                    <asp:Calendar ID="Calendar1" runat="server" OnSelectionChanged="Calendar1_SelectionChanged"></asp:Calendar>
+
                 </div>
+            </div>
+
+            <div class="row">
                 <div class="col-75 right">
-                    <asp:Button ID="makeBtn" runat="server" Text="Make Reservation" />
+
+                    <asp:Label ID="TimeLbl" runat="server" Text="Time"></asp:Label>
+                    <asp:DropDownList ID="timeDdl" runat="server">
+                    </asp:DropDownList>
                 </div>
             </div>
 
         </div>
+
+        <!--#include file="includes/footer.inc"-->
+        <p>
+            <asp:Button ID="makeBtn" runat="server" Text="Make Reservation" OnClick="makeBtn_Click" />
+        </p>
+        <br />
+        <br />
     </form>
 
-    <!--#include file="includes/footer.inc"-->
 </body>
 </html>
