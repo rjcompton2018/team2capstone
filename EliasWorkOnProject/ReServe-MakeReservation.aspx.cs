@@ -25,7 +25,7 @@ namespace ReServeAPI_v2._0
             if (!IsPostBack)
             {
                 BindGrind();
-
+                
                 restaurantDdl.SelectedIndex = 0;
             }
         }
@@ -72,11 +72,12 @@ namespace ReServeAPI_v2._0
 
             using (SqlConnection con = new SqlConnection(connectingString))
             {
-                string com = "INSERT INTO Reservation (Name, PartyNum, Phone_Number, Restaurant, Occasion, DateTime)" +
-                    " VALUES (@Name, @PartyNum, @Phone_Number, @Restaurant, @Occasion, @DateTime)";
+                string com = "INSERT INTO Reservation (User_ID, Name, PartyNum, Phone_Number, Restaurant, Occasion, DateTime)" +
+                    " VALUES (@User_ID, @Name, @PartyNum, @Phone_Number, @Restaurant, @Occasion, @DateTime)";
 
                 SqlCommand cmd = new SqlCommand(com, con);
 
+                cmd.Parameters.AddWithValue("@User_ID", ID);
                 cmd.Parameters.AddWithValue("@Name", partyName);
                 cmd.Parameters.AddWithValue("@PartyNum", partyNumInt);
                 cmd.Parameters.AddWithValue("@Phone_Number", phoneNum);
