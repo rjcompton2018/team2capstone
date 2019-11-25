@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="reServe-CustomerAccountInfo.aspx.cs" Inherits="ReServeAPI_v2._0.reServe_CustomerAccountInfo" %>
+﻿    <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="reServe-CustomerAccountInfo.aspx.cs" Inherits="ReServeAPI_v2._0.reServe_CustomerAccountInfo" %>
 
 <!DOCTYPE html>
 <html>
@@ -27,16 +27,7 @@
 				Email:
             </div>
             <div class="col-75">
-                <!-- INPUT -->
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-25">
-				Password:
-            </div>
-            <div class="col-75">
-                <!-- INPUT -->
+                <asp:Label ID="emailInsert" runat="server"></asp:Label>
             </div>
         </div>
 
@@ -45,7 +36,7 @@
 				Phone Number:
             </div>
             <div class="col-75">
-                <!-- INPUT -->
+                <asp:Label ID="phoneNumInsert" runat="server"></asp:Label>
             </div>
         </div>
 

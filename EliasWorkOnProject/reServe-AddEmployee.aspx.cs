@@ -21,6 +21,9 @@ namespace ReServeAPI_v2._0
 
         protected void SubmitBtn_Click(object sender, EventArgs e)
         {
+
+            Response.Redirect("reServe-RestaurantMainPage.aspx");
+
         //    string name = nameTxt.Text;
         //    string email = emailTxt.Text;
         //    string pass = passwordTxt.Text;
@@ -114,6 +117,8 @@ namespace ReServeAPI_v2._0
         //        conn.Close();
         //        Response.Redirect("reServe-RestaurantMainPage.aspx");
         //    }
+
+            
 
         }
     }

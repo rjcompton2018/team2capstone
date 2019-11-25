@@ -118,5 +118,10 @@ namespace ReServeAPI_v2._0
             }
         }
 
+        protected void toContinuedSignUp(Object sender, EventArgs e)
+        {
+            Response.Redirect("reServe-RestaurantContinuedSignUp.aspx");
+        }
+
     }
 }

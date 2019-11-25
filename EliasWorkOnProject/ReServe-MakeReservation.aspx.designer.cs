@@ -42,22 +42,31 @@ namespace ReServeAPI_v2._0
         protected global::System.Web.UI.WebControls.DropDownList restaurantDdl;
 
         /// <summary>
-        /// numberLbl control.
+        /// restInfo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label numberLbl;
+        protected global::System.Web.UI.WebControls.Label restInfo;
 
         /// <summary>
-        /// numberTxt control.
+        /// partyNum control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox numberTxt;
+        protected global::System.Web.UI.WebControls.Label partyNum;
+
+        /// <summary>
+        /// partyNumTxt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox partyNumTxt;
 
         /// <summary>
         /// occasionLbl control.
@@ -112,6 +121,42 @@ namespace ReServeAPI_v2._0
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox phoneTxt;
+
+        /// <summary>
+        /// DateLbl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label DateLbl;
+
+        /// <summary>
+        /// Calendar1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Calendar Calendar1;
+
+        /// <summary>
+        /// TimeLbl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label TimeLbl;
+
+        /// <summary>
+        /// timeDdl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList timeDdl;
 
         /// <summary>
         /// makeBtn control.

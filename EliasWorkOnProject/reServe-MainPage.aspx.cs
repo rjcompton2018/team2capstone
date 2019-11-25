@@ -19,5 +19,15 @@ namespace ReServeAPI_v2._0
         {
 
         }
+
+        protected void signUpCustomer(object sender, EventArgs e)
+        {
+            Response.Redirect("reServe-CustomerSignUp.aspx");
+        }
+
+        protected void signUpRestaurant(object sender, EventArgs e)
+        {
+            Response.Redirect("reServe-RestaurantSignUp.aspx");
+        }
     }
 }
