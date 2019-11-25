@@ -28,11 +28,6 @@ namespace ReServeAPI_v2._0
         //This pulls the customer's information from the database and populates the fields.
         protected void ViewInformation(object sender, EventArgs e)
         {
-        }
-
-        //This allows the customer to edit their information.
-        protected void EditBtn_Click(object sender, EventArgs e)
-        {
 
         }
 

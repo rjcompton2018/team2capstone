@@ -59,10 +59,10 @@
 
             <div class="row">
                 <div class="col-25">
-                    <asp:Button ID="customerBtn" runat="server" Text="Customer" />
+                    <asp:Button ID="customerBtn" runat="server" Text="Customer" onClick="customerSignUp"/>
                 </div>
                 <div class="col-25">
-                    <asp:Button ID="restaurantBtn" runat="server" Text="Restaurant" />
+                    <asp:Button ID="restaurantBtn" runat="server" Text="Restaurant" onClick="restaurantSignUp"/>
                 </div>
             </div>
             

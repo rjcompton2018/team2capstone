@@ -116,5 +116,15 @@ namespace ReServeAPI_v2._0
                 return false;
             }
         }
+
+        protected void customerSignUp(object sender, EventArgs e)
+        {
+            Response.Redirect("reServe-CustomerSignUp.aspx");
+        }
+
+        protected void restaurantSignUp(object sender, EventArgs e)
+        {
+            Response.Redirect("reServe-RestaurantSignUp.aspx");
+        }
     }
 }
