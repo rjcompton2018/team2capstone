@@ -22,12 +22,35 @@ namespace ReServeAPI_v2._0
         //This loads the page.       
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(!IsPostBack)
+            {
+                BindGrind();
+            }
 
         }
-
+        
         //This pulls the customer's information from the database and populates the fields.
-        protected void ViewInformation(object sender, EventArgs e)
+        protected void BindGrind()
         {
+            string identification = Request.QueryString["ID"];
+            int User_ID = Convert.ToInt32(identification);
+
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();
+                string comm = "SELECT Email, PhoneNumber FROM [dbo].[User] WHERE User_ID=" + User_ID;
+                SqlCommand cmd = new SqlCommand(comm, con);
+
+                //cmd.Parameters.AddWithValue("@User_ID", User_ID);
+
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                reader.Read();
+
+                emailInsert.Text = reader[0].ToString();
+                phoneNumInsert.Text = reader[1].ToString();
+
+            }
 
         }
 

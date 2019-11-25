@@ -36,7 +36,7 @@
                     <asp:Label ID="passwordLbl" runat="server" Text="Password: "></asp:Label>
                 </div>
                 <div class="col-75">
-                    <asp:TextBox ID="passwordTxt" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="passwordTxt" runat="server" type="password"></asp:TextBox>
                     <br />
                     <br />
                     <asp:Label ID="errorlbl" runat="server" Text=""></asp:Label>

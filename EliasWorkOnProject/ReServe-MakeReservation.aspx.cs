@@ -53,7 +53,9 @@ namespace ReServeAPI_v2._0
         protected void makeBtn_Click(object sender, EventArgs e)
         {
             string identification = Request.QueryString["ID"];
-            int ID = Convert.ToInt32(identification);
+            int User_ID = Convert.ToInt32(identification);
+
+            Console.WriteLine(User_ID);
 
             string partyNum = partyNumTxt.Text;
             int partyNumInt = Convert.ToInt32(partyNum);
@@ -77,7 +79,7 @@ namespace ReServeAPI_v2._0
 
                 SqlCommand cmd = new SqlCommand(com, con);
 
-                cmd.Parameters.AddWithValue("@User_ID", ID);
+                cmd.Parameters.AddWithValue("@User_ID", User_ID);
                 cmd.Parameters.AddWithValue("@Name", partyName);
                 cmd.Parameters.AddWithValue("@PartyNum", partyNumInt);
                 cmd.Parameters.AddWithValue("@Phone_Number", phoneNum);
@@ -93,7 +95,7 @@ namespace ReServeAPI_v2._0
 
             }
 
-            Response.Redirect("reServe-ViewReservation.aspx?ID=" + ID);
+            Response.Redirect("reServe-ViewReservation.aspx?ID=" + User_ID);
 
         }
 

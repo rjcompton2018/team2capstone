@@ -36,12 +36,12 @@ namespace ReServeAPI_v2._0
                 SqlDataReader reader = cmd.ExecuteReader();
                 reader.Read();
                 string password = reader.GetString(0);
-                int ID = reader.GetInt32(1);
+                int User_ID = reader.GetInt32(1);
 
                 if (password == passwordTxt.Text)
                 {
                     cnn.Close();
-                    Response.Redirect("reServe-CustomerMainPage.aspx?ID=" + ID);
+                    Response.Redirect("reServe-CustomerMainPage.aspx?ID=" + User_ID);
                 }
                 else
                 {
