@@ -1,7 +1,6 @@
 ﻿<!-- Navbar -->
     <nav id="rs-main-nav" class="navbar navbar-expand-md navbar-dark fixed-top">
 
-        <!-- Brand = Highlights the the name of the project -->
 		<!-- Brand = Highlights the the name of the project -->
 		<a class="navbar-brand" href="#">
 			<img src="images\tea-time-32-292243.png" alt="I'm a little teapot">
@@ -17,27 +16,24 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
 				<li class="nav-item">
-					<a class="nav-link" href="#">Add Employee</a>
+					<a class="nav-link" href="reServe-HostessPage.aspx">Hostess Page</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Hostess Page</a>
+					<a class="nav-link" href="reServe-AddEmployee.aspx">Add Employee</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Account Information</a>
+					<a class="nav-link" href="reServe-TableConfiguration.aspx">Table Configurations</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Table Configurations</a>
+					<a class="nav-link" href="reServe-RestaurantAccountInfo.aspx">Account Information</a>
 				</li>
+			</ul>
+		</div>
 
-				<!-- Dropdown -->
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-						Reservations
-					</a>
-					<div class="dropdown-menu">
-						<a class="dropdown-item" href="#">Make Reservations</a>
-						<a class="dropdown-item" href="#">View Reservations</a>
-					</div>
+		<div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="reServe-Login.aspx">Logout</a>
 				</li>
 			</ul>
 		</div>

@@ -64,7 +64,15 @@ body {
     text-align: center;
 }
 
-#rs-main-signupbtn {
+#restaurantSignUp {
+    background-color: #FFFFFF;
+    border-color: #466289;
+    color: #466289;
+    font-family: Impact;
+    font-size: xx-large;
+}
+
+#customerSignUp {
     background-color: #FFFFFF;
     border-color: #466289;
     color: #466289;
