@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <form ID="myForm" runat="server">
     <!--#include file="includes/navbar-customer.inc"-->
 
     <!--#include file="includes/imagebar.inc"-->
@@ -48,5 +49,6 @@
     </div>
 
     <!--#include file="includes/footer.inc"-->
+        </form>
 </body>
 </html>
