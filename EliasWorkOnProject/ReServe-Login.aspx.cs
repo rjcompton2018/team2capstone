@@ -28,7 +28,8 @@ namespace ReServeAPI_v2._0
             errorlbl.Text = "* Invalid username or password";
             SqlConnection cnn = new SqlConnection(connectingString);
             Boolean isUser = CheckIfUser();
-            if(isUser == true)
+            Boolean isRestaurant = CheckIfRestaurant();
+            if (isUser == true)
             {
                 cnn.Open();
                 SqlCommand cmd = new SqlCommand("SELECT Password, User_ID FROM [dbo].[User]  WHERE ([Email] = @user)", cnn);
@@ -49,7 +50,7 @@ namespace ReServeAPI_v2._0
                     errorlbl.Visible = true;
                 }
             }
-            Boolean isRestaurant = CheckIfUser();
+            
             if (isRestaurant == true)
             {
                 cnn.Open();

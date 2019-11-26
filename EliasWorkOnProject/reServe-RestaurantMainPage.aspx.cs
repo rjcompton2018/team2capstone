@@ -32,7 +32,7 @@ namespace ReServeAPI_v2._0
         {
             string identification = Request.QueryString["ID"];
             int ID = Convert.ToInt32(identification);
-            Response.Redirect("restaurantConfiguration.aspx?ID=" + ID);
+            Response.Redirect("reServe-RestaurantAccountInfo.aspx?ID=" + ID);
         }
         private void BindGrid()
         {
