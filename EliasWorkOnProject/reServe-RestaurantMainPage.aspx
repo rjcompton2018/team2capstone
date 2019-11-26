@@ -21,8 +21,7 @@
         <h2>Restaurant Details</h2>
 	  <div class="menu">
           <form id="MyForm" method="post" runat="server">
-          <asp:Button ID="Display" runat="server" Text="Display Info" OnClick="Button1_Click" Width="158px" />
-          &nbsp;<asp:Button ID="Edit" runat="server" Text="Edit Info" Width="158px" OnClick="Edit_Click" />
+          <asp:Button ID="Edit" runat="server" Text="Edit Info" Width="158px" OnClick="Edit_Click" />
 		      <br />
 		
          

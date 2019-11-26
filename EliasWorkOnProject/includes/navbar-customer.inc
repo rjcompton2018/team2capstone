@@ -30,4 +30,12 @@
 				</li>
 			</ul>
 		</div>
+
+		<div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="reServe-Login.aspx">Logout</a>
+				</li>
+			</ul>
+		</div>
     </nav>

@@ -15,13 +15,76 @@ namespace ReServeAPI_v2._0
     {
 
         /// <summary>
-        /// editBtn control.
+        /// myForm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button editBtn;
+        protected global::System.Web.UI.HtmlControls.HtmlForm myForm;
+
+        /// <summary>
+        /// emailInsert control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label emailInsert;
+
+        /// <summary>
+        /// phoneNumInsert control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label phoneNumInsert;
+
+        /// <summary>
+        /// emaillabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label emaillabel;
+
+        /// <summary>
+        /// emailtxt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox emailtxt;
+
+        /// <summary>
+        /// phonelabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label phonelabel;
+
+        /// <summary>
+        /// numbertxt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox numbertxt;
+
+        /// <summary>
+        /// Editbtn2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Editbtn2;
 
         /// <summary>
         /// makeBtn control.
@@ -31,6 +94,15 @@ namespace ReServeAPI_v2._0
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button makeBtn;
+
+        /// <summary>
+        /// editBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button editBtn;
 
         /// <summary>
         /// currentBtn control.

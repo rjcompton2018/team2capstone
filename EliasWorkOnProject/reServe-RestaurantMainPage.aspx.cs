@@ -7,6 +7,8 @@ using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.SqlClient;
 
+//This page will have little to no C#
+
 using System.Configuration;
 namespace ReServeAPI_v2._0
 {

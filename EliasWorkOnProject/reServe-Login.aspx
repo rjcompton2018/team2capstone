@@ -36,7 +36,7 @@
                     <asp:Label ID="passwordLbl" runat="server" Text="Password: "></asp:Label>
                 </div>
                 <div class="col-75">
-                    <asp:TextBox ID="passwordTxt" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="passwordTxt" runat="server" type="password"></asp:TextBox>
                     <br />
                     <br />
                     <asp:Label ID="errorlbl" runat="server" Text=""></asp:Label>
@@ -59,10 +59,10 @@
 
             <div class="row">
                 <div class="col-25">
-                    <asp:Button ID="customerBtn" runat="server" Text="Customer" />
+                    <asp:Button ID="customerBtn" runat="server" Text="Customer" onClick="customerSignUp"/>
                 </div>
                 <div class="col-25">
-                    <asp:Button ID="restaurantBtn" runat="server" Text="Restaurant" />
+                    <asp:Button ID="restaurantBtn" runat="server" Text="Restaurant" onClick="restaurantSignUp"/>
                 </div>
             </div>
             

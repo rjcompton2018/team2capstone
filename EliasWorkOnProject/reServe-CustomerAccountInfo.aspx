@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="reServe-CustomerAccountInfo.aspx.cs" Inherits="ReServeAPI_v2._0.reServe_CustomerAccountInfo" %>
+﻿    <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="reServe-CustomerAccountInfo.aspx.cs" Inherits="ReServeAPI_v2._0.reServe_CustomerAccountInfo" %>
 
 <!DOCTYPE html>
 <html>
@@ -6,8 +6,9 @@
     <title>ReServe - Customer Account Information</title>
     <!--#include file="includes/header.inc"-->
 </head>
-
+   
 <body>
+    <form runat="server" ID="myForm">
     <!--#include file="includes/navbar-customer.inc"-->
 
     <!--#include file="includes/imagebar.inc"-->
@@ -26,16 +27,7 @@
 				Email:
             </div>
             <div class="col-75">
-                <!-- INPUT -->
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-25">
-				Password:
-            </div>
-            <div class="col-75">
-                <!-- INPUT -->
+                <asp:Label ID="emailInsert" runat="server"></asp:Label>
             </div>
         </div>
 
@@ -44,29 +36,45 @@
 				Phone Number:
             </div>
             <div class="col-75">
-                <!-- INPUT -->
+                <asp:Label ID="phoneNumInsert" runat="server"></asp:Label>
             </div>
         </div>
 
         <div class="row">
             <div class="col-25">
+                 <asp:Label ID="emaillabel" text="New Email:" runat="server"></asp:Label>
+                &nbsp;
+                <asp:TextBox ID="emailtxt" runat="server"></asp:TextBox>
+              &nbsp;
+              <asp:Label ID="phonelabel" text="New Number:" runat="server"></asp:Label>
+                &nbsp;<asp:TextBox ID="numbertxt" runat="server"></asp:TextBox>
+                &nbsp;&nbsp;&nbsp;
+                <asp:Button ID="Editbtn2" runat="server" Text="Edit" OnClick="Editbtn2_Click" />
+                <br />
+                
+                
             </div>
             <div class="col-75 right">
-                <asp:Button ID="editBtn" runat="server" Text="Edit Account" />
+               
             </div>
+
         </div>
 
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-4" align="center">
-                    <asp:Button ID="makeBtn" runat="server" Text="Make Reservation" />
-                </div>
-                <div class="col-4" align="center">
-                    <asp:Button ID="currentBtn" runat="server" Text="View Current Reservation" />
-                </div>
+                
+                    <asp:Button ID="makeBtn" runat="server" Text="Make Reservation" OnClick="makeBtn_Click" />
+              
+                
+                  &nbsp;<asp:Button ID="editBtn" runat="server" Text="Edit Account" OnClick="editBtn_Click1" />
+                
+                
+                    &nbsp;<asp:Button ID="currentBtn" runat="server" Text="View Current Reservation" OnClick="currentBtn_Click" />
+                
             </div>
         </div>
-
+        </div>
     <!--#include file="includes/footer.inc"-->
+        </form>
 </body>
 </html>

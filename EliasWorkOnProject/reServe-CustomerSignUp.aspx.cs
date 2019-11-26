@@ -7,6 +7,12 @@ using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Data;
 
+//This page allows a customer to sign up for ReServe.
+//They enter:
+// -- an email
+// -- a password
+// -- a phone number
+
 namespace ReServeAPI_v2._0
 {
     public partial class reServe_CustomerSignUp : System.Web.UI.Page
@@ -57,12 +63,11 @@ namespace ReServeAPI_v2._0
                 }
             }
 
+            
+
         }
         protected void checkIfEmailExist()
         {
-
-
-
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM [dbo].[User]  WHERE ([Email] = @user)", conn);
@@ -70,7 +75,6 @@ namespace ReServeAPI_v2._0
                 cmd.Parameters.AddWithValue("@user", emailtxt.Text);
                 conn.Open();
                 int UserExist = (int)cmd.ExecuteScalar();
-
 
 
                 if (UserExist > 0)

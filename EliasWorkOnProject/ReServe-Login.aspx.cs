@@ -7,6 +7,12 @@ using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Data;
 
+//This page allows users to login to ReServe.
+//It includes:
+// -- a login name which is an email
+// -- a password
+// -- the ability to go to the two sign up pages
+
 namespace ReServeAPI_v2._0
 {
     public partial class reServe_Login : System.Web.UI.Page
@@ -30,12 +36,12 @@ namespace ReServeAPI_v2._0
                 SqlDataReader reader = cmd.ExecuteReader();
                 reader.Read();
                 string password = reader.GetString(0);
-                int ID = reader.GetInt32(1);
+                int User_ID = reader.GetInt32(1);
 
                 if (password == passwordTxt.Text)
                 {
                     cnn.Close();
-                    Response.Redirect("reServe-CustomerMainPage.aspx?ID=" + ID);
+                    Response.Redirect("reServe-CustomerMainPage.aspx?ID=" + User_ID);
                 }
                 else
                 {
@@ -109,6 +115,16 @@ namespace ReServeAPI_v2._0
                 cnn.Close();
                 return false;
             }
+        }
+
+        protected void customerSignUp(object sender, EventArgs e)
+        {
+            Response.Redirect("reServe-CustomerSignUp.aspx");
+        }
+
+        protected void restaurantSignUp(object sender, EventArgs e)
+        {
+            Response.Redirect("reServe-RestaurantSignUp.aspx");
         }
     }
 }

@@ -13,12 +13,11 @@
         </button>
 
 		<!--Navbar Links -->
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
             <ul class="navbar-nav">
 				<li class="nav-item">
 					<a class="nav-link" href="reServe-Login.aspx">Login</a>
 				</li>
 			</ul>
 		</div>
-        
-    </nav>
+     </nav>

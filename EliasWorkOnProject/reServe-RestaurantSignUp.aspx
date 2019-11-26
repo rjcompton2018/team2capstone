@@ -107,7 +107,7 @@
                 <asp:Label Style="color: red" ID="errorLbl" runat="server" Text=""></asp:Label>
             </div>
             <div class="col-75 right">
-                <asp:Button ID="NextBtn" runat="server" Text="Next" OnClick="NextBtn_Click"/>
+                <asp:Button ID="NextBtn" runat="server" Text="Next" OnClick="toContinuedSignUp"/>
             </div>
         </div>
     </div>

@@ -251,6 +251,13 @@
     <Compile Include="reServe-RestaurantAccountInfo.aspx.designer.cs">
       <DependentUpon>reServe-RestaurantAccountInfo.aspx</DependentUpon>
     </Compile>
+    <Compile Include="reServe-RestaurantContinuedSignUp.aspx.cs">
+      <DependentUpon>reServe-RestaurantContinuedSignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reServe-RestaurantContinuedSignUp.aspx.designer.cs">
+      <DependentUpon>reServe-RestaurantContinuedSignUp.aspx</DependentUpon>
+    </Compile>
     <Compile Include="reServe-RestaurantSignUp.aspx.cs">
       <DependentUpon>reServe-RestaurantSignUp.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -391,6 +398,7 @@
     <Content Include="reServe-MakeReservation.aspx" />
     <Content Include="reServe-RedoTableConfiguration.aspx" />
     <Content Include="reServe-RestaurantAccountInfo.aspx" />
+    <Content Include="reServe-RestaurantContinuedSignUp.aspx" />
     <Content Include="reServe-RestaurantSignUp.aspx" />
     <Content Include="reServe-TableConfiguration.aspx" />
     <Content Include="reServe-ViewReservation.aspx" />

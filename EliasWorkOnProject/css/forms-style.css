@@ -67,6 +67,10 @@ input[type=submit] {
     float: right;
 }
 
+#btn {
+
+}
+
 /* Clear floats after the columns */
 .row:after {
     content: "";
