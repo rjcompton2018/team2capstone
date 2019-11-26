@@ -55,8 +55,6 @@ namespace ReServeAPI_v2._0
             string identification = Request.QueryString["ID"];
             int User_ID = Convert.ToInt32(identification);
 
-            Console.WriteLine(User_ID);
-
             string partyNum = partyNumTxt.Text;
             int partyNumInt = Convert.ToInt32(partyNum);
 

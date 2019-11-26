@@ -22,11 +22,14 @@ namespace ReServeAPI_v2._0
 
         protected void BindGrind()
         {
+            string identification = Request.QueryString["ID"];
+            int User_ID = Convert.ToInt32(identification);
+
             using (SqlConnection con = new SqlConnection(connectingString))
             {
                 con.Open();
 
-                string com = "SELECT Restaurant, DateTime FROM Reservation";
+                string com = "SELECT Restaurant, DateTime FROM Reservation WHERE User_ID=" + User_ID;
 
                 SqlCommand cmd = new SqlCommand(com, con);
 
