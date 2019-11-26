@@ -42,10 +42,21 @@
 
         <div class="row">
             <div class="col-25">
+                <br />
+                
+                
             </div>
             <div class="col-75 right">
-              
+                <asp:Label ID="emaillabel" text="New Email:" runat="server"></asp:Label>
+                &nbsp;
+                <asp:TextBox ID="emailtxt" runat="server"></asp:TextBox>
+              &nbsp;
+              <asp:Label ID="phonelabel" text="New Number:" runat="server"></asp:Label>
+                &nbsp;<asp:TextBox ID="numbertxt" runat="server"></asp:TextBox>
+                &nbsp;&nbsp;&nbsp;
+                <asp:Button ID="Editbtn2" runat="server" Text="Edit" OnClick="Editbtn2_Click" />
             </div>
+
         </div>
 
         <div class="container">
