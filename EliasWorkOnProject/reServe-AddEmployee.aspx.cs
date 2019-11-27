@@ -19,112 +19,29 @@ namespace ReServeAPI_v2._0
             errorlbl.Visible = false;
         }
 
-        protected void SubmitBtn_Click(object sender, EventArgs e)
-        {
-
-            Response.Redirect("reServe-RestaurantMainPage.aspx");
-
-        //    string name = nameTxt.Text;
-        //    string email = emailTxt.Text;
-        //    string pass = passwordTxt.Text;
-        //    string title = titleTxt.Text;
-           
-        //    if (isNumber != true)
-        //    {
-        //        errorlbl.Text = "* Please enter 10 digits phone number";
-        //        errorlbl.Visible = true;
-        //    }
-        //    else
-        //    {
-        //        int myOutput = 0;
-
-        //        myOutput = string.Compare(pass, repass);
-
-        //        errorlbl.Visible = false;
-        //        if (myOutput == 0)
-        //        {
-        //            if (str.Length != 10)
-        //            {
-        //                errorlbl.Text = "* Please enter 10 digits phone number";
-        //                errorlbl.Visible = true;
-        //            }
-        //            else
-        //            {
-
-        //                errorlbl.Visible = false;
-        //                checkIfEmailExist();
-        //            }
-        //        }
-        //        else
-        //        {
-        //            errorlbl.Text = "* Passwords does not match";
-        //            errorlbl.Visible = true;
-        //        }
-        //    }
-
-        //}
-        //protected void checkIfEmailExist()
-        //{
-
-        //    using (SqlConnection conn = new SqlConnection(connectionString))
-        //    {
-        //        SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM [dbo].[Employee]  WHERE ([Email] = @user)", conn);
-
-        //        cmd.Parameters.AddWithValue("@user", emailTxt.Text);
-        //        conn.Open();
-        //        int UserExist = (int)cmd.ExecuteScalar();
-
-
-
-        //        if (UserExist > 0)
-        //        {
-        //            //Username exist
-        //            errorlbl.Text = "* Email is not availabe";
-        //            errorlbl.Visible = true;
-        //        }
-        //        else
-        //        {
-        //            //Username doesn't exist.
-        //            SqlCommand cmd2 = new SqlCommand("SELECT COUNT(*) FROM [dbo].[Employee]  WHERE ([Email] = @user)", conn);
-
-        //            cmd2.Parameters.AddWithValue("@user", emailTxt.Text);
-        //            int Exist = (int)cmd2.ExecuteScalar();
-        //            if (Exist > 0)
-        //            {
-        //                errorlbl.Text = "* Email is not availabe";
-        //                errorlbl.Visible = true;
-        //            }
-        //            else
-        //            {
-        //                conn.Close();
-        //                DataInsert();
-        //            }
-        //        }
-        //    }
-        //}
-        //protected void DataInsert()
-        //{
-        //    using (SqlConnection conn = new SqlConnection(connectionString))
-        //    {
-        //        conn.Open();
-        //        SqlCommand cmd = new SqlCommand("INSERT INTO [dbo].[Employee] (Name, Email, Password, Title) VALUES(@name, @email, @password, @title)", conn);
-
-        //        cmd.Parameters.AddWithValue("@name", nameTxt.Text);
-        //        cmd.Parameters.AddWithValue("@email", emailTxt.Text);
-        //        cmd.Parameters.AddWithValue("@password", passwordTxt.Text);
-        //        cmd.Parameters.AddWithValue("@title", titleTxt.Text);
-        //        cmd.ExecuteNonQuery();
-        //        conn.Close();
-        //        Response.Redirect("reServe-RestaurantMainPage.aspx");
-        //    }
-
-            
-
-        }
-
         protected void toRestMainPage(object sender, EventArgs e)
         {
+            //INSERT Name, Email, Employee_Type, Restauraant_ID, Password
 
+            string identification = Request.QueryString["Rest_ID"];
+            int rest_ID = Convert.ToInt32(identification);
+
+            using(SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("INSERT INTO [dbo].[Employee] (Name, Email, Restaurant_ID, Password) VALUES" +
+                    "(@Name, @Email, @Restaurant_ID, @Password)", con);
+
+                cmd.Parameters.AddWithValue("@Name", nameTxt.Text);
+                cmd.Parameters.AddWithValue("@Email", emailTxt.Text);
+                cmd.Parameters.AddWithValue("@Restaurant_ID", rest_ID);
+                cmd.Parameters.AddWithValue("@Password", passwordTxt.Text);
+
+                con.Close();
+            }
+
+
+            Response.Redirect("reServe-RestaurantMainPage.aspx?Rest_ID=" + rest_ID);
         }
     }
 }

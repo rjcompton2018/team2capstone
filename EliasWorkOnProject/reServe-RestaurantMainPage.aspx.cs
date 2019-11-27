@@ -67,5 +67,13 @@ namespace ReServeAPI_v2._0
             this.BindGrid();
         }
 
+        protected void addEmployee(Object sender, EventArgs e)
+        {
+            string identification = Request.QueryString["Rest_ID"];
+            int Rest_ID = Convert.ToInt32(identification);
+
+            Response.Redirect("reServe-AddEmployee.aspx?Rest_ID=" + Rest_ID);
+        }
+
     }
 }
