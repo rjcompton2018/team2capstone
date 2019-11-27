@@ -30,16 +30,39 @@ namespace ReServeAPI_v2._0
                 - handicap (B)
                 - high chair (B)
             */
-            string identification = Request.QueryString["Rest_ID"];
-            int ID = Convert.ToInt32(identification);
 
-            using (SqlConnection con = new SqlConnection(connectionString))
+            string email = Session["Email"].ToString();
+            string password = Session["Password"].ToString();
+            
+            string restName = Session["Name"].ToString();
+            string foodStyle = Session["FoodStyle"].ToString();
+            string hours = Session["Hours"].ToString();
+            string address = Session["Address"].ToString();
+            string phoneNumber = Session["PhoneNumber"].ToString();
+            string description = Session["Description"].ToString();
+
+            using (SqlConnection con1 = new SqlConnection(connectionString))
             {
-                con.Open();
-                SqlCommand cmd = new SqlCommand("INSERT [dbo].[Restaurant] (Capacity, TotalTables, Booths, " +
-                    "Bar, Delivery, Catering, Vegan, Outdoor, HandicapAccesible, HighChairs) " +
-                    "VALUES (@capacity, @totalTables, @Booths, @Bar, @Delivery, @Catering, @Vegan, @Outdoor," +
-                    "@HandicapAccessible, @highChairs) WHERE Restaurant_ID=" + ID, con);
+                con1.Open();
+                SqlCommand cmd = new SqlCommand("INSERT INTO [dbo].[RestaurantAccountInformation] (Email, Password, RestaurantName) VALUES (@AdminEmail, @AdminPassword, @RestaurantName)", con1);
+
+                cmd.Parameters.AddWithValue("@AdminEmail", email);
+                cmd.Parameters.AddWithValue("@AdminPassword", password);
+                cmd.Parameters.AddWithValue("@RestaurantName", restName);
+
+                cmd.ExecuteNonQuery();
+
+                cmd.CommandText = "INSERT INTO [dbo].[Restaurant] (Name, FoodStyle, Hours, Address, PhoneNumber, Description, Capacity, TotalTables, Booths, " +
+                    "Bar, Delivery, Catering, Vegan, Outdoor, HandicapAccessible, HighChairs) " +
+                    "VALUES (@Name, @FoodStyles, @Hours, @Address, @PhoneNumber, @Description, @capacity, @totalTables, @Booths, @Bar, @Delivery, @Catering, @Vegan, @Outdoor," +
+                    "@HandicapAccessible, @highChairs)";
+
+                cmd.Parameters.AddWithValue("@Name", restName);
+                cmd.Parameters.AddWithValue("@FoodStyles", foodStyle);
+                cmd.Parameters.AddWithValue("@Hours", hours);
+                cmd.Parameters.AddWithValue("@Address", address);
+                cmd.Parameters.AddWithValue("@PhoneNumber", phoneNumber);
+                cmd.Parameters.AddWithValue("@Description", description);
 
                 int capacity = Convert.ToInt32(capacityTxt.Text);
                 int totaltables = Convert.ToInt32(totalTablesTxt.Text);
@@ -67,9 +90,7 @@ namespace ReServeAPI_v2._0
                 cmd.Parameters.AddWithValue("@highChairs", highChairInt);
 
                 cmd.ExecuteNonQuery();
-
-                con.Close();
-
+                con1.Close();
             }
         }
 
@@ -84,6 +105,8 @@ namespace ReServeAPI_v2._0
 
         protected void toTableConfig(object sender, EventArgs e)
         {
+            DataInsert();
+
             string identification = Request.QueryString["Rest_ID"];
             int ID = Convert.ToInt32(identification);
             Response.Redirect("reServe-TableConfiguration.aspx?Rest_ID=" + ID);

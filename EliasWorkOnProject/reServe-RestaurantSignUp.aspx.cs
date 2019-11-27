@@ -83,59 +83,25 @@ namespace ReServeAPI_v2._0
                 else
                 {
                     conn.Close();
-                    DataInsert();
                 }
-
-            }
-        }
-
-        protected void DataInsert()
-        {
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                conn.Open();
-                SqlCommand cmd = new SqlCommand("INSERT INTO [dbo].[RestaurantAccountInformation] (Email, Password, RestaurantName) VALUES (@AdminEmail, @AdminPassword, @RestaurantName)", conn);
-
-                cmd.Parameters.AddWithValue("@AdminEmail", AdminEmailEntry.Text);
-                cmd.Parameters.AddWithValue("@AdminPassword", AdminPasswordEntry.Text);
-                cmd.Parameters.AddWithValue("@RestaurantName", RestaurantNameEntry.Text);
-
-                cmd.ExecuteNonQuery();
-
-                cmd.CommandText = "INSERT INTO [dbo].[Restaurant] (Name, FoodStyle, Hours, Address, PhoneNumber, Description) " +
-                    "VALUES (@Name, @FoodStyles, @Hours, @Address, @PhoneNumber, @Description)";
-
-                cmd.Parameters.AddWithValue("@Name", RestaurantNameEntry.Text);
-                cmd.Parameters.AddWithValue("@FoodStyles", RestaurantTypeofFoodEntry.Text);
-                cmd.Parameters.AddWithValue("@Hours", RestaurantHoursEntry.Text);
-                cmd.Parameters.AddWithValue("@Address", RestaurantAddressEntry.Text);
-                cmd.Parameters.AddWithValue("@PhoneNumber", RestaurantPhoneNumberEntry.Text);
-                cmd.Parameters.AddWithValue("@Description", DescriptionEntry.Text);
-
-                cmd.ExecuteNonQuery();
-                conn.Close();
 
             }
         }
 
         protected void toContinuedSignUp(Object sender, EventArgs e)
         {
-            //using(SqlConnection conn = new SqlConnection(connectionString))
-            //{
-            //    conn.Open();
-            //    SqlCommand cmd = new SqlCommand("SELECT Id FROM [dbo].RestaurantAccountInformation WHERE ([Email] = @email)", conn);
-            //    cmd.Parameters.AddWithValue("@email", AdminEmailEntry.Text);
-            //    SqlDataReader reader = cmd.ExecuteReader();
 
-            //    reader.Read();
+            Session["Email"] = AdminEmailEntry.Text;
+            Session["Password"] = AdminPasswordEntry.Text;
 
-                //string identification = reader[0].ToString();
-                //int rest_id = Convert.ToInt32(identification);
+            Session["Name"] = RestaurantNameEntry.Text;
+            Session["FoodStyle"] = RestaurantTypeofFoodEntry.Text;
+            Session["Hours"] = RestaurantHoursEntry.Text;
+            Session["Address"] = RestaurantAddressEntry.Text;
+            Session["PhoneNumber"] = RestaurantPhoneNumberEntry.Text;
+            Session["Description"] = DescriptionEntry.Text;
 
-                Response.Redirect("reServe-RestaurantContinuedSignUp.aspx");
+            Response.Redirect("reServe-RestaurantContinuedSignUp.aspx");
             }
-            
-        //}
-
     }
 }
