@@ -61,9 +61,6 @@ namespace ReServeAPI_v2._0
             string partyName = nameTxt.Text;
             string phoneNum = phoneTxt.Text;
 
-            // TODO: CHANGE TO DROPDOWN
-            string occasion = occasionTxt.Text;
-
             string date = Calendar1.SelectedDate.ToShortDateString();
             string time = timeDdl.SelectedItem.Text;
 
@@ -73,7 +70,7 @@ namespace ReServeAPI_v2._0
             using (SqlConnection con = new SqlConnection(connectingString))
             {
                 string com = "INSERT INTO Reservation (User_ID, Name, PartyNum, Phone_Number, Restaurant, Occasion, DateTime)" +
-                    " VALUES (@User_ID, @Name, @PartyNum, @Phone_Number, @Restaurant, @Occasion, @DateTime)";
+                    " VALUES (@User_ID, @Name, @PartyNum, @Phone_Number, @Restaurant, @DateTime)";
 
                 SqlCommand cmd = new SqlCommand(com, con);
 
@@ -82,7 +79,6 @@ namespace ReServeAPI_v2._0
                 cmd.Parameters.AddWithValue("@PartyNum", partyNumInt);
                 cmd.Parameters.AddWithValue("@Phone_Number", phoneNum);
                 cmd.Parameters.AddWithValue("@Restaurant", restaurantDdl.SelectedItem.Text);
-                cmd.Parameters.AddWithValue("@Occasion", occasion);
                 cmd.Parameters.AddWithValue("@DateTime", datetimeDT);
 
                 con.Open();
