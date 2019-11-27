@@ -120,7 +120,21 @@ namespace ReServeAPI_v2._0
 
         protected void toContinuedSignUp(Object sender, EventArgs e)
         {
-            Response.Redirect("reServe-RestaurantContinuedSignUp.aspx");
+            using(SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("SELECT Id FROM [dbo].RestaurantAccountInformation WHERE ([Email] = @email)", conn);
+                cmd.Parameters.AddWithValue("@email", AdminEmailEntry.Text);
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                reader.Read();
+
+                string identification = reader[0].ToString();
+                int rest_id = Convert.ToInt32(identification);
+
+                Response.Redirect("reServe-RestaurantContinuedSignUp.aspx?Rest_ID=" + rest_id);
+            }
+            
         }
 
     }

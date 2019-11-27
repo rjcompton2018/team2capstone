@@ -30,13 +30,13 @@ namespace ReServeAPI_v2._0
 
         protected void Edit_Click(object sender, EventArgs e)
         {
-            string identification = Request.QueryString["ID"];
+            string identification = Request.QueryString["Rest_ID"];
             int ID = Convert.ToInt32(identification);
-            Response.Redirect("reServe-RestaurantAccountInfo.aspx?ID=" + ID);
+            Response.Redirect("reServe-RestaurantAccountInfo.aspx?Rest_ID=" + ID);
         }
         private void BindGrid()
         {
-            string identification = Request.QueryString["ID"];
+            string identification = Request.QueryString["Rest_ID"];
             int ID = Convert.ToInt32(identification);
            
 

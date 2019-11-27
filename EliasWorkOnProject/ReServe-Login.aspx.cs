@@ -65,7 +65,7 @@ namespace ReServeAPI_v2._0
                 if (password == passwordTxt.Text)
                 {
                     cnn.Close();
-                    Response.Redirect("reServe-RestaurantMainPage.aspx?ID=" + ID);
+                    Response.Redirect("reServe-RestaurantMainPage.aspx?Rest_ID=" + ID);
                 }
                 else
                 {
@@ -88,7 +88,7 @@ namespace ReServeAPI_v2._0
                 if (password == passwordTxt.Text)
                 {
                     cnn.Close();
-                    Response.Redirect("reServe-HostessPage.aspx?ID=" + ID);
+                    Response.Redirect("reServe-HostessPage.aspx?Emp_ID=" + ID);
                 }
                 else
                 {
@@ -145,24 +145,21 @@ namespace ReServeAPI_v2._0
 
         protected Boolean CheckIfEmployee()
         {
-            using (SqlConnection con = new SqlConnection(connectingString))
+            SqlConnection cnn = new SqlConnection(connectingString);
+            SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM [dbo].[Employee]  WHERE ([Email] = @user)", cnn);
+            cmd.Parameters.AddWithValue("@user", emailTxt.Text);
+
+            cnn.Open();
+            int UserExist = (int)cmd.ExecuteScalar();
+            if (UserExist > 0)
             {
-                SqlCommand cmd = new SqlCommand("SELECT Count(*) FROM [dbo].[Employee] WHERE ([Email] = @user", con);
-                cmd.Parameters.AddWithValue("@user", emailTxt.Text);
-
-                con.Open();
-
-                int EmployeeExists = (int)cmd.ExecuteScalar();
-                if (EmployeeExists > 0)
-                {
-                    con.Close();
-                    return true;
-                }
-                else
-                {
-                    con.Close();
-                    return false;
-                }
+                cnn.Close();
+                return true;
+            }
+            else
+            {
+                cnn.Close();
+                return false;
             }
         }
 

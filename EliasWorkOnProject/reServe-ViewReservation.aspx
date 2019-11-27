@@ -27,11 +27,6 @@
                 </Columns>
             </asp:GridView>
 
-            <div id="div1">
-                <%--<asp:Button ID="editBtn" runat="server" Text="Edit" />--%>
-                <%--<asp:Button ID="removeBtn" runat="server" Text="Cancel" OnClick="clicked" />--%>
-            </div>
-
         </div>
 
         <!--#include file="includes/footer.inc"-->
