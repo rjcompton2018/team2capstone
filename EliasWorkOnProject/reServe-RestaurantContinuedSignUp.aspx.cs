@@ -16,7 +16,7 @@ namespace ReServeAPI_v2._0
 
         }
 
-        protected void DataInsert()
+        protected int DataInsert()
         {
             /* inserting:
                 - capacity
@@ -50,13 +50,15 @@ namespace ReServeAPI_v2._0
                 cmd.Parameters.AddWithValue("@AdminPassword", password);
                 cmd.Parameters.AddWithValue("@RestaurantName", restName);
 
-                cmd.ExecuteNonQuery();
+                int id = Convert.ToInt32(cmd.ExecuteScalar());
+                //cmd.ExecuteNonQuery();
 
                 cmd.CommandText = "INSERT INTO [dbo].[Restaurant] (Name, FoodStyle, Hours, Address, PhoneNumber, Description, Capacity, TotalTables, Booths, " +
                     "Bar, Delivery, Catering, Vegan, Outdoor, HandicapAccessible, HighChairs) " +
                     "VALUES (@Name, @FoodStyles, @Hours, @Address, @PhoneNumber, @Description, @capacity, @totalTables, @Booths, @Bar, @Delivery, @Catering, @Vegan, @Outdoor," +
                     "@HandicapAccessible, @highChairs)";
 
+                //cmd.Parameters.AddWithValue("@Restaurant_ID", id);
                 cmd.Parameters.AddWithValue("@Name", restName);
                 cmd.Parameters.AddWithValue("@FoodStyles", foodStyle);
                 cmd.Parameters.AddWithValue("@Hours", hours);
@@ -89,30 +91,34 @@ namespace ReServeAPI_v2._0
                 cmd.Parameters.AddWithValue("@HandicapAccessible", handicapInt);
                 cmd.Parameters.AddWithValue("@highChairs", highChairInt);
 
-                cmd.ExecuteNonQuery();
+                int insertedID = Convert.ToInt32(cmd.ExecuteScalar());
+
+                //cmd.ExecuteNonQuery();
                 con1.Close();
+                return insertedID;
             }
+            
         }
 
         protected void toRestMainPage(object sender, EventArgs e)
         {
-            DataInsert();
+            int rest_id = DataInsert();
 
-            string identification = Request.QueryString["Rest_ID"];
-            int ID = Convert.ToInt32(identification);
-            Response.Redirect("reServe-RestaurantMainPage.aspx?Rest_ID=" + ID);
+            //string identification = Request.QueryString["Rest_ID"];
+            //int ID = Convert.ToInt32(identification);
+            Response.Redirect("reServe-RestaurantMainPage.aspx?Rest_ID=" + rest_id);
         }
 
         protected void toTableConfig(object sender, EventArgs e)
         {
-            DataInsert();
+            int rest_id = DataInsert();
 
-            string identification = Request.QueryString["Rest_ID"];
-            int ID = Convert.ToInt32(identification);
+            //string identification = Request.QueryString["Rest_ID"];
+            //int ID = Convert.ToInt32(identification);
 
             Session["totalTables"] = totalTablesTxt.Text;
 
-            Response.Redirect("reServe-TableConfiguration.aspx?Rest_ID=" + ID);
+            Response.Redirect("reServe-TableConfiguration.aspx?Rest_ID=" + rest_id);
         }
     }
 }
