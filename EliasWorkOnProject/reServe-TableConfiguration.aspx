@@ -34,17 +34,21 @@
                         <div class="menu">
                             <div class="container-fluid">
                                 <asp:PlaceHolder ID="placeholder" runat="server"></asp:PlaceHolder>
-                            <%--    <div id="d1" class="oval"></div>
-                                <div id="d2" class="oval"></div>
-                                <div id="d3" class="oval"></div>
-                                <div id="d4" class="oval"></div>--%>
 
                                 <asp:Label ID="lbl1" runat="server"></asp:Label>
 
                                 <script type="text/javascript">
                                     $(function () {
                                         for (var i = 0; i < 50; i++) {
-                                            $("#myDiv" + i).draggable();
+                                            $("#myDiv" + i).draggable({
+                                                drag: function (event, ui) {
+                                                    $("#myDiv" + i).css("opacity", "0.6");
+                                                },
+                                                stop: function (event, ui) {
+                                                    $("#myDiv" + i).css("opacity", "1.0");
+                                                },
+                                                cursor: "move"
+                                            });
                                         }
                                     });
                                 </script>
