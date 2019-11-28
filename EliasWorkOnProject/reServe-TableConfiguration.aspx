@@ -34,15 +34,17 @@
                         <div class="menu">
                             <div class="container-fluid">
                                 <asp:PlaceHolder ID="placeholder" runat="server"></asp:PlaceHolder>
-                                <%--<div id="d1" class="oval"></div>
+                            <%--    <div id="d1" class="oval"></div>
                                 <div id="d2" class="oval"></div>
                                 <div id="d3" class="oval"></div>
                                 <div id="d4" class="oval"></div>--%>
 
+                                <asp:Label ID="lbl1" runat="server"></asp:Label>
+
                                 <script type="text/javascript">
                                     $(function () {
                                         for (var i = 0; i < 50; i++) {
-                                            $("#d" + i).draggable();
+                                            $("#myDiv" + i).draggable();
                                         }
                                     });
                                 </script>
