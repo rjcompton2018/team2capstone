@@ -109,6 +109,9 @@ namespace ReServeAPI_v2._0
 
             string identification = Request.QueryString["Rest_ID"];
             int ID = Convert.ToInt32(identification);
+
+            Session["totalTables"] = totalTablesTxt.Text;
+
             Response.Redirect("reServe-TableConfiguration.aspx?Rest_ID=" + ID);
         }
     }

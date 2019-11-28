@@ -69,7 +69,7 @@ namespace ReServeAPI_v2._0
 
             using (SqlConnection con = new SqlConnection(connectingString))
             {
-                string com = "INSERT INTO Reservation (User_ID, Name, PartyNum, Phone_Number, Restaurant, Occasion, DateTime)" +
+                string com = "INSERT INTO Reservation (User_ID, Name, PartyNum, Phone_Number, Restaurant, DateTime)" +
                     " VALUES (@User_ID, @Name, @PartyNum, @Phone_Number, @Restaurant, @DateTime)";
 
                 SqlCommand cmd = new SqlCommand(com, con);
