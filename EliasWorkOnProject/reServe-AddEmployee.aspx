@@ -42,18 +42,18 @@
                 <asp:Label ID="passwordLbl" runat="server" Text="Password: "></asp:Label>
             </div>
             <div class="col-75">
-                <asp:TextBox ID="passwordTxt" runat="server"></asp:TextBox>
+                <asp:TextBox ID="passwordTxt" runat="server" type="password"></asp:TextBox>
             </div>
         </div>
 
-        <div class="row">
+        <%--<div class="row">
             <div class="col-25">
                 <asp:Label ID="titleLbl" runat="server" Text="Title: "></asp:Label>
             </div>
             <div class="col-75">
                 <asp:TextBox ID="titleTxt" runat="server"></asp:TextBox>
             </div>
-        </div>
+        </div>--%>
 
          <div class="row">
             <div class="col-25">

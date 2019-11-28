@@ -258,6 +258,13 @@
     <Compile Include="reServe-RestaurantContinuedSignUp.aspx.designer.cs">
       <DependentUpon>reServe-RestaurantContinuedSignUp.aspx</DependentUpon>
     </Compile>
+    <Compile Include="reServe-RestaurantListOfEmployess.aspx.cs">
+      <DependentUpon>reServe-RestaurantListOfEmployess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reServe-RestaurantListOfEmployess.aspx.designer.cs">
+      <DependentUpon>reServe-RestaurantListOfEmployess.aspx</DependentUpon>
+    </Compile>
     <Compile Include="reServe-RestaurantSignUp.aspx.cs">
       <DependentUpon>reServe-RestaurantSignUp.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -399,6 +406,7 @@
     <Content Include="reServe-RedoTableConfiguration.aspx" />
     <Content Include="reServe-RestaurantAccountInfo.aspx" />
     <Content Include="reServe-RestaurantContinuedSignUp.aspx" />
+    <Content Include="reServe-RestaurantListOfEmployess.aspx" />
     <Content Include="reServe-RestaurantSignUp.aspx" />
     <Content Include="reServe-TableConfiguration.aspx" />
     <Content Include="reServe-ViewReservation.aspx" />
@@ -446,11 +454,11 @@
     <Content Include="ReServeModel.edmx.diagram">
       <DependentUpon>ReServeModel.edmx</DependentUpon>
     </Content>
-    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
-    <Content Include="Scripts\jquery-3.3.1.js" />
-    <Content Include="Scripts\jquery-3.3.1.min.js" />
-    <Content Include="Scripts\jquery-3.3.1.slim.js" />
-    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -497,8 +505,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
-    <Content Include="Scripts\jquery-3.3.1.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

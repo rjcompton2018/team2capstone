@@ -2,6 +2,9 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
+      "jQuery/3.4.1": {
+        "type": "package"
+      },
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
         "compile": {
@@ -29,6 +32,29 @@
     }
   },
   "libraries": {
+    "jQuery/3.4.1": {
+      "sha512": "vDD5O2nuVN2rF0rTASFSJNM5ef50niEP5HsXDQyXPPZH1rBaAaLtCutHG5wvXOPmrQw+MEZHOcOk9kYmdnL/Xw==",
+      "type": "package",
+      "path": "jquery/3.4.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Scripts/jquery-3.4.1-vsdoc.js",
+        "Content/Scripts/jquery-3.4.1.js",
+        "Content/Scripts/jquery-3.4.1.min.js",
+        "Content/Scripts/jquery-3.4.1.min.map",
+        "Content/Scripts/jquery-3.4.1.slim.js",
+        "Content/Scripts/jquery-3.4.1.slim.min.js",
+        "Content/Scripts/jquery-3.4.1.slim.min.map",
+        "Tools/common.ps1",
+        "Tools/install.ps1",
+        "Tools/jquery-3.4.1.intellisense.js",
+        "Tools/uninstall.ps1",
+        "jquery.3.4.1.nupkg.sha512",
+        "jquery.nuspec"
+      ]
+    },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
@@ -175,31 +201,29 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "NETStandard.Library >= 2.0.3"
+      "NETStandard.Library >= 2.0.3",
+      "jQuery >= 3.4.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\p1nkp\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Users\\selena\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\p1nkp\\Projects\\CSI4999\\ReServeAccess_v2.0\\ReServeAccess_v2.0.csproj",
+      "projectUniqueName": "C:\\Users\\selena\\team2capstone\\ReServeAccess_v2.0\\ReServeAccess_v2.0.csproj",
       "projectName": "ReServeAccess_v2.0",
-      "projectPath": "C:\\Users\\p1nkp\\Projects\\CSI4999\\ReServeAccess_v2.0\\ReServeAccess_v2.0.csproj",
-      "packagesPath": "C:\\Users\\p1nkp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\p1nkp\\Projects\\CSI4999\\ReServeAccess_v2.0\\obj\\",
+      "projectPath": "C:\\Users\\selena\\team2capstone\\ReServeAccess_v2.0\\ReServeAccess_v2.0.csproj",
+      "packagesPath": "C:\\Users\\selena\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\selena\\team2capstone\\ReServeAccess_v2.0\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\p1nkp\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\selena\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
@@ -227,6 +251,10 @@
             "target": "Package",
             "version": "[2.0.3, )",
             "autoReferenced": true
+          },
+          "jQuery": {
+            "target": "Package",
+            "version": "[3.4.1, )"
           }
         },
         "imports": [

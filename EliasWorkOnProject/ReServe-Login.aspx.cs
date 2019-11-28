@@ -28,7 +28,9 @@ namespace ReServeAPI_v2._0
             errorlbl.Text = "* Invalid username or password";
             SqlConnection cnn = new SqlConnection(connectingString);
             Boolean isUser = CheckIfUser();
-            if(isUser == true)
+            Boolean isRestaurant = CheckIfRestaurant();
+            Boolean isEmployee = CheckIfEmployee();
+            if (isUser == true)
             {
                 cnn.Open();
                 SqlCommand cmd = new SqlCommand("SELECT Password, User_ID FROM [dbo].[User]  WHERE ([Email] = @user)", cnn);
@@ -49,7 +51,7 @@ namespace ReServeAPI_v2._0
                     errorlbl.Visible = true;
                 }
             }
-            Boolean isRestaurant = CheckIfUser();
+            
             if (isRestaurant == true)
             {
                 cnn.Open();
@@ -63,7 +65,7 @@ namespace ReServeAPI_v2._0
                 if (password == passwordTxt.Text)
                 {
                     cnn.Close();
-                    Response.Redirect("reServe-RestaurantMainPage.aspx?ID=" + ID);
+                    Response.Redirect("reServe-RestaurantMainPage.aspx?Rest_ID=" + ID);
                 }
                 else
                 {
@@ -71,7 +73,31 @@ namespace ReServeAPI_v2._0
                     errorlbl.Visible = true; 
                 }
             }
-            if( isRestaurant == false && isUser == false)
+            
+
+            if (isEmployee == true)
+            {
+                cnn.Open();
+                SqlCommand cmd = new SqlCommand("SELECT Password, Employee_ID FROM [dbo].[Employee] WHERE ([Email] = @user)", cnn);
+                cmd.Parameters.AddWithValue("@user", emailTxt.Text);
+                SqlDataReader reader = cmd.ExecuteReader();
+                reader.Read();
+                string password = reader.GetString(0);
+                int ID = reader.GetInt32(1);
+
+                if (password == passwordTxt.Text)
+                {
+                    cnn.Close();
+                    Response.Redirect("reServe-HostessPage.aspx?Emp_ID=" + ID);
+                }
+                else
+                {
+                    cnn.Close();
+                    errorlbl.Visible = true;
+                }
+            }
+
+            if (isRestaurant == false && isUser == false && isEmployee == false)
             {
                 errorlbl.Visible = true;
             }
@@ -101,6 +127,26 @@ namespace ReServeAPI_v2._0
         {
             SqlConnection cnn = new SqlConnection(connectingString);
             SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM [dbo].[RestaurantAccountInformation]  WHERE ([Email] = @user)", cnn);
+            cmd.Parameters.AddWithValue("@user", emailTxt.Text);
+
+            cnn.Open();
+            int UserExist = (int)cmd.ExecuteScalar();
+            if (UserExist > 0)
+            {
+                cnn.Close();
+                return true;
+            }
+            else
+            {
+                cnn.Close();
+                return false;
+            }
+        }
+
+        protected Boolean CheckIfEmployee()
+        {
+            SqlConnection cnn = new SqlConnection(connectingString);
+            SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM [dbo].[Employee]  WHERE ([Email] = @user)", cnn);
             cmd.Parameters.AddWithValue("@user", emailTxt.Text);
 
             cnn.Open();

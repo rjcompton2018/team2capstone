@@ -54,15 +54,6 @@
 
             <div class="row">
                 <div class="col-25">
-                    <asp:Label ID="occasionLbl" runat="server" Text="Occasion: "></asp:Label>
-                </div>
-                <div class="col-75">
-                    <asp:TextBox ID="occasionTxt" runat="server"></asp:TextBox>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-25">
                     <asp:Label ID="nameLbl" runat="server" Text="Name: "></asp:Label>
                 </div>
                 <div class="col-75">
