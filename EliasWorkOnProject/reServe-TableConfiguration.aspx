@@ -16,7 +16,21 @@
             background-color: #555;
             border-radius: 50%;
         }
+        .table {
+            background: lightblue;
+        }
     </style>
+
+    <script lang="javascript" type="text/javascript">
+        //$(document).ready(function () {
+        //    for (var i = 0; i < 150; i++) {
+        //        var element = $('positionElement');
+        //        var position = element.position();
+
+        //    }
+        //});
+    </script>
+
 </head>
 
 <body>
@@ -33,23 +47,23 @@
                     <div class="col-sm-12">
                         <div class="menu">
                             <div class="container-fluid">
+                                <%--<asp:Button ID="submitBtn" runat="server" OnClick="position" />--%>
                                 <asp:PlaceHolder ID="placeholder" runat="server"></asp:PlaceHolder>
 
                                 <asp:Label ID="lbl1" runat="server"></asp:Label>
 
                                 <script type="text/javascript">
                                     $(function () {
-                                        for (var i = 0; i < 50; i++) {
-                                            $("#myDiv" + i).draggable({
-                                                drag: function (event, ui) {
-                                                    $("#myDiv" + i).css("opacity", "0.6");
-                                                },
-                                                stop: function (event, ui) {
-                                                    $("#myDiv" + i).css("opacity", "1.0");
-                                                },
-                                                cursor: "move"
-                                            });
-                                        }
+                                        $('.table').draggable({
+                                            start: function (event, ui) {
+                                                $(event.target).css("opacity", "0.6");
+                                            },
+                                            stop: function (event, ui) {
+                                                $(event.target).css("opacity", "1.0");
+                                                //var x = $(event.target).position();
+                                                $(event.target).val($(event.target).position());
+                                            }
+                                        });
                                     });
                                 </script>
 

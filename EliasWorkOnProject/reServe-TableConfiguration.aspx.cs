@@ -22,10 +22,17 @@ namespace ReServeAPI_v2._0
                 {
                     HtmlGenericControl myDiv = new HtmlGenericControl("div");
                     myDiv.ID = "myDiv" + i;
-                    myDiv.Attributes.Add("class", "oval");
+                    myDiv.Attributes.Add("class", "table oval");
+
                     placeholder.Controls.Add(myDiv);
                 }
             }
+        }
+
+        protected void position ()
+        {
+            //string position = PositionField.Value;
+            //string position = ;
         }
     }
 }
