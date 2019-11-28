@@ -17,12 +17,11 @@
         <div class="row">
             <div class="col-sm-8">
 
-                <h2>&nbsp;</h2>
+                <%--<h2>&nbsp;</h2>--%>
                 <h2>Restaurant Details</h2>
                 <div class="menu">
                     <form id="MyForm" method="post" runat="server">
                         <asp:Button ID="Edit" runat="server" Text="Edit Info" Width="158px" OnClick="Edit_Click" />
-                        </br>
                         <asp:Button ID="addEmployeeBtn" runat="server" Text="Add Employee" Width="158px" OnClick="addEmployee" />
 
                         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false" AllowPaging="true"

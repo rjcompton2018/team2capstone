@@ -46,6 +46,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "jQuery": {
+              "target": "Package",
+              "version": "[3.4.1, )"
             }
           },
           "imports": [
