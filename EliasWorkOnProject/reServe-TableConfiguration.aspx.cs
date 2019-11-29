@@ -11,7 +11,7 @@ namespace ReServeAPI_v2._0
 {
     public partial class reServe_TableConfiguration : System.Web.UI.Page
     {
-        //string connectingString = @"Data Source=141.210.25.5;User ID=reserve;Password=Test123;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        string connectingString = @"Data Source=141.210.25.5;User ID=reserve;Password=Test123;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -46,14 +46,27 @@ namespace ReServeAPI_v2._0
 
         protected void displaySomething(object sender, EventArgs e)
         {
-            int totalTables = Convert.ToInt32(Session["totalTables"]);
-            for (int i = 0; i < totalTables; i ++)
+            string[] positions = coordinates.Value.Split(',');
+
+            using (SqlConnection con = new SqlConnection(connectingString))
             {
-                lbl.Text = positionHdnTop.Value[i].ToString();
+
+                con.Open();
+                for (int i = 0; i < Convert.ToInt32(Session["totalTables"]) * 2; i ++)
+                {
+                    SqlCommand cmd = new SqlCommand("INSERT INTO [dbo].[Table] (top_Coord, left_Coord, Table_ID)" +
+                        "VALUES (@top_Coord, @left_Coord, @Table_ID)", con);
+                    cmd.Parameters.AddWithValue("@top_Coord", positions[i]);
+                    cmd.Parameters.AddWithValue("@left_Coord", positions[i + 1]);
+                    cmd.Parameters.AddWithValue("@Table_ID", "myDIV");
+                    i += 1;
+                    
+                    cmd.ExecuteNonQuery();
+
+                }
+
+                con.Close();
             }
-            
-            string positionTop = positionHdnTop.Value.ToString();
-            string positionLeft = positionHdnLeft.Value.ToString();
         }
     }
 }

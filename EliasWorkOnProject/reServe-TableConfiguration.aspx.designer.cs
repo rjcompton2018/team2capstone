@@ -33,24 +33,6 @@ namespace ReServeAPI_v2._0
         protected global::System.Web.UI.WebControls.PlaceHolder placeholder;
 
         /// <summary>
-        /// positionHdnTop control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField positionHdnTop;
-
-        /// <summary>
-        /// positionHdnLeft control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField positionHdnLeft;
-
-        /// <summary>
         /// btn control.
         /// </summary>
         /// <remarks>
@@ -67,5 +49,14 @@ namespace ReServeAPI_v2._0
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbl;
+
+        /// <summary>
+        /// coordinates control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField coordinates;
     }
 }
