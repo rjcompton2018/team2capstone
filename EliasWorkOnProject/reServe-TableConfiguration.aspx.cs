@@ -24,15 +24,36 @@ namespace ReServeAPI_v2._0
                     myDiv.ID = "myDiv" + i;
                     myDiv.Attributes.Add("class", "table oval");
 
+                    HtmlGenericControl txtBox = new HtmlGenericControl("input");
+                    txtBox.ID = "txtBox" + i;
+                    txtBox.Attributes.Add("class", "textBox");
+
+                    HtmlGenericControl lbl = new HtmlGenericControl("label");
+                    lbl.ID = "lbl" + i;
+                    lbl.InnerText = "Capacity: ";
+                    lbl.Attributes.Add("style", "left: 20%; top: 10%");
+
+                    myDiv.Controls.Add(lbl);
+                    myDiv.Controls.Add(txtBox);
                     placeholder.Controls.Add(myDiv);
                 }
             }
         }
 
-        protected void position ()
+        protected void txtBoxVisible(HtmlGenericControl txtBox)
         {
-            //string position = PositionField.Value;
-            //string position = ;
+        }
+
+        protected void displaySomething(object sender, EventArgs e)
+        {
+            int totalTables = Convert.ToInt32(Session["totalTables"]);
+            for (int i = 0; i < totalTables; i ++)
+            {
+                lbl.Text = positionHdnTop.Value[i].ToString();
+            }
+            
+            string positionTop = positionHdnTop.Value.ToString();
+            string positionLeft = positionHdnLeft.Value.ToString();
         }
     }
 }

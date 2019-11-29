@@ -11,24 +11,25 @@
 
     <style>
         .oval {
-            height: 50px;
-            width: 100px;
+            height: 100px;
+            width: 200px;
             background-color: #555;
             border-radius: 50%;
         }
         .table {
             background: lightblue;
         }
+        .textBox {
+            height: 25px;
+            width: 30px;
+            position: relative;
+            top: 10%;
+            left: 5%;
+        }
     </style>
 
     <script lang="javascript" type="text/javascript">
-        //$(document).ready(function () {
-        //    for (var i = 0; i < 150; i++) {
-        //        var element = $('positionElement');
-        //        var position = element.position();
 
-        //    }
-        //});
     </script>
 
 </head>
@@ -49,8 +50,8 @@
                             <div class="container-fluid">
                                 <%--<asp:Button ID="submitBtn" runat="server" OnClick="position" />--%>
                                 <asp:PlaceHolder ID="placeholder" runat="server"></asp:PlaceHolder>
-
-                                <asp:Label ID="lbl1" runat="server"></asp:Label>
+                                <asp:HiddenField ID="positionHdnTop" runat="server" ClientIDMode="Static" />
+                                <asp:HiddenField ID="positionHdnLeft" runat="server" ClientIDMode="Static" />
 
                                 <script type="text/javascript">
                                     $(function () {
@@ -60,12 +61,22 @@
                                             },
                                             stop: function (event, ui) {
                                                 $(event.target).css("opacity", "1.0");
-                                                //var x = $(event.target).position();
-                                                $(event.target).val($(event.target).position());
+                                                var position = $(event.target).position();
+                                                var positionArray = [];
+                                                //String[] positions = new String[] { };
+                                                for (var i = 0; i < 150; i++) {
+                                                    positionArray[i] = position.top + " " + position.left;
+                                                    $("#positionHdnTop").val(positionArray[i]);
+                                                }
+                                                
                                             }
                                         });
                                     });
                                 </script>
+
+                                <asp:Button ID="btn" Text="display" runat="server" OnClick="displaySomething" />
+                                <asp:Label ID="lbl" Text="hi" runat="server"></asp:Label>
+
 
                                 <!-- Column width 25% -->
                                 <%--<div class="row">
