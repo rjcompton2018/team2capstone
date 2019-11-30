@@ -72,12 +72,20 @@ body {
     font-size: xx-large;
 }
 
+#restaurantSignUp:hover {
+    background-color: #FA6121;
+}
+
 #customerSignUp {
     background-color: #FFFFFF;
     border-color: #466289;
     color: #466289;
     font-family: Impact;
     font-size: xx-large;
+}
+
+#customerSignUp:hover {
+    background-color: #FA6121;
 }
 
     #rs-main-signupbtn:hover {
@@ -89,5 +97,9 @@ body {
 }
 
 #rs-signups {
+    margin-bottom: 100px;
+}
+
+rSignUpPg {
     margin-bottom: 100px;
 }

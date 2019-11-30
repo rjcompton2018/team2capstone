@@ -16,7 +16,7 @@
 
     <form id="form1" runat="server">
 
-    <div class="container">
+    <div id="rSignUpPg" class="container">
         <div class="row">
             <h2>Restaurant Sign Up</h2>
         </div>
@@ -80,7 +80,7 @@
                 <asp:Label ID="Description" runat="server" Text="Description"></asp:Label>
             </div>
             <div class="col-75">
-                <asp:TextBox ID="DescriptionEntry" runat="server" Height="41px" Width="159px"></asp:TextBox>
+                <asp:TextBox ID="DescriptionEntry" runat="server"></asp:TextBox>
             </div>
         </div>
 
