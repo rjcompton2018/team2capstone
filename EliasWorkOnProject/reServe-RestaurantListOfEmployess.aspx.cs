@@ -50,7 +50,9 @@ namespace ReServeAPI_v2._0
 
         protected void addEmployee(object sender, EventArgs e)
         {
-            Response.Redirect("reServe-AddEmployee.aspx");
+            string identification = Request.QueryString["ID"];
+            int Rest_ID = Convert.ToInt32(identification);
+            Response.Redirect("reServe-AddEmployee.aspx?Rest_ID=" + Rest_ID);
         }
     }
 }

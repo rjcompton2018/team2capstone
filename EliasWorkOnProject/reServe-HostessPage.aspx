@@ -5,6 +5,28 @@
 <head>
     <title>ReServe - Hostess Page</title>
     <!--#include file="includes/header.inc"-->
+
+    <style>
+        .oval {
+            height: 100px;
+            width: 200px;
+            background-color: #555;
+            border-radius: 50%;
+        }
+
+        .table {
+            background: lightblue;
+        }
+
+        .textBox {
+            height: 25px;
+            width: 30px;
+            position: relative;
+            top: 10%;
+            left: 5%;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -21,16 +43,18 @@
             <div class="row">
                 <p>Quickly manage all reservations from this page!</p>
             </div>
-            
+
+            <div class="row">
+                <div class="col-25">
+                    <asp:PlaceHolder ID="placeholder" runat="server"></asp:PlaceHolder>
+                </div>
+                
+            </div>
             <div class="row">
                 <asp:Button ID="viewBtn" runat="server" Text="View Current Reservations" />
-            </div>
-            <div class="row">
                 <asp:Button ID="makeBtn" runat="server" Text="Make a Reservation" />
-            </div>
-            <div class="row">
                 <asp:Button ID="deleteBtn" runat="server" Text="Delete a Reservation" />
-            </div> 
+            </div>
         </div>
     </form>
 

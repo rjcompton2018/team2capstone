@@ -101,7 +101,6 @@ namespace ReServeAPI_v2._0
                 con1.Close();
                 return insertedID;
             }
-            
         }
 
         protected void toRestMainPage(object sender, EventArgs e)
