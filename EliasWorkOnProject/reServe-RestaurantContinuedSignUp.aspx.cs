@@ -54,12 +54,13 @@ namespace ReServeAPI_v2._0
                 reader.Read();
                 int insertedID = Convert.ToInt32(reader[0]);
 
-                //int id = Convert.ToInt32(cmd.ExecuteScalar());
-                //cmd.ExecuteNonQuery();
+                con1.Close();
+
+                con1.Open();
 
                 cmd.CommandText = "INSERT INTO [dbo].[Restaurant] (Restaurant_ID, Name, FoodStyle, Hours, Address, PhoneNumber, Description, Capacity, TotalTables, Booths, " +
                     "Bar, Delivery, Catering, Vegan, Outdoor, HandicapAccessible, HighChairs) " +
-                    "VALUES (@Name, @FoodStyles, @Hours, @Address, @PhoneNumber, @Description, @capacity, @totalTables, @Booths, @Bar, @Delivery, @Catering, @Vegan, @Outdoor," +
+                    "VALUES (@Restaurant_ID, @Name, @FoodStyles, @Hours, @Address, @PhoneNumber, @Description, @capacity, @totalTables, @Booths, @Bar, @Delivery, @Catering, @Vegan, @Outdoor," +
                     "@HandicapAccessible, @highChairs)";
 
                 cmd.Parameters.AddWithValue("@Restaurant_ID", insertedID);
@@ -94,6 +95,8 @@ namespace ReServeAPI_v2._0
                 cmd.Parameters.AddWithValue("@Outdoor", outdoorInt);
                 cmd.Parameters.AddWithValue("@HandicapAccessible", handicapInt);
                 cmd.Parameters.AddWithValue("@highChairs", highChairInt);
+
+                cmd.ExecuteNonQuery();
 
                 con1.Close();
                 return insertedID;
