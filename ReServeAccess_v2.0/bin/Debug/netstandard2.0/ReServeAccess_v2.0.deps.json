@@ -9,11 +9,20 @@
     ".NETStandard,Version=v2.0/": {
       "ReServeAccess_v2.0/1.0.0": {
         "dependencies": {
+          "AjaxControlToolkit": "19.1.0",
           "NETStandard.Library": "2.0.3",
           "jQuery": "3.4.1"
         },
         "runtime": {
           "ReServeAccess_v2.0.dll": {}
+        }
+      },
+      "AjaxControlToolkit/19.1.0": {
+        "runtime": {
+          "lib/net40/AjaxControlToolkit.dll": {
+            "assemblyVersion": "19.1.0.0",
+            "fileVersion": "19.1.0.0"
+          }
         }
       },
       "jQuery/3.4.1": {},
@@ -30,6 +39,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AjaxControlToolkit/19.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ITBkAidFQl7Y/qMDwj5jskdcpmtV4e2Y370hhLhWMRufrZmcYS/DjllYWix/PJTk4KzudePlv1/YF/LeGsUwjA==",
+      "path": "ajaxcontroltoolkit/19.1.0",
+      "hashPath": "ajaxcontroltoolkit.19.1.0.nupkg.sha512"
     },
     "jQuery/3.4.1": {
       "type": "package",

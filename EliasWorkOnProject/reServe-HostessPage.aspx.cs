@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
@@ -24,6 +25,7 @@ namespace ReServeAPI_v2._0
             if (!IsPostBack)
             {
                 retrieveData();
+                getReservationData();
             }
         }
 
@@ -34,11 +36,11 @@ namespace ReServeAPI_v2._0
 
             using (SqlConnection con = new SqlConnection(connectingString))
             {
-                SqlCommand cmd1 = new SqlCommand("SELECT top_Coord, left_Coord, Table_ID, Capcity FROM [dbo].[Table] WHERE Restaurant_ID=" + Rest_ID, con);
+                SqlCommand cmd = new SqlCommand("SELECT top_Coord, left_Coord, Table_ID, Capcity FROM [dbo].[Table] WHERE Restaurant_ID=" + Rest_ID, con);
 
                 con.Open();
 
-                SqlDataReader reader = cmd1.ExecuteReader();
+                SqlDataReader reader = cmd.ExecuteReader();
 
                 while (reader.Read())
                 {
@@ -59,11 +61,34 @@ namespace ReServeAPI_v2._0
                     myDiv.Controls.Add(capacityLbl);
                     placeholder.Controls.Add(myDiv);
                 }
-
                 con.Close();
-
             }
 
+        }
+
+        protected void getReservationData()
+        {
+
+            using (SqlConnection con = new SqlConnection(connectingString))
+            {
+                con.Open();
+
+                string com = "SELECT Restaurant, DateTime FROM Reservation";
+
+                SqlCommand cmd = new SqlCommand(com, con);
+
+                SqlDataAdapter sda = new SqlDataAdapter();
+                DataTable dt = new DataTable();
+
+                cmd.Connection = con;
+                sda.SelectCommand = cmd;
+
+                sda.Fill(dt);
+                GridView1.DataSource = dt;
+                GridView1.DataBind();
+
+                con.Close();
+            }
         }
     }
 }
