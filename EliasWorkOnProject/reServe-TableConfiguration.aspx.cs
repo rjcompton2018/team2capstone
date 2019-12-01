@@ -21,15 +21,15 @@ namespace ReServeAPI_v2._0
                 for (int i = 0; i < totalTables; i++)
                 {
                     HtmlGenericControl myDiv = new HtmlGenericControl("div");
-                    myDiv.ID = "myDiv" + i;
+                    myDiv.ID = "table" + i;
                     myDiv.Attributes.Add("class", "table oval");
 
                     HtmlGenericControl txtBox = new HtmlGenericControl("input");
-                    txtBox.ID = "txtBox" + i;
+                    txtBox.ID = "capacity_table" + i;
                     txtBox.Attributes.Add("class", "textBox");
 
                     HtmlGenericControl lbl = new HtmlGenericControl("label");
-                    lbl.ID = "lbl" + i;
+                    lbl.ID = "CapacityLbl" + i;
                     lbl.InnerText = "Capacity: ";
                     lbl.Attributes.Add("style", "left: 20%; top: 10%");
 
@@ -44,29 +44,35 @@ namespace ReServeAPI_v2._0
         {
         }
 
-        protected void displaySomething(object sender, EventArgs e)
+        protected void submitConfiguration(object sender, EventArgs e)
         {
-            string[] positions = coordinates.Value.Split(',');
+            string[] tableInfo = coordinates.Value.Split(',');
+
+            string identification = Request.QueryString["Rest_ID"];
+            int Rest_ID = Convert.ToInt32(identification);
 
             using (SqlConnection con = new SqlConnection(connectingString))
             {
-
                 con.Open();
-                for (int i = 0; i < Convert.ToInt32(Session["totalTables"]) * 2; i ++)
+                for (int i = 0; i < Convert.ToInt32(Session["totalTables"]) * 4; i++)
                 {
-                    SqlCommand cmd = new SqlCommand("INSERT INTO [dbo].[Table] (top_Coord, left_Coord, Table_ID)" +
-                        "VALUES (@top_Coord, @left_Coord, @Table_ID)", con);
-                    cmd.Parameters.AddWithValue("@top_Coord", positions[i]);
-                    cmd.Parameters.AddWithValue("@left_Coord", positions[i + 1]);
-                    cmd.Parameters.AddWithValue("@Table_ID", "myDIV");
-                    i += 1;
-                    
+                    SqlCommand cmd = new SqlCommand("INSERT INTO [dbo].[Table] (Restaurant_ID, top_Coord, left_Coord, Table_ID, Capcity)" +
+                        "VALUES (@Restaurant_ID, @top_Coord, @left_Coord, @Table_ID, @capacity)", con);
+                    cmd.Parameters.AddWithValue("@Restaurant_ID", Rest_ID);
+                    cmd.Parameters.AddWithValue("@top_Coord", tableInfo[i]);
+                    cmd.Parameters.AddWithValue("@left_Coord", tableInfo[i + 1]);
+                    cmd.Parameters.AddWithValue("@capacity", tableInfo[i + 2]);
+                    cmd.Parameters.AddWithValue("@Table_ID", tableInfo[i + 3]);
+                    i += 3;
+
                     cmd.ExecuteNonQuery();
 
                 }
 
                 con.Close();
             }
+
+            Response.Redirect("reServe-HostessPage.aspx?Rest_ID=" + Rest_ID);
         }
     }
 }

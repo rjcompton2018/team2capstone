@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AjaxControlToolkit" Version="19.1.0" />
     <PackageReference Include="jQuery" Version="3.4.1" />
   </ItemGroup>
 

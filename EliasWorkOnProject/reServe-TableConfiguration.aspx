@@ -51,9 +51,7 @@
                         <div class="menu">
                             <div class="container-fluid">
                                 <asp:PlaceHolder ID="placeholder" runat="server"></asp:PlaceHolder>
-
-                                <asp:Button ID="btn" Text="display" runat="server" OnClick="displaySomething" />
-                                <asp:Label ID="lbl" Text="hi" runat="server"></asp:Label>
+                                <asp:Button ID="btn" Text="display" runat="server" OnClick="submitConfiguration" />
                             </div>
                         </div>
                     </div>
@@ -72,8 +70,6 @@
                 },
                 stop: function (event, ui) {
                     $(event.target).css("opacity", "1.0");
-                    var position = $(event.target).position();
-                    var positionArray = [];
                 }
             });
 
@@ -83,9 +79,10 @@
                 positions = [];
 
                 for (var i = 0; i < tableCount; i++) {
-                    position = $('#myDiv' + i).position();
-                    positions[i] = [position.top, position.left];
-                    console.log(positions[i]);
+                    position = $('#table' + i).position();
+                    capcity = $('#capacity_table' + i).val();
+                    name = $('#table' + i).attr("id");
+                    positions[i] = [position.top, position.left, capcity, name];
                 }
                 $('#coordinates').val(positions);
             });

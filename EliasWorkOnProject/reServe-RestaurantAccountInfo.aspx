@@ -138,6 +138,9 @@
                                 <asp:CheckBox ID="HighChairsCbx" runat="server" /><asp:Label ID="highChairsLbl" runat="server" Text="High Chairs"></asp:Label>
                             </div>
                         </div>
+
+                        
+
                     </div>
                 </div>
             </div>
