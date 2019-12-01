@@ -103,3 +103,25 @@ body {
 rSignUpPg {
     margin-bottom: 100px;
 }
+
+#viewBtn {
+    margin: 10px;
+}
+
+#makeBtn {
+    margin: 10px
+}
+
+#deleteBtn {
+    margin: 10px
+}
+
+#rememberMe {
+    text-align:right;
+}
+
+hr {
+    justify-content: left;
+    width: 70%;
+    border-color: black;
+}

@@ -19,12 +19,14 @@
                 <h2>Login</h2>
             </div>
             <div class="row">
-                Enter your email and password to login.
+                <p>
+                    Enter your email and password to login.
+                </p>
             </div>
 
             <div class="row">
                 <div class="col-25">
-                    <asp:Label ID="emailLbl" runat="server" Text="Email: "></asp:Label>
+                    <asp:Label ID="emailLbl" runat="server" Text="Email:"></asp:Label>
                 </div>
                 <div class="col-75">
                     <asp:TextBox ID="emailTxt" runat="server"></asp:TextBox>
@@ -33,7 +35,7 @@
 
             <div class="row">
                 <div class="col-25">
-                    <asp:Label ID="passwordLbl" runat="server" Text="Password: "></asp:Label>
+                    <asp:Label ID="passwordLbl" runat="server" Text="Password:"></asp:Label>
                 </div>
                 <div class="col-75">
                     <asp:TextBox ID="passwordTxt" runat="server" type="password"></asp:TextBox>
@@ -45,7 +47,7 @@
             </div>
                         
             <div class="row">
-                <div class="col-25">
+                <div id="rememberMe" class="col-25">
                     <asp:CheckBox ID="rememberCbx" runat="server" Text="Remember me!" />
                 </div>
                 <div class="col-75 right">
@@ -54,7 +56,14 @@
             </div>
 
             <div class="row">
-                Don't have an account? Sign up as a customer or restaurant by clicking one of the buttons below!
+                <hr />
+            </div>
+            
+
+            <div class="row">
+                <p>
+                    Don't have an account? Sign up as a customer or restaurant by clicking one of the buttons below!
+                </p>                
             </div>
 
             <div class="row">
