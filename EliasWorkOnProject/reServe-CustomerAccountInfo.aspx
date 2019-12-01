@@ -43,38 +43,33 @@
         <div class="row">
             <div class="col-25">
                  <asp:Label ID="emaillabel" text="New Email:" runat="server"></asp:Label>
-                &nbsp;
-                <asp:TextBox ID="emailtxt" runat="server"></asp:TextBox>
-              &nbsp;
-              <asp:Label ID="phonelabel" text="New Number:" runat="server"></asp:Label>
-                &nbsp;<asp:TextBox ID="numbertxt" runat="server"></asp:TextBox>
-                &nbsp;&nbsp;&nbsp;
-                <asp:Button ID="Editbtn2" runat="server" Text="Edit" OnClick="Editbtn2_Click" />
-                <br />
-                
-                
             </div>
             <div class="col-75 right">
-               
-            </div>
-
-        </div>
-
-        <div class="container">
-            <div class="row justify-content-center">
-                
-                    <asp:Button ID="makeBtn" runat="server" Text="Make Reservation" OnClick="makeBtn_Click" />
-              
-                
-                  &nbsp;<asp:Button ID="editBtn" runat="server" Text="Edit Account" OnClick="editBtn_Click1" />
-                
-                
-                    &nbsp;<asp:Button ID="currentBtn" runat="server" Text="View Current Reservation" OnClick="currentBtn_Click" />
-                
+                <asp:TextBox ID="emailtxt" runat="server"></asp:TextBox>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-25">
+                <asp:Label ID="phonelabel" Text="New Number:" runat="server"></asp:Label>
+            </div>
+            <div class="col-75 right">
+                <asp:TextBox ID="numbertxt" runat="server"></asp:TextBox>
+            </div>
         </div>
+
+        <div class="row">
+            <div class="col-25">
+                
+            </div>
+            <div class="col-75 text-right">
+                <asp:Button ID="Editbtn2" runat="server" Text="Edit" OnClick="Editbtn2_Click" />
+            </div>
+        </div>
+    </div>
+    
+    </form>
+
     <!--#include file="includes/footer.inc"-->
-        </form>
 </body>
 </html>

@@ -39,18 +39,23 @@
                 </div>
                 <div class="col-75">
                     <asp:TextBox ID="passwordTxt" runat="server" type="password"></asp:TextBox>
-                    <br />
-                    <br />
+                </div>
+            </div>
+
+            <div class="row justify-content-end">
+                <div class="col-50 text-right">
                     <asp:Label ID="errorlbl" runat="server" Text=""></asp:Label>
-                    <br />
                 </div>
             </div>
                         
-            <div class="row">
-                <div id="rememberMe" class="col-25">
-                    <asp:CheckBox ID="rememberCbx" runat="server" Text="Remember me!" />
+            <div class="row justify-content-end">
+                <div class="col-50 text-right">
+                    <asp:CheckBox ID="rememberCbx" runat="server" Text=" Remember me!" />
                 </div>
-                <div class="col-75 right">
+            </div>
+
+            <div class="row justify-content-end">
+                <div class="col-50 text-right">
                     <asp:Button ID="submitBtn" runat="server" Text="Submit" OnClick="submitBtn_Click" />
                 </div>
             </div>
@@ -60,22 +65,24 @@
             </div>
             
 
-            <div class="row">
+            <div class="row justify-content-center">
                 <p>
                     Don't have an account? Sign up as a customer or restaurant by clicking one of the buttons below!
                 </p>                
             </div>
 
-            <div class="row">
-                <div class="col-25">
+            <div class="row justify-content-center" style="margin-bottom: 50px;">
+                <div class="col-2 justify-content-center">
                     <asp:Button ID="customerBtn" runat="server" Text="Customer" onClick="customerSignUp"/>
                 </div>
-                <div class="col-25">
+                <div class="col-2 text-center">
                     <asp:Button ID="restaurantBtn" runat="server" Text="Restaurant" onClick="restaurantSignUp"/>
                 </div>
             </div>
             
         </div>
     </form>
+
+    <!--#include file="includes/footer.inc"-->
 </body>
 </html>

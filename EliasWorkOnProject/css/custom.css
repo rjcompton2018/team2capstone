@@ -121,7 +121,7 @@ rSignUpPg {
 }
 
 hr {
-    justify-content: left;
-    width: 70%;
+    text-align: left;
+    width: 90%;
     border-color: black;
 }
