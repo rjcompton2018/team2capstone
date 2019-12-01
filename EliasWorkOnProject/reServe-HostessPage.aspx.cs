@@ -24,12 +24,12 @@ namespace ReServeAPI_v2._0
         {
             if (!IsPostBack)
             {
-                retrieveData();
+                getTableConfig();
                 getReservationData();
             }
         }
 
-        protected void retrieveData()
+        protected void getTableConfig()
         {
             string identification = Request.QueryString["Rest_ID"];
             int Rest_ID = Convert.ToInt32(identification);
@@ -89,6 +89,47 @@ namespace ReServeAPI_v2._0
 
                 con.Close();
             }
+        }
+
+        protected int makeReservation()
+        {
+            string identification = Request.QueryString["Rest_ID"];
+            int Rest_ID = Convert.ToInt32(identification);
+
+            string partyNum = txtPartyNum.Text;
+            int partyNumInt = Convert.ToInt32(partyNum);
+
+            string partyName = txtName.Text;
+            string phoneNum = txtPhoneNumber.Text;
+
+            string time = ddlTime.SelectedItem.Text;
+
+            string datetime = DateTime.Now.ToString() + time;
+            DateTime datetimeDT = DateTime.ParseExact(datetime, "M/d/yyyy h:mm", null);
+
+            using (SqlConnection con = new SqlConnection(connectingString))
+            {
+                string com = "INSERT INTO Reservation (Name, PartyNum, Phone_Number, Restaurant, DateTime)" +
+                    " VALUES (@Name, @PartyNum, @Phone_Number, @Restaurant, @DateTime)";
+
+                SqlCommand cmd = new SqlCommand(com, con);
+
+                //cmd.Parameters.AddWithValue("@User_ID", "1");
+                cmd.Parameters.AddWithValue("@Name", partyName);
+                cmd.Parameters.AddWithValue("@PartyNum", partyNumInt);
+                cmd.Parameters.AddWithValue("@Phone_Number", phoneNum);
+                cmd.Parameters.AddWithValue("@Restaurant", Rest_ID.ToString());
+                cmd.Parameters.AddWithValue("@DateTime", datetimeDT);
+
+                con.Open();
+
+                cmd.ExecuteNonQuery();
+
+                con.Close();
+
+            }
+
+            return 1;
         }
     }
 }
