@@ -18,7 +18,10 @@ namespace ReServeAPI_v2._0
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            string identification = Request.QueryString["Rest_ID"];
+            int ID = Convert.ToInt32(identification);
+            
+            Application["Rest_ID"] = ID;
         }
 
         protected void Button1_Click(object sender, EventArgs e)

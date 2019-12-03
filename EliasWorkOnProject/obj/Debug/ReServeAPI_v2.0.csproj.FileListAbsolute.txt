@@ -261,3 +261,11 @@ C:\Users\selena\team2capstone\EliasWorkOnProject\obj\Debug\ReServeAPI_v2.0.dll
 C:\Users\selena\team2capstone\EliasWorkOnProject\obj\Debug\ReServeAPI_v2.0.pdb
 C:\Users\selena\team2capstone\EliasWorkOnProject\bin\AjaxControlToolkit.dll
 C:\Users\p1nkp\Projects\CSI4999\EliasWorkOnProject\bin\AjaxControlToolkit.dll
+C:\Users\Eq_94\OneDrive\Documents\GitHub\team2capstone\EliasWorkOnProject\bin\AjaxControlToolkit.dll
+C:\Users\Eq_94\OneDrive\Documents\GitHub\team2capstone\EliasWorkOnProject\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\Eq_94\OneDrive\Documents\GitHub\team2capstone\EliasWorkOnProject\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Eq_94\OneDrive\Documents\GitHub\team2capstone\EliasWorkOnProject\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Eq_94\OneDrive\Documents\GitHub\team2capstone\EliasWorkOnProject\bin\Twilio.dll
+C:\Users\Eq_94\OneDrive\Documents\GitHub\team2capstone\EliasWorkOnProject\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\Eq_94\OneDrive\Documents\GitHub\team2capstone\EliasWorkOnProject\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\Eq_94\OneDrive\Documents\GitHub\team2capstone\EliasWorkOnProject\bin\Twilio.xml

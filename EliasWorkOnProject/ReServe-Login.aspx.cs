@@ -66,6 +66,7 @@ namespace ReServeAPI_v2._0
                 {
                     cnn.Close();
                     Response.Redirect("reServe-RestaurantMainPage.aspx?Rest_ID=" + ID);
+                    
                 }
                 else
                 {

@@ -19,6 +19,7 @@ namespace ReServeAPI_v2._0
 {
     public partial class reServe_HostessPage : System.Web.UI.Page
     {
+        
         string connectingString = @"Data Source=141.210.25.5;User ID=reserve;Password=Test123;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -31,13 +32,14 @@ namespace ReServeAPI_v2._0
 
         protected void getTableConfig()
         {
-            string identification = Request.QueryString["Rest_ID"];
-            int Rest_ID = Convert.ToInt32(identification);
+            //string identification = Request.QueryString["Rest_ID"];
+            string Name = Application["Rest_ID"].ToString();
+            int Rest_ID = Convert.ToInt32(Name);
 
             using (SqlConnection con = new SqlConnection(connectingString))
             {
-                SqlCommand cmd = new SqlCommand("SELECT top_Coord, left_Coord, Table_ID, Capcity FROM [dbo].[Table] WHERE Restaurant_ID=" + Rest_ID, con);
-
+                SqlCommand cmd = new SqlCommand("SELECT top_Coord, left_Coord, Table_ID, Capcity FROM [dbo].[Table] WHERE Restaurant_ID= @RestID", con);
+                cmd.Parameters.AddWithValue("@RestID", Rest_ID);
                 con.Open();
 
                 SqlDataReader reader = cmd.ExecuteReader();
@@ -75,15 +77,16 @@ namespace ReServeAPI_v2._0
         {
             //string identification = Request.QueryString["Rest_ID"];
             //int Rest_ID = Convert.ToInt32(identification);
-
+            string Name = Application["Rest_ID"].ToString();
+            int Rest_ID = Convert.ToInt32(Name);
             using (SqlConnection con = new SqlConnection(connectingString))
             {
                 con.Open();
 
-                string com = "SELECT Reservation_ID, Name, PartyNum, Phone_Number, DateTime FROM Reservation" /*WHERE Restaurant_ID=" + Rest_ID*/;
-
+                string com = "SELECT Reservation_ID, Name, PartyNum, Phone_Number, DateTime FROM Reservation WHERE Reservation_ID= @RestID";
+                
                 SqlCommand cmd = new SqlCommand(com, con);
-
+                cmd.Parameters.AddWithValue("@RestID", Rest_ID);
                 SqlDataAdapter sda = new SqlDataAdapter();
                 DataTable dt = new DataTable();
 
@@ -101,9 +104,9 @@ namespace ReServeAPI_v2._0
         protected void makeReservation(object sender, EventArgs e)
         {
 
-            
-            string identification = Request.QueryString["Rest_ID"];
-            int Rest_ID = Convert.ToInt32(identification);
+
+            string Name = Application["Rest_ID"].ToString();
+            int Rest_ID = Convert.ToInt32(Name);
 
             string partyNum = txtPartyNum.Text;
             //Response.Write("<script language=javascript>console.log('" + newReservation.Value + "'); </script>");

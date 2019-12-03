@@ -7,6 +7,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Twilio;
+using Twilio.Rest.Api.V2010.Account;
 
 //This page will allow restaurants or customers to make reservations. MOSTLY CUSTOMERS
 //It will include:
@@ -86,6 +88,44 @@ namespace ReServeAPI_v2._0
                 cmd.ExecuteNonQuery();
 
                 con.Close();
+                int parynumber = Int32.Parse(partyNum);
+                Random random = new Random();
+                if(parynumber > 4)
+                { 
+                int num =  random.Next(15, 45);
+                    datetimeDT.AddMinutes(num);
+                    const string accountSid = "AC35d309c5be325ca11b2cebf54dc38fdc";
+                    const string authToken = "a55375efca451a1ffd453d7179ceecd7";
+
+                    TwilioClient.Init(accountSid, authToken);
+
+                    var message = MessageResource.Create(
+                        body: "Hello, Your reservation will be ready in " + num + " please present in  " + datetimeDT + "5 mins before",
+                        from: new Twilio.Types.PhoneNumber("+13107366494"),
+                        to: new Twilio.Types.PhoneNumber("+18104475644")
+                    );
+
+                }
+                else
+                {
+                    int num = random.Next(10, 15);
+                    datetimeDT.AddMinutes(num);
+                    const string accountSid = "AC35d309c5be325ca11b2cebf54dc38fdc";
+                    const string authToken = "a55375efca451a1ffd453d7179ceecd7";
+
+                    TwilioClient.Init(accountSid, authToken);
+
+                    var message = MessageResource.Create(
+                        body: "Hello, Your reservation will be ready on " + datetimeDT + " please present in 5 mins before",
+                        from: new Twilio.Types.PhoneNumber("+13107366494"),
+                        to: new Twilio.Types.PhoneNumber("+18104475644")
+                    );
+
+                }
+                // DateTime t2 = DateTime.ParseExact(time, "HH:MM", CultureInfo.InvariantCulture);
+                //int t = Int32.Parse(time);
+
+               
 
             }
 
