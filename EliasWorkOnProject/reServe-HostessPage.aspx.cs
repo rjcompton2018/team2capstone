@@ -24,12 +24,12 @@ namespace ReServeAPI_v2._0
         {
             if (!IsPostBack)
             {
-                retrieveData();
+                getTableConfig();
                 getReservationData();
             }
         }
 
-        protected void retrieveData()
+        protected void getTableConfig()
         {
             string identification = Request.QueryString["Rest_ID"];
             int Rest_ID = Convert.ToInt32(identification);
@@ -68,12 +68,14 @@ namespace ReServeAPI_v2._0
 
         protected void getReservationData()
         {
+            //string identification = Request.QueryString["Rest_ID"];
+            //int Rest_ID = Convert.ToInt32(identification);
 
             using (SqlConnection con = new SqlConnection(connectingString))
             {
                 con.Open();
 
-                string com = "SELECT Name, PartyNum, Phone_Number, DateTime FROM Reservation";
+                string com = "SELECT Reservation_ID, Name, PartyNum, Phone_Number, DateTime FROM Reservation" /*WHERE Restaurant_ID=" + Rest_ID*/;
 
                 SqlCommand cmd = new SqlCommand(com, con);
 
@@ -89,6 +91,70 @@ namespace ReServeAPI_v2._0
 
                 con.Close();
             }
+        }
+
+        protected void makeReservation(object sender, EventArgs e)
+        {
+
+            
+            string identification = Request.QueryString["Rest_ID"];
+            int Rest_ID = Convert.ToInt32(identification);
+
+            string partyNum = txtPartyNum.Text;
+            //Response.Write("<script language=javascript>console.log('" + newReservation.Value + "'); </script>");
+            //int partyNumInt = Convert.ToInt32(partyNum);
+
+            string partyName = txtName.Text;
+            string phoneNum = txtPhoneNumber.Text;
+
+            string time = ddlTime.SelectedItem.Text;
+
+            DateTime datetime = DateTime.Now;
+            //DateTime datetimeDT = DateTime.ParseExact(datetime, "M/d/yyyy h:mm", null);
+
+            using (SqlConnection con = new SqlConnection(connectingString))
+            {
+                string com = "INSERT INTO Reservation (Name, PartyNum, Phone_Number, Restaurant, DateTime)" +
+                    " VALUES (@Name, @PartyNum, @Phone_Number, @Restaurant, @DateTime)";
+
+                SqlCommand cmd = new SqlCommand(com, con);
+
+                cmd.Parameters.AddWithValue("@Name", partyName);
+                cmd.Parameters.AddWithValue("@PartyNum", partyNum);
+                cmd.Parameters.AddWithValue("@Phone_Number", phoneNum);
+                cmd.Parameters.AddWithValue("@Restaurant", Rest_ID.ToString());
+                cmd.Parameters.AddWithValue("@DateTime", datetime);
+
+                con.Open();
+
+                cmd.ExecuteNonQuery();
+
+                con.Close();
+
+                Response.Write("<script language=javascript>console.log(' success '); </script>");
+
+            }
+        }
+
+        protected void gridView_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            GridViewRow row = (GridViewRow)GridView1.Rows[e.RowIndex];
+
+            using (SqlConnection con = new SqlConnection(connectingString) )
+            {
+                SqlCommand cmd = new SqlCommand("Delete From Reservation (Name, PartyNum, Phone_Number, Restaurant, DateTime) WHERE Reservation_ID=@Reservation_ID", con);
+                cmd.Parameters.AddWithValue("@Reservation_ID", GridView1.DataKeys[e.RowIndex].Values["Reservation_ID"].ToString());
+
+                con.Open();
+
+                cmd.ExecuteNonQuery();
+
+                con.Close();
+            }
+           
+
+            //cmd.Parameters.AddWithValue("@Reservation_ID", GridView1.DataKeys[e.RowIndex].Values["Reservation_ID"].ToString());
+            GridView1.DataBind();
         }
     }
 }
