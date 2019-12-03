@@ -65,7 +65,7 @@ namespace ReServeAPI_v2._0
                 if (password == passwordTxt.Text)
                 {
                     cnn.Close();
-                    Response.Redirect("reServe-RestaurantAccountInfo.aspx?Rest_ID=" + ID);
+                    Response.Redirect("reServe-RestaurantAccountInf.aspx?Rest_ID=" + ID);
                     
                 }
                 else

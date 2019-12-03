@@ -20,28 +20,38 @@
                 ShowPopup($(document.getElementById('dialogMakeReservation')));
                 return false;
             });
-        });
-        function ShowPopup(dialogToShow) {
-            dialog = dialogToShow.dialog({
-                title: "Reservations",
-                width: 450,
-
-                modal: true
-            });
-
-            dialog.on("dialogclose", function () {
+            $(document.getElementById('btnSubmitReservation')).click(function () {
                 reservationDetails = [];
 
                 partyName = $('#txtName').val();
                 partyNum = $('#txtPartyNum').val();
                 partyPhoneNum = $('#txtPhoneNum').val();
 
-                console.log(partyName);
+                //console.log(partyName);
 
-                reservationDetails = [partyName, partyNum, partyPhoneNum];
+                reservationDetails[0] = partyName;
+                reservationDetails[1] = partyNum;
+                reservationDetails[2] = partyPhoneNum;
+                //reservationDetails = [partyName, partyNum, partyPhoneNum];
+
+                //console.log(reservationDetails);
 
                 $('#newReservation').val(reservationDetails);
             });
+        });
+
+
+        function ShowPopup(dialogToShow) {
+            dialog = dialogToShow.dialog({
+                title: "Reservations",
+                width: 450,
+                modal: true,
+                close: function (event, ui) { }
+            });
+
+            //$(".selector").on("dialogclose", function () {
+                
+            //});
 
             $(this).dialog('open');
         }
@@ -192,6 +202,7 @@
                                     <div class="row">
                                         <p>Quickly manage all reservations from this page!</p>
                                     </div>
+                                    
                                 </div>
                                 <asp:HiddenField ID="newReservation" runat="server" />
                             </div>
@@ -204,8 +215,8 @@
 
                     <div class="row footer-button">
                         <div class="span6" style="display: inline-block; width: 1000px">
-                            <asp:Button ID="viewBtn" runat="server" Text="View Current Reservations" />
-                            <asp:Button ID="makeBtn" runat="server" Text="Make a Reservation" />
+                            <asp:Button ID="viewBtn" runat="server" Text="View Current Reservations" onClick="pullReservations"/>
+                            <asp:Button ID="makeBtn" runat="server" Text="Make a Reservation"/>
                         </div>
                     </div>
                 </div>

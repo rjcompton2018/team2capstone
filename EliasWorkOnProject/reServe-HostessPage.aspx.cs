@@ -75,10 +75,10 @@ namespace ReServeAPI_v2._0
 
         protected void getReservationData()
         {
-            //string identification = Request.QueryString["Rest_ID"];
-            //int Rest_ID = Convert.ToInt32(identification);
-            string Name = Application["Rest_ID"].ToString();
-            int Rest_ID = Convert.ToInt32(Name);
+            string identification = Request.QueryString["Rest_ID"];
+            int Rest_ID = Convert.ToInt32(identification);
+            //string Name = Application["Rest_ID"].ToString();
+            //int Rest_ID = Convert.ToInt32(Name);
             using (SqlConnection con = new SqlConnection(connectingString))
             {
                 con.Open();
@@ -103,22 +103,34 @@ namespace ReServeAPI_v2._0
 
         protected void makeReservation(object sender, EventArgs e)
         {
+            string identification = Request.QueryString["Rest_ID"];
+            int Rest_ID = Convert.ToInt32(identification);
+
+            //string Name = Application["Rest_ID"].ToString();
+            //int Rest_ID = Convert.ToInt32(Name);
+
+            //string partyNum = txtPartyNum.Text;
+            ////Response.Write("<script language=javascript>console.log('" + newReservation.Value + "'); </script>");
+
+            //string partyName = txtName.Text;
+            //string phoneNum = txtPhoneNumber.Text;
+
+            //string time = ddlTime.SelectedItem.Text;
 
 
-            string Name = Application["Rest_ID"].ToString();
-            int Rest_ID = Convert.ToInt32(Name);
+            //DateTime datetimeDT = DateTime.ParseExact(datetime, "M/d/yyyy h:mm", null);
 
-            string partyNum = txtPartyNum.Text;
-            //Response.Write("<script language=javascript>console.log('" + newReservation.Value + "'); </script>");
-            //int partyNumInt = Convert.ToInt32(partyNum);
 
-            string partyName = txtName.Text;
-            string phoneNum = txtPhoneNumber.Text;
 
-            string time = ddlTime.SelectedItem.Text;
+
 
             DateTime datetime = DateTime.Now;
-            //DateTime datetimeDT = DateTime.ParseExact(datetime, "M/d/yyyy h:mm", null);
+
+            string[] tableInfo = newReservation.Value.Split(',');
+
+            string partyName = tableInfo[0];
+            string partyNum = tableInfo[1];
+            string phoneNum = tableInfo[2];
 
             using (SqlConnection con = new SqlConnection(connectingString))
             {
@@ -139,7 +151,9 @@ namespace ReServeAPI_v2._0
 
                 con.Close();
 
-                Response.Write("<script language=javascript>console.log(' success '); </script>");
+                Response.Write("<script language=javascript>console.log('" + partyName + "'); </script>");
+                Response.Write("<script language=javascript>console.log('" + phoneNum + "'); </script>");
+                Response.Write("<script language=javascript>console.log('" + datetime + "'); </script>");
 
             }
         }
@@ -163,6 +177,14 @@ namespace ReServeAPI_v2._0
 
             //cmd.Parameters.AddWithValue("@Reservation_ID", GridView1.DataKeys[e.RowIndex].Values["Reservation_ID"].ToString());
             GridView1.DataBind();
+        }
+
+        protected void pullReservations(object sender, EventArgs e)
+        {
+            GridView1.DataSource = null;
+            GridView1.DataBind();
+
+            getReservationData();
         }
     }
 }
