@@ -94,61 +94,33 @@
 
             <div class="row">
                 <div class="col-25">
-                    <asp:Label ID="RestaurantHours" runat="server" Text="Hours"></asp:Label>
+                    <asp:Label ID="RestaurantHoursLbl" runat="server" Text="Hours"></asp:Label>
                 </div>
                 <div class="col-75">
-                    <asp:TextBox ID="RestaurantHoursEntry" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="RestaurantHoursEntrytxt" runat="server"></asp:TextBox>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-25">
-                    <asp:Label ID="RestaurantTypeofFood" runat="server" Text="Type of Food"></asp:Label>
+                    <asp:Label ID="RestaurantTypeofFoodlbl" runat="server" Text="Type of Food"></asp:Label>
                 </div>
                 <div class="col-75">
-                    <asp:TextBox ID="RestaurantTypeofFoodEntry" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="RestaurantTypeofFoodEntrytxt" runat="server"></asp:TextBox>
                 </div>
             </div>
 
             <div class="row footer-button">
                 <div class="col-25">
-                    <asp:Label Style="color: red" ID="errorLbl" runat="server" Text=""></asp:Label>
+                    <asp:Label Style="color: red" ID="error_Lbl" runat="server" Text=""></asp:Label>
                 </div>
                 <div class="col-75 right">
                     <div class="span6" style="display: inline-block; width: 500px">
-                        <asp:Button ID="NextBtn" runat="server" Text="Next" OnClick="toContinuedSignUp" />
+                        <asp:Button ID="NextSignUpBtn" runat="server" Text="Next" OnClick="toContinuedSignUp" />
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="row">
-            <div class="col-25">
-                <asp:Label ID="RestaurantHours" runat="server" Text="Hours"></asp:Label>
-            </div>
-            <div class="col-75">
-                <asp:TextBox ID="RestaurantHoursEntry" runat="server"></asp:TextBox>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-25">
-                <asp:Label ID="RestaurantTypeofFood" runat="server" Text="Type of Food"></asp:Label>
-            </div>
-            <div class="col-75">
-                <asp:TextBox ID="RestaurantTypeofFoodEntry" runat="server"></asp:TextBox>
-            </div>
-        </div>
-
-        <div class="row" style="margin-bottom: 50px;">
-            <div class="col-25">
-                <asp:Label Style="color: red" ID="errorLbl" runat="server" Text=""></asp:Label>
-            </div>
-            <div class="col-75 text-right">
-                <asp:Button ID="NextBtn" runat="server" Text="Next" OnClick="toContinuedSignUp"/>
-            </div>
-        </div>
-    </div>
     </form>
 
     <!--#include file="includes/footer.inc"-->

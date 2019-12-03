@@ -29,12 +29,12 @@ namespace ReServeAPI_v2._0
 
             if (isNumberPhone != true)
             {
-                errorLbl.Text = "Please enter 10 digit phone number";
-                errorLbl.Visible = true;
+                error_Lbl.Text = "Please enter 10 digit phone number";
+                error_Lbl.Visible = true;
             } 
             else
             {
-                errorLbl.Visible = false;
+                error_Lbl.Visible = false;
 
                 int myOutput = 0;
 
@@ -44,19 +44,19 @@ namespace ReServeAPI_v2._0
                 {
                     if (restPhone.Length != 10)
                     {
-                        errorLbl.Text = "Please enter 10 digit phone number";
-                        errorLbl.Visible = true;
+                        error_Lbl.Text = "Please enter 10 digit phone number";
+                        error_Lbl.Visible = true;
                     }
                     else
                     {
-                        errorLbl.Visible = false;
+                        error_Lbl.Visible = false;
                         checkIfEmailExists();
                     }
                 }
                 else
                 {
-                    errorLbl.Text = "Passwords do not match";
-                    errorLbl.Visible = true;
+                    error_Lbl.Text = "Passwords do not match";
+                    error_Lbl.Visible = true;
                 }
 
             }
@@ -77,8 +77,8 @@ namespace ReServeAPI_v2._0
 
                 if (UserExists > 0)
                 {
-                    errorLbl.Text = "Email already exists";
-                    errorLbl.Visible = true;
+                    error_Lbl.Text = "Email already exists";
+                    error_Lbl.Visible = true;
                 }
                 else
                 {
@@ -95,8 +95,8 @@ namespace ReServeAPI_v2._0
             Session["Password"] = AdminPasswordEntry.Text;
 
             Session["Name"] = RestaurantNameEntry.Text;
-            Session["FoodStyle"] = RestaurantTypeofFoodEntry.Text;
-            Session["Hours"] = RestaurantHoursEntry.Text;
+            Session["FoodStyle"] = RestaurantTypeofFoodEntrytxt.Text;
+            Session["Hours"] = RestaurantHoursEntrytxt.Text;
             Session["Address"] = RestaurantAddressEntry.Text;
             Session["PhoneNumber"] = RestaurantPhoneNumberEntry.Text;
             Session["Description"] = DescriptionEntry.Text;

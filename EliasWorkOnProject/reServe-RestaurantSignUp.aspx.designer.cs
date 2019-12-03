@@ -150,57 +150,57 @@ namespace ReServeAPI_v2._0
         protected global::System.Web.UI.WebControls.TextBox DescriptionEntry;
 
         /// <summary>
-        /// RestaurantHours control.
+        /// RestaurantHoursLbl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label RestaurantHours;
+        protected global::System.Web.UI.WebControls.Label RestaurantHoursLbl;
 
         /// <summary>
-        /// RestaurantHoursEntry control.
+        /// RestaurantHoursEntrytxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox RestaurantHoursEntry;
+        protected global::System.Web.UI.WebControls.TextBox RestaurantHoursEntrytxt;
 
         /// <summary>
-        /// RestaurantTypeofFood control.
+        /// RestaurantTypeofFoodlbl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label RestaurantTypeofFood;
+        protected global::System.Web.UI.WebControls.Label RestaurantTypeofFoodlbl;
 
         /// <summary>
-        /// RestaurantTypeofFoodEntry control.
+        /// RestaurantTypeofFoodEntrytxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox RestaurantTypeofFoodEntry;
+        protected global::System.Web.UI.WebControls.TextBox RestaurantTypeofFoodEntrytxt;
 
         /// <summary>
-        /// errorLbl control.
+        /// error_Lbl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label errorLbl;
+        protected global::System.Web.UI.WebControls.Label error_Lbl;
 
         /// <summary>
-        /// NextBtn control.
+        /// NextSignUpBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button NextBtn;
+        protected global::System.Web.UI.WebControls.Button NextSignUpBtn;
     }
 }
