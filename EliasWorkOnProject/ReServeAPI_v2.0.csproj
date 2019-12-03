@@ -169,12 +169,12 @@
     <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
-    <Compile Include="reServe-AddEmployee.aspx.cs">
-      <DependentUpon>reServe-AddEmployee.aspx</DependentUpon>
+    <Compile Include="reServe-RestaurantAddEmployee.aspx.cs">
+      <DependentUpon>reServe-RestaurantAddEmployee.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="reServe-AddEmployee.aspx.designer.cs">
-      <DependentUpon>reServe-AddEmployee.aspx</DependentUpon>
+    <Compile Include="reServe-RestaurantAddEmployee.aspx.designer.cs">
+      <DependentUpon>reServe-RestaurantAddEmployee.aspx</DependentUpon>
     </Compile>
     <Compile Include="reServe-CustomerAccountInfo.aspx.cs">
       <DependentUpon>reServe-CustomerAccountInfo.aspx</DependentUpon>
@@ -261,12 +261,12 @@
     <Compile Include="reServe-RestaurantContinuedSignUp.aspx.designer.cs">
       <DependentUpon>reServe-RestaurantContinuedSignUp.aspx</DependentUpon>
     </Compile>
-    <Compile Include="reServe-RestaurantListOfEmployess.aspx.cs">
-      <DependentUpon>reServe-RestaurantListOfEmployess.aspx</DependentUpon>
+    <Compile Include="reServe-RestaurantListOfEmployees.aspx.cs">
+      <DependentUpon>reServe-RestaurantListOfEmployees.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="reServe-RestaurantListOfEmployess.aspx.designer.cs">
-      <DependentUpon>reServe-RestaurantListOfEmployess.aspx</DependentUpon>
+    <Compile Include="reServe-RestaurantListOfEmployees.aspx.designer.cs">
+      <DependentUpon>reServe-RestaurantListOfEmployees.aspx</DependentUpon>
     </Compile>
     <Compile Include="reServe-RestaurantSignUp.aspx.cs">
       <DependentUpon>reServe-RestaurantSignUp.aspx</DependentUpon>
@@ -339,7 +339,7 @@
     <Content Include="includes\navbar-customer.inc" />
     <Content Include="includes\imagebar.inc" />
     <!--<<<<<<< HEAD-->
-    <Content Include="reServe-AddEmployee.aspx" />
+    <Content Include="reServe-RestaurantAddEmployee.aspx" />
     <Content Include="reServe-CustomerAccountInfo.aspx" />
     <Content Include="reServe-CustomerMainPage.aspx" />
     <!--=======-->
@@ -409,7 +409,7 @@
     <Content Include="reServe-RedoTableConfiguration.aspx" />
     <Content Include="reServe-RestaurantAccountInfo.aspx" />
     <Content Include="reServe-RestaurantContinuedSignUp.aspx" />
-    <Content Include="reServe-RestaurantListOfEmployess.aspx" />
+    <Content Include="reServe-RestaurantListOfEmployees.aspx" />
     <Content Include="reServe-RestaurantSignUp.aspx" />
     <Content Include="reServe-TableConfiguration.aspx" />
     <Content Include="reServe-ViewReservation.aspx" />
