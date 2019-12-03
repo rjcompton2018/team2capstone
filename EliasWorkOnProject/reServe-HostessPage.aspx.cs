@@ -32,9 +32,9 @@ namespace ReServeAPI_v2._0
 
         protected void getTableConfig()
         {
-            //string identification = Request.QueryString["Rest_ID"];
-            string Name = Application["Rest_ID"].ToString();
-            int Rest_ID = Convert.ToInt32(Name);
+            string identification = Request.QueryString["Rest_ID"];
+            //string Name = Application["Rest_ID"].ToString();
+            int Rest_ID = Convert.ToInt32(identification);
 
             using (SqlConnection con = new SqlConnection(connectingString))
             {

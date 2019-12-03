@@ -95,23 +95,22 @@
         }
 
         .oval {
-            height: 100px;
-            width: 200px;
+            height: 80px;
+            width: 100px;
             background-color: #555;
             border-radius: 50%;
         }
 
         .table {
-            background-color: lightblue;
+            background: lightblue;
         }
 
         .textBox {
-            height: 25px;
-            width: 30px;
+            height: 20px;
+            width: 25px;
             position: relative;
-            top: 10%;
-            left: 5%;
-            background-color: lightblue;
+            top: -20%;
+            left:32%;
         }
 
         .footer-button {
