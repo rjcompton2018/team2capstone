@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <!--#include file="includes/navbar-restaurant.inc"-->
+    <!--#include file="includes/navbar-main.inc"-->
 
     <!--#include file="includes/imagebar.inc"-->
 

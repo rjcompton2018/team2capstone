@@ -62,7 +62,7 @@
             <div class="col-25">
                 <asp:Label Style="color: red" ID="errorlbl" runat="server" Text=""></asp:Label>
             </div>
-            <div class="col-75 right">
+            <div class="col-75 text-right">
                 <asp:Button ID="SubmitBtn" runat="server" Text="Submit" OnClick="SubmitBtn_Click" />
             </div>
         </div>

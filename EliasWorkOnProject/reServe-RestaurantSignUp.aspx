@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <!--#include file="includes/navbar-restaurant.inc"-->
+    <!--#include file="includes/navbar-main.inc"-->
 
     <!--#include file="includes/imagebar.inc"-->
 
@@ -102,11 +102,11 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row" style="margin-bottom: 50px;">
             <div class="col-25">
                 <asp:Label Style="color: red" ID="errorLbl" runat="server" Text=""></asp:Label>
             </div>
-            <div class="col-75 right">
+            <div class="col-75 text-right">
                 <asp:Button ID="NextBtn" runat="server" Text="Next" OnClick="toContinuedSignUp"/>
             </div>
         </div>

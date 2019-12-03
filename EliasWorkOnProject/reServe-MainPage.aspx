@@ -22,11 +22,10 @@
         </div>
 
         <div id="rs-signups" class="row justify-content-center">
-            <div class="col-2">
+            <div class="col-50 text-center">
                 <%--<a href="#" id="rs-main-signupbtn" class="btn btn-info" role="button" onClick="signUpRestaurant">Restaurant Sign Up</a>--%>
                 <asp:Button ID="restaurantSignUp" class="btn btn-info" runat="server" Text="Restaurant Sign Up" onClick="signUpRestaurant"/>
-            </div>
-            <div class="col-2">
+
                 <%--<a href="#" id="rs-main-signupbtn" class="btn btn-info" role="button" onClick="signUpCustomer">Customer Sign Up</a>--%>
                 <asp:Button ID="customerSignUp" class="btn btn-info" runat="server" Text="Customer Sign Up" OnClick="signUpCustomer" />
             </div>
