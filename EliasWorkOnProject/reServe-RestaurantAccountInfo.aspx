@@ -23,7 +23,7 @@
 
             <!-- NEEDS TO PULL FROM DATABASE HERE!!!!! -->
 
-            <div class="container">
+            <%--<div class="container">--%>
                 <div class="row">
                     <div class="col-sm">
                         <div class="row">
@@ -144,7 +144,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        <%--</div>--%>
     </form>
 
     <!--#include file="includes/footer.inc"-->
