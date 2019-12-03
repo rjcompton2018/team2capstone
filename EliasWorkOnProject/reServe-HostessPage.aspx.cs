@@ -49,6 +49,8 @@ namespace ReServeAPI_v2._0
                     string tableID = reader[2].ToString();
                     float capacity = float.Parse(reader[3].ToString());
 
+                    //HtmlGenericControl panel = new HtmlGenericControl("panel");
+
                     HtmlGenericControl myDiv = new HtmlGenericControl("div");
                     myDiv.ID = tableID.ToString();
                     myDiv.Attributes.Add("class", "table oval");
@@ -59,7 +61,10 @@ namespace ReServeAPI_v2._0
                     capacityLbl.Attributes.Add("class", "textBox");
 
                     myDiv.Controls.Add(capacityLbl);
-                    placeholder.Controls.Add(myDiv);
+                    
+                    panel1.Controls.Add(myDiv);
+
+                    //container1.Controls.Add(panel);
                 }
                 con.Close();
             }
