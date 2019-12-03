@@ -113,6 +113,12 @@
             left: 5%;
             background-color: lightblue;
         }
+
+        .footer-button {
+            position: absolute;
+            right: 0;
+            bottom: 35px;
+        }
     </style>
 </head>
 
@@ -122,69 +128,90 @@
     <!--#include file="includes/imagebar.inc"-->
 
     <!-- Page content -->
+
     <form id="form1" runat="server">
-        <div id="dialogMakeReservation" style="display: none">
-            <asp:Label ID="lblName" runat="server" Text="Name"></asp:Label><asp:TextBox ID="txtName" runat="server"></asp:TextBox>
-            <asp:Label ID="lblPartyNum" runat="server" Text="Party Number"></asp:Label><asp:TextBox ID="txtPartyNum" runat="server"></asp:TextBox>
-            <asp:Label ID="lblPhoneNumber" runat="server" Text="Phone Number"></asp:Label><asp:TextBox ID="txtPhoneNumber" runat="server"></asp:TextBox>
-            <asp:Label ID="lblTime" runat="server" Text="Time"></asp:Label><asp:DropDownList ID="ddlTime" runat="server">
-                <asp:ListItem>12:00</asp:ListItem>
-                <asp:ListItem>12:30</asp:ListItem>
-                <asp:ListItem>1:00</asp:ListItem>
-                <asp:ListItem>1:30</asp:ListItem>
-                <asp:ListItem>2:00</asp:ListItem>
-                <asp:ListItem>2:30</asp:ListItem>
-                <asp:ListItem>3:00</asp:ListItem>
-                <asp:ListItem>3:30</asp:ListItem>
-                <asp:ListItem>4:00</asp:ListItem>
-                <asp:ListItem>4:30</asp:ListItem>
-                <asp:ListItem>5:00</asp:ListItem>
-                <asp:ListItem>5:30</asp:ListItem>
-                <asp:ListItem>6:00</asp:ListItem>
-                <asp:ListItem>6:30</asp:ListItem>
-                <asp:ListItem>7:30</asp:ListItem>
-                <asp:ListItem>8:00</asp:ListItem>
-                <asp:ListItem>8:30</asp:ListItem>
-                <asp:ListItem>9:00</asp:ListItem>
-                <asp:ListItem>9:30</asp:ListItem>
-                <asp:ListItem>10:00</asp:ListItem>
-                <asp:ListItem>10:30</asp:ListItem>
-            </asp:DropDownList>
-            <asp:Button ID="btnSubmitReservation" Text="Make Reservation" runat="server" OnClick="makeReservation" UseSubmitBehavior="false" />
-        </div>
         <div class="container">
-            <div class="row">
-                <h2>Hostess Page</h2>
-            </div>
-            <div class="row">
-                <p>Quickly manage all reservations from this page!</p>
-            </div>
+            <!-- Main Row Container -->
+            <div class="container" style="margin-top: 30px">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="menu">
+                            <div class="container-fluid">
 
-            <div class="row">
-                <div class="col-25">
-                    <asp:PlaceHolder ID="placeholder" runat="server"></asp:PlaceHolder>
+                                <!-- DIALOGS -->
+                                <div id="dialogMakeReservation" style="display: none">
+                                    <asp:Label ID="lblName" runat="server" Text="Name"></asp:Label><asp:TextBox ID="txtName" runat="server"></asp:TextBox>
+                                    <asp:Label ID="lblPartyNum" runat="server" Text="Party Number"></asp:Label><asp:TextBox ID="txtPartyNum" runat="server"></asp:TextBox>
+                                    <asp:Label ID="lblPhoneNumber" runat="server" Text="Phone Number"></asp:Label><asp:TextBox ID="txtPhoneNumber" runat="server"></asp:TextBox>
+                                    <asp:Label ID="lblTime" runat="server" Text="Time"></asp:Label><asp:DropDownList ID="ddlTime" runat="server">
+                                        <asp:ListItem>12:00</asp:ListItem>
+                                        <asp:ListItem>12:30</asp:ListItem>
+                                        <asp:ListItem>1:00</asp:ListItem>
+                                        <asp:ListItem>1:30</asp:ListItem>
+                                        <asp:ListItem>2:00</asp:ListItem>
+                                        <asp:ListItem>2:30</asp:ListItem>
+                                        <asp:ListItem>3:00</asp:ListItem>
+                                        <asp:ListItem>3:30</asp:ListItem>
+                                        <asp:ListItem>4:00</asp:ListItem>
+                                        <asp:ListItem>4:30</asp:ListItem>
+                                        <asp:ListItem>5:00</asp:ListItem>
+                                        <asp:ListItem>5:30</asp:ListItem>
+                                        <asp:ListItem>6:00</asp:ListItem>
+                                        <asp:ListItem>6:30</asp:ListItem>
+                                        <asp:ListItem>7:30</asp:ListItem>
+                                        <asp:ListItem>8:00</asp:ListItem>
+                                        <asp:ListItem>8:30</asp:ListItem>
+                                        <asp:ListItem>9:00</asp:ListItem>
+                                        <asp:ListItem>9:30</asp:ListItem>
+                                        <asp:ListItem>10:00</asp:ListItem>
+                                        <asp:ListItem>10:30</asp:ListItem>
+                                    </asp:DropDownList>
+                                    <asp:Button ID="btnSubmitReservation" Text="Make Reservation" runat="server" OnClick="makeReservation" UseSubmitBehavior="false" />
+                                </div>
+
+                                <div id="dialogViewReservation" style="display: none">
+                                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false" AutoGenerateEditButton="true" AutoGenerateDeleteButton="true" AutoGenerateSelectButton="false" AllowPaging="false" OnRowDeleting="gridView_RowDeleting">
+                                        <Columns>
+                                            <asp:BoundField ItemStyle-Width="150px" DataField="Reservation_ID" HeaderText="Reservation_ID" />
+                                            <asp:BoundField ItemStyle-Width="150px" DataField="Name" HeaderText="Name" />
+                                            <asp:BoundField ItemStyle-Width="150px" DataField="PartyNum" HeaderText="Party Number" />
+                                            <asp:BoundField ItemStyle-Width="150px" DataField="Phone_Number" HeaderText="Phone Number" />
+                                            <asp:BoundField ItemStyle-Width="150px" DataField="DateTime" HeaderText="Reservation Time" />
+                                        </Columns>
+                                    </asp:GridView>
+                                </div>
+
+
+
+                                <!-- PAGE CONTENT -->
+                                <div class="container">
+
+                                    <div class="row">
+                                        <h2>Hostess Page</h2>
+                                    </div>
+
+                                    <div class="row">
+                                        <p>Quickly manage all reservations from this page!</p>
+                                    </div>
+                                </div>
+                                <asp:HiddenField ID="newReservation" runat="server" />
+                            </div>
+                            
+                        </div>
+                        <div class="row" style="position: absolute; top: 120px;">
+                                <asp:Panel ID="panel1" runat="server" Height="500px"></asp:Panel>
+                            </div>
+                    </div>
+
+                    <div class="row footer-button">
+                        <div class="span6" style="display: inline-block; width: 1000px">
+                            <asp:Button ID="viewBtn" runat="server" Text="View Current Reservations" />
+                            <asp:Button ID="makeBtn" runat="server" Text="Make a Reservation" />
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div class="row">
-                <div id="dialogViewReservation" style="display: none">
-                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false" AutoGenerateEditButton="true" AutoGenerateDeleteButton="true" AutoGenerateSelectButton="false" AllowPaging="false" OnRowDeleting="gridView_RowDeleting">
-                        <Columns>
-                            <asp:BoundField ItemStyle-Width="150px" DataField="Reservation_ID" HeaderText="Reservation_ID" />
-                            <asp:BoundField ItemStyle-Width="150px" DataField="Name" HeaderText="Name" />
-                            <asp:BoundField ItemStyle-Width="150px" DataField="PartyNum" HeaderText="Party Number" />
-                            <asp:BoundField ItemStyle-Width="150px" DataField="Phone_Number" HeaderText="Phone Number" />
-                            <asp:BoundField ItemStyle-Width="150px" DataField="DateTime" HeaderText="Reservation Time" />
-                        </Columns>
-                    </asp:GridView>
-                </div>
-
-                <asp:Button ID="viewBtn" runat="server" Text="View Current Reservations" />
-                <asp:Button ID="makeBtn" runat="server" Text="Make a Reservation" />
-                <asp:Button ID="deleteBtn" runat="server" Text="Delete a Reservation" />
             </div>
         </div>
-        <asp:HiddenField ID="newReservation" runat="server" />
     </form>
 
     <!--#include file="includes/footer.inc"-->

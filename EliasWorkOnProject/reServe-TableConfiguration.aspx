@@ -28,6 +28,12 @@
             top: 10%;
             left: 5%;
         }
+
+        .footer-button {
+            position: absolute;
+            right: 0;
+            bottom: 35px;
+        }
     </style>
 
     <script lang="javascript" type="text/javascript">
@@ -51,9 +57,13 @@
                         <div class="menu">
                             <div class="container-fluid">
                                 <asp:PlaceHolder ID="placeholder" runat="server"></asp:PlaceHolder>
-                                <asp:Button ID="btn" Text="display" runat="server" OnClick="submitConfiguration" />
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="row footer-button">
+                    <div class="span6" style="display: inline-block; width: 500px">
+                        <asp:Button ID="Button1" Text="To Hostess Page" runat="server" OnClick="submitConfiguration" />
                     </div>
                 </div>
             </div>
