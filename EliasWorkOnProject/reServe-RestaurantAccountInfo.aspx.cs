@@ -82,5 +82,12 @@ namespace ReServeAPI_v2._0
         {
 
         }
+
+        protected void toHostessPage(object sender, EventArgs e)
+        {
+            string identification = Request.QueryString["Rest_ID"];
+            int Rest_ID = Convert.ToInt32(identification);
+            Response.Redirect("reServe-HostessPage.aspx?Rest_ID=" + Rest_ID);
+        }
     }
 }

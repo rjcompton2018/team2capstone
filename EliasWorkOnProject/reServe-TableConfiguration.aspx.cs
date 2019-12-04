@@ -46,6 +46,7 @@ namespace ReServeAPI_v2._0
 
         protected void submitConfiguration(object sender, EventArgs e)
         {
+            
             string[] tableInfo = coordinates.Value.Split(',');
 
             string identification = Request.QueryString["Rest_ID"];
