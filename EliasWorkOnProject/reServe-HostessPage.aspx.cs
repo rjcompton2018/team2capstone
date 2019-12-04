@@ -28,17 +28,15 @@ namespace ReServeAPI_v2._0
             {
                 
                 getReservationData();
-                settingGridView();
+                initializingGridView();
             }
         }
 
-        protected void settingGridView()
+        protected void initializingGridView()
         {
             DataTable dt = new DataTable();
 
             ViewState["CurrentTable"] = dt;
-
-            
         }
 
         protected void addNewCustomer(object sender, EventArgs e)
@@ -67,6 +65,7 @@ namespace ReServeAPI_v2._0
 
         }
 
+        // wait time formula to go here
         protected int waitTime()
         {
             Random random = new Random();
@@ -74,6 +73,15 @@ namespace ReServeAPI_v2._0
 
             return randomNum;
         }
+
+        //protected void gridViewRowDeleted()
+        //{
+        //    if(ViewState["CurrentTable"] != null)
+        //    {
+        //        DataTable dt = (DataTable)ViewState["CurrentTable"];
+                
+        //    }
+        //}
 
         protected void getTableConfig()
         {
@@ -166,14 +174,12 @@ namespace ReServeAPI_v2._0
             //DateTime datetimeDT = DateTime.ParseExact(datetime, "M/d/yyyy h:mm", null);
 
 
-            Response.Write("<script language=javascript>alert(' makeReservation called '); </script>");
+            //Response.Write("<script language=javascript>alert(' makeReservation called '); </script>");
 
 
             DateTime datetime = DateTime.Now;
 
             string[] reservationInfo = newReservation.Value.Split(',');
-
-            Response.Write("<script language=javascript>alert(" + newReservation.Value + ") </script>");
 
             //string partyName = reservationInfo[0];
             //string partyNum = reservationInfo[1];

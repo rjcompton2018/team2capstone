@@ -111,18 +111,18 @@
                             <asp:Panel ID="panel1" runat="server" Height="500px"></asp:Panel>
                         </div>
                     </div>
-                    <div class="col-sm" style="right: 0px;">
-                        <asp:GridView ID="GridViewCustomers" runat="server" ></asp:GridView>
+                    <div class="col-sm right" style="position:relative; left: 400px">
+                        <asp:GridView ID="GridViewCustomers" runat="server"></asp:GridView>
                         <br />
                         <asp:Label ID="lblAddCust" Text="Enter Name and Party Number" runat="server"></asp:Label>
                         <br />
-                        <div class="span6" style="display: inline-block">
-                            <asp:TextBox ID="CustomerName" runat="server" Width="100px" Height="40px" style="padding: 0px"></asp:TextBox>
-                            <asp:TextBox ID="PartyNumber" runat="server" Width="50px" Height="40px" style="padding: 0px"></asp:TextBox>
-                            <asp:Button ID="addCustomer" Text="Add Customer" runat="server" OnClick="addNewCustomer"/>
+                        <div style="display: inline-block;">
+                            <asp:TextBox ID="CustomerName" runat="server" Width="100px" Height="40px"></asp:TextBox>
+                            <asp:TextBox ID="PartyNumber" runat="server" Width="50px" Height="40px"></asp:TextBox>
+                            <asp:Button ID="addCustomer" Text="Add Customer" runat="server" OnClick="addNewCustomer" />
 
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -179,7 +179,8 @@
         <asp:HiddenField ID="newReservation" runat="server" />
     </form>
 
-    <script type="text/javascript">
+    <script>
+
         $(function () {
             $(document.getElementById('viewBtn')).click(function () {
                 ShowPopup($(document.getElementById('dialogViewReservation')));
@@ -220,7 +221,6 @@
             reservationDetails = [partyName, partyNum, partyPhoneNum];
 
             $('#newReservation').val(reservationDetails);
-            alert($('#newReservation').val());
         }
 
 
