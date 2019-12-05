@@ -230,27 +230,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Eq_94\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Users\\selena\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Eq_94\\OneDrive\\Documents\\GitHub\\team2capstone\\ReServeAccess_v2.0\\ReServeAccess_v2.0.csproj",
+      "projectUniqueName": "C:\\Users\\selena\\team2capstone\\ReServeAccess_v2.0\\ReServeAccess_v2.0.csproj",
       "projectName": "ReServeAccess_v2.0",
-      "projectPath": "C:\\Users\\Eq_94\\OneDrive\\Documents\\GitHub\\team2capstone\\ReServeAccess_v2.0\\ReServeAccess_v2.0.csproj",
-      "packagesPath": "C:\\Users\\Eq_94\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Eq_94\\OneDrive\\Documents\\GitHub\\team2capstone\\ReServeAccess_v2.0\\obj\\",
+      "projectPath": "C:\\Users\\selena\\team2capstone\\ReServeAccess_v2.0\\ReServeAccess_v2.0.csproj",
+      "packagesPath": "C:\\Users\\selena\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\selena\\team2capstone\\ReServeAccess_v2.0\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Eq_94\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\selena\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
