@@ -18,6 +18,8 @@
         <div class="container">
             <div class="row">
                 <h2>Make a Reservation</h2>
+                <h2>&nbsp;</h2>
+                
             </div>
             <div class="row">
                 Select a restaurant from the menu, enter your party's information, then click "Make Reservation" to enter the queue!
@@ -42,7 +44,11 @@
                     <asp:Label ID="restInfo" runat="server"></asp:Label><br />
                 </div>
             </div>
-
+            <div class="row">
+                <div class="col-150">
+            <asp:Label ID="waitlbl" runat="server" Text=""></asp:Label>
+                    </div>
+                </div>
             <div class="row">
                 <div class="col-25">
                     <asp:Label ID="partyNum" runat="server" Text="Number in Party: "></asp:Label>
@@ -55,6 +61,7 @@
             <div class="row">
                 <div class="col-25">
                     <asp:Label ID="nameLbl" runat="server" Text="Name: "></asp:Label>
+                    
                 </div>
                 <div class="col-75">
                     <asp:TextBox ID="nameTxt" runat="server"></asp:TextBox>

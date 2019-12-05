@@ -5,6 +5,13 @@
 <head>
     <title>ReServe - Restaurant Main Page</title>
     <!--#include file="includes/header.inc"-->
+    <style>
+        .footer-button {
+            position: absolute;
+            right: 0;
+            bottom: 35px;
+        }
+    </style>
 </head>
 
 <body>
@@ -21,9 +28,10 @@
     <form id="MyForm" method="post" runat="server">
     <div class="row justify-content-center">
 
-        <div class="col-50 text-center">
+        <div class="col-50 text-center footer-button">
             <asp:Button ID="Edit" runat="server" Text="Edit Info" Width="158px" OnClick="Edit_Click" />
             <asp:Button ID="addEmployeeBtn" runat="server" Text="Add Employee" Width="158px" OnClick="addEmployee" />
+            <asp:Button ID="listEmployeesBtn" runat="server" Text="Employee List" Width="158px" OnClick="listEmployee" />
         </div>
 
         <div class="col">

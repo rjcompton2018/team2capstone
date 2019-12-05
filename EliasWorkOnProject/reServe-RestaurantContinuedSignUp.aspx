@@ -5,6 +5,14 @@
 <head>
     <title>ReServe - Restaurant Main Page</title>
     <!--#include file="includes/header.inc"-->
+
+    <style>
+        .footer-button {
+            position: absolute;
+            right: 0;
+            bottom: 35px;
+        }
+    </style>
 </head>
 
 <body>
@@ -87,12 +95,10 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="span6" style="display: inline-block; width: 500px">
-                    <asp:Button ID="submitBtn" runat="server" Text="Submit" OnClick="toRestMainPage" />
-                </div>
+            <div class="row footer-button">
                 <div class="span6" style="display: inline-block; width: 500px">
                     <asp:Button ID="TableConfigBtn" runat="server" Text="Continue to Table Configurator" OnClick="toTableConfig" />
+                    <asp:Button ID="submitBtn" runat="server" Text="Submit" OnClick="toRestMainPage" />
                 </div>
             </div>
 
