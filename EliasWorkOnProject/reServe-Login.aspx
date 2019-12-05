@@ -5,14 +5,6 @@
 <head>
     <title>ReServe - Login</title>
     <!--#include file="includes/header.inc"-->
-
-    <style>
-        .footer-button {
-            position: absolute;
-            right: 0;
-            bottom: 35px;
-        }
-    </style>
 </head>
 
 <body>

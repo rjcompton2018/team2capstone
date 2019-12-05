@@ -18,9 +18,8 @@
         <div class="container">
             <div class="row">
                 <h2>Make a Reservation</h2>
-                <h2>&nbsp;</h2>
-                
             </div>
+
             <div class="row">
                 Select a restaurant from the menu, enter your party's information, then click "Make Reservation" to enter the queue!
             </div>
@@ -36,19 +35,24 @@
                         </Items>
                     </asp:DropDownList>
                 </div>
-
             </div>
 
             <div class="row">
-                <div class="col-150">
+                <div class="col-25">
+                </div>
+                <div class="col-75">
                     <asp:Label ID="restInfo" runat="server"></asp:Label><br />
                 </div>
             </div>
+
             <div class="row">
-                <div class="col-150">
-            <asp:Label ID="waitlbl" runat="server" Text=""></asp:Label>
-                    </div>
+                <div class="col-25">
                 </div>
+                <div class="col-75">
+                    <asp:Label ID="waitlbl" runat="server" Text=""></asp:Label>
+                </div>
+            </div>
+
             <div class="row">
                 <div class="col-25">
                     <asp:Label ID="partyNum" runat="server" Text="Number in Party: "></asp:Label>
@@ -61,7 +65,6 @@
             <div class="row">
                 <div class="col-25">
                     <asp:Label ID="nameLbl" runat="server" Text="Name: "></asp:Label>
-                    
                 </div>
                 <div class="col-75">
                     <asp:TextBox ID="nameTxt" runat="server"></asp:TextBox>
@@ -79,18 +82,18 @@
 
             <div class="row">
                 <div class="col-25">
-
                     <asp:Label ID="DateLbl" runat="server" Text="Date"></asp:Label>
+                </div>
+                <div class="col-75">
                     <asp:Calendar ID="Calendar1" runat="server" OnSelectionChanged="Calendar1_SelectionChanged"></asp:Calendar>
-
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-75 right">
-
+                <div class="col-25">
                     <asp:Label ID="TimeLbl" runat="server" Text="Time"></asp:Label>
-
+                </div>
+                <div class="col-75 right">
                     <asp:DropDownList ID="timeDdl" runat="server">
                         <asp:ListItem>12:00</asp:ListItem>
                         <asp:ListItem>12:30</asp:ListItem>
@@ -117,15 +120,17 @@
                 </div>
             </div>
 
+        <div class="row" style="margin-bottom: 50px;">
+            <div class="col-25">
+            </div>
+            <div class="col-75 text-right">
+                <asp:Button ID="makeBtn" runat="server" Text="Make Reservation" OnClick="makeBtn_Click" />
+            </div>
         </div>
 
-        <!--#include file="includes/footer.inc"-->
-        <p>
-            <asp:Button ID="makeBtn" runat="server" Text="Make Reservation" OnClick="makeBtn_Click" />
-        </p>
-        <br />
-        <br />
+    </div>
     </form>
 
+    <!--#include file="includes/footer.inc"-->
 </body>
 </html>

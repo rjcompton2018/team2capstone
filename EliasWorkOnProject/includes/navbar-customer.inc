@@ -5,7 +5,7 @@
 		<a class="navbar-brand" href="#">
 			<img src="images\tea-time-32-292243.png" alt="I'm a little teapot">
 		</a>
-        <a class="navbar-brand" href="reServe-MainPage.aspx">ReServe</a>
+        <a class="navbar-brand" href="reServe-CustomerMainPage.aspx">ReServe</a>
 
         <!-- Collapse toggler = Creates hamburger menu for small screens -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -21,8 +21,8 @@
 						Reservations
 					</a>
 					<div class="dropdown-menu">
-						<a class="dropdown-item" href="#">Make Reservations</a>
-						<a class="dropdown-item" href="#">View Reservations</a>
+						<a class="dropdown-item" href="reServe-MakeReservation.aspx">Make Reservations</a>
+						<a class="dropdown-item" href="reServe-ViewReservation.aspx">View Reservations</a>
 					</div>
 				</li>
 				<li class="nav-item">
@@ -39,3 +39,11 @@
 			</ul>
 		</div>
     </nav>
+
+	<!-- // Here how you get the ID from the URL when you pass it
+				string identification = Request.QueryString["ID"];
+				int ID = Convert.ToInt32(identification);
+
+		// This how you pass the ID in the URL when redirecting to other pages
+				Response.Redirect("ReServe-Main.aspx?ID=" + ID);
+	 -->

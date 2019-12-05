@@ -5,7 +5,7 @@
 		<a class="navbar-brand" href="#">
 			<img src="images\tea-time-32-292243.png" alt="I'm a little teapot">
 		</a>
-        <a class="navbar-brand" href="reServe-MainPage.aspx">ReServe</a>
+        <a class="navbar-brand" href="reServe-RestaurantMainPage.aspx">ReServe</a>
 
         <!-- Collapse toggler = Creates hamburger menu for small screens -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">

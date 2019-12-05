@@ -3,16 +3,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ReServe - Restaurant Main Page</title>
+    <title>ReServe - Restaurant Sign Up</title>
     <!--#include file="includes/header.inc"-->
-
-    <style>
-        .footer-button {
-            position: absolute;
-            right: 0;
-            bottom: 35px;
-        }
-    </style>
 </head>
 
 <body>
@@ -110,14 +102,12 @@
                 </div>
             </div>
 
-            <div class="row footer-button">
+            <div class="row" style="margin-bottom: 50px;">
                 <div class="col-25">
                     <asp:Label Style="color: red" ID="error_Lbl" runat="server" Text=""></asp:Label>
                 </div>
-                <div class="col-75 right">
-                    <div class="span6" style="display: inline-block; width: 500px">
-                        <asp:Button ID="NextSignUpBtn" runat="server" Text="Next" OnClick="toContinuedSignUp" />
-                    </div>
+                <div class="col-75 text-right">
+                    <asp:Button ID="NextSignUpBtn" runat="server" Text="Next" OnClick="toContinuedSignUp" />
                 </div>
             </div>
         </div>
