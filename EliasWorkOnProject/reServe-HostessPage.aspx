@@ -120,7 +120,8 @@
                             <asp:TextBox ID="CustomerName" runat="server" Width="100px" Height="40px"></asp:TextBox>
                             <asp:TextBox ID="PartyNumber" runat="server" Width="50px" Height="40px"></asp:TextBox>
                             <asp:Button ID="addCustomer" Text="Add Customer" runat="server" OnClick="addNewCustomer" />
-
+                            &nbsp;&nbsp;
+                            <asp:Label ID="waitlbl" runat="server" Text=""></asp:Label>
                         </div>
 
                     </div>

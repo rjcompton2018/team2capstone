@@ -26,6 +26,7 @@ namespace ReServeAPI_v2._0
             getTableConfig();
             if (!IsPostBack)
             {
+                waitlbl.Visible = false;
                 getReservationData();
                 initializingGridView();
             }
@@ -50,8 +51,8 @@ namespace ReServeAPI_v2._0
                     dtCT.Columns.Add("Party Number", typeof(int));
                     dtCT.Columns.Add("Wait Time", typeof(int));
                 }
-
-                int waitTimeC = waitTime();
+                int numCus = Convert.ToInt32(PartyNumber.Text);
+                int waitTimeC = waitTime(numCus);
 
                 DataRow newRow = dtCT.NewRow();
                 newRow[0] = CustomerName.Text;
@@ -65,12 +66,16 @@ namespace ReServeAPI_v2._0
         }
 
         // wait time formula to go here
-        protected int waitTime()
+        protected int waitTime(int num)
         {
-            Random random = new Random();
-            int randomNum = random.Next(1,20);
+           
+            int possibleWait = (num * 1) + (num * 5) + (num * 10) + num;
+            int finalWait = possibleWait / 5;
 
-            return randomNum;
+            
+
+
+            return finalWait;
         }
         protected void getTableConfig()
         {

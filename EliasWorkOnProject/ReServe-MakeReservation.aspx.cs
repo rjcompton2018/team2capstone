@@ -29,6 +29,7 @@ namespace ReServeAPI_v2._0
                 BindGrind();
                 
                 restaurantDdl.SelectedIndex = 0;
+                waitlbl.Visible = false;
             }
         }
 
@@ -89,7 +90,9 @@ namespace ReServeAPI_v2._0
 
                 con.Close();
                 int parynumber = Int32.Parse(partyNum);
+                waitTime(parynumber);
                 Random random = new Random();
+                /*
                 if(parynumber > 4)
                 { 
                 int num =  random.Next(15, 45);
@@ -104,7 +107,7 @@ namespace ReServeAPI_v2._0
                         from: new Twilio.Types.PhoneNumber("+13107366494"),
                         to: new Twilio.Types.PhoneNumber("+18104475644")
                     );
-
+                
                 }
                 else
                 {
@@ -121,7 +124,7 @@ namespace ReServeAPI_v2._0
                         to: new Twilio.Types.PhoneNumber("+18104475644")
                     );
 
-                }
+                } */
                 // DateTime t2 = DateTime.ParseExact(time, "HH:MM", CultureInfo.InvariantCulture);
                 //int t = Int32.Parse(time);
 
@@ -129,8 +132,20 @@ namespace ReServeAPI_v2._0
 
             }
 
-            Response.Redirect("reServe-ViewReservation.aspx?ID=" + User_ID);
+            //Response.Redirect("reServe-ViewReservation.aspx?ID=" + User_ID);
 
+        }
+        protected void waitTime(int num)
+        {
+
+            int possibleWait = (num * 1) + (num * 5) + (num * 10) + num;
+            int finalWait = possibleWait / 5;
+
+            waitlbl.Text = "there will be " + finalWait.ToString() + " mins wait time";
+            waitlbl.Visible = true;
+
+
+            
         }
 
         protected void selectionChanged(object sender, EventArgs e)
