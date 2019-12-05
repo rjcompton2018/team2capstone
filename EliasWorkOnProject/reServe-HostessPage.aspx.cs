@@ -108,15 +108,19 @@ namespace ReServeAPI_v2._0
                     capacityLbl.InnerText = capacity.ToString();
                     capacityLbl.Attributes.Add("class", "textBox");
 
+                    //myDiv.Attributes.Add("onClick", "changeColor");
+                    //myDiv.Attributes.Add("CommandArgument", myDiv.Attributes["background-color"]);
+
                     myDiv.Controls.Add(capacityLbl);
 
                     panel1.Controls.Add(myDiv);
+
+
                 }
                 con.Close();
             }
 
         }
-
         protected void getReservationData(object sender, EventArgs e)
         {
             string identification = Request.QueryString["Rest_ID"];

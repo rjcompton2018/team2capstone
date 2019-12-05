@@ -29,7 +29,7 @@ namespace ReServeAPI_v2._0
             {
                 con.Open();
 
-                string com = "SELECT Restaurant, DateTime FROM Reservation WHERE User_ID=" + User_ID;
+                string com = "SELECT Restaurant_ID, DateTime FROM Reservation WHERE User_ID=" + User_ID;
 
                 SqlCommand cmd = new SqlCommand(com, con);
 
