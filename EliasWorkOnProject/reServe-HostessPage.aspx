@@ -204,11 +204,12 @@
             //    $('#newReservation').val(reservationDetails);
             //    alert($('#newReservation').val());
             //});
-            document.getElementById('btnSubmitReservation').addEventListener("click", function (event) {
-                event.preventDefault();
-                saveDetails();
 
-            })
+            $(document.getElementById('btnSubmitReservation')).on("click", saveDetails);
+
+            $(".table").click(function () {
+                tableColor($(event.target));
+            });
         });
 
         function saveDetails() {
@@ -221,6 +222,8 @@
             reservationDetails = [partyName, partyNum, partyPhoneNum];
 
             $('#newReservation').val(reservationDetails);
+
+            window.localStorage.setItem("ReservationDetails", reservationDetails);
         }
 
 
@@ -233,6 +236,14 @@
             });
 
             $(this).dialog('open');
+        }
+
+        function tableColor(target) {
+            if (target.css('background-color') === 'rgb(173, 216, 230)') {
+                target.css("background-color", "lightgreen");
+            } else {
+                target.css("background-color", "rgb(173, 216, 230)");
+            }
         }
     </script>
 

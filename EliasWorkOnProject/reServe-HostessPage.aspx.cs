@@ -26,7 +26,6 @@ namespace ReServeAPI_v2._0
             getTableConfig();
             if (!IsPostBack)
             {
-                
                 getReservationData();
                 initializingGridView();
             }
@@ -73,16 +72,6 @@ namespace ReServeAPI_v2._0
 
             return randomNum;
         }
-
-        //protected void gridViewRowDeleted()
-        //{
-        //    if(ViewState["CurrentTable"] != null)
-        //    {
-        //        DataTable dt = (DataTable)ViewState["CurrentTable"];
-                
-        //    }
-        //}
-
         protected void getTableConfig()
         {
             string identification = Request.QueryString["Rest_ID"];
@@ -118,8 +107,6 @@ namespace ReServeAPI_v2._0
                     myDiv.Controls.Add(capacityLbl);
 
                     panel1.Controls.Add(myDiv);
-
-                    //container1.Controls.Add(panel);
                 }
                 con.Close();
             }
@@ -130,8 +117,7 @@ namespace ReServeAPI_v2._0
         {
             string identification = Request.QueryString["Rest_ID"];
             int Rest_ID = Convert.ToInt32(identification);
-            //string Name = Application["Rest_ID"].ToString();
-            //int Rest_ID = Convert.ToInt32(Name);
+
             using (SqlConnection con = new SqlConnection(connectingString))
             {
                 con.Open();
@@ -177,9 +163,14 @@ namespace ReServeAPI_v2._0
             //Response.Write("<script language=javascript>alert(' makeReservation called '); </script>");
 
 
+            ViewState["name"] = txtName.Text;
+
             DateTime datetime = DateTime.Now;
 
-            string[] reservationInfo = newReservation.Value.Split(',');
+            //string[] reservationInfo = newReservation.Value.Split(',');
+            
+
+            Response.Write("<script language=javascript>alert('" + ViewState["name"].ToString() + "'); </script>");
 
             //string partyName = reservationInfo[0];
             //string partyNum = reservationInfo[1];
