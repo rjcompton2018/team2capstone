@@ -31,14 +31,14 @@
             <!-- NEEDS TO PULL FROM DATABASE HERE!!!!! -->
             <div class="row">
                 <div class="col-sm">
-                    <div class="row">
+                    <%--<div class="row">
                         <div class="col-50">
                             Admin Email:
                         </div>
                         <div class="col-50">
                             <asp:Label ID="adminEmailDisp" runat="server" Text=""></asp:Label>
                         </div>
-                    </div>
+                    </div>--%>
                     <div class="row">
                         <div class="col-50">
                             Restaurant Name:

@@ -72,8 +72,20 @@ namespace ReServeAPI_v2._0
 
             using (SqlConnection con = new SqlConnection(connectingString))
             {
-                string com = "INSERT INTO Reservation (User_ID, Name, PartyNum, Phone_Number, Restaurant, DateTime)" +
-                    " VALUES (@User_ID, @Name, @PartyNum, @Phone_Number, @Restaurant, @DateTime)";
+                string com1 = "Select Restaurant_ID FROM [dbo].[Restaurant] WHERE Name='" + restaurantDdl.SelectedItem.Text + "'";
+                SqlCommand cmd1 = new SqlCommand(com1, con);
+
+                con.Open();
+                SqlDataReader reader = cmd1.ExecuteReader();
+
+                reader.Read();
+
+                int restaurant_ID = (int)reader[0];
+
+                con.Close();
+
+                string com = "INSERT INTO Reservation (User_ID, Name, PartyNum, Phone_Number, Restaurant_ID, DateTime)" +
+                    " VALUES (@User_ID, @Name, @PartyNum, @Phone_Number, @Restaurant_ID, @DateTime)";
 
                 SqlCommand cmd = new SqlCommand(com, con);
 
@@ -81,7 +93,7 @@ namespace ReServeAPI_v2._0
                 cmd.Parameters.AddWithValue("@Name", partyName);
                 cmd.Parameters.AddWithValue("@PartyNum", partyNumInt);
                 cmd.Parameters.AddWithValue("@Phone_Number", phoneNum);
-                cmd.Parameters.AddWithValue("@Restaurant", restaurantDdl.SelectedItem.Text);
+                cmd.Parameters.AddWithValue("@Restaurant_ID", restaurant_ID);
                 cmd.Parameters.AddWithValue("@DateTime", datetimeDT);
 
                 con.Open();
@@ -132,7 +144,7 @@ namespace ReServeAPI_v2._0
 
             }
 
-            //Response.Redirect("reServe-ViewReservation.aspx?ID=" + User_ID);
+            Response.Redirect("reServe-ViewReservation.aspx?ID=" + User_ID);
 
         }
         protected void waitTime(int num)

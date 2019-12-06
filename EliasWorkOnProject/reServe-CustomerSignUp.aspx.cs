@@ -86,7 +86,7 @@ namespace ReServeAPI_v2._0
                 else
                 {
                     //Username doesn't exist.
-                    SqlCommand cmd2 = new SqlCommand("SELECT COUNT(*) FROM [dbo].[ResturantInformation]  WHERE ([Email] = @user)", conn);
+                    SqlCommand cmd2 = new SqlCommand("SELECT COUNT(*) FROM [dbo].[RestaurantAccountInformation]  WHERE ([Email] = @user)", conn);
 
                     cmd2.Parameters.AddWithValue("@user", emailtxt.Text);
                     int Exist = (int)cmd2.ExecuteScalar();
