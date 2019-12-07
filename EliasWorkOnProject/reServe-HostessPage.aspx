@@ -63,19 +63,20 @@
             height: 80px;
             width: 100px;
             background-color: #555;
-            border-radius: 50%;
+            border-radius: 10%;
         }
 
         .table {
-            background: lightblue;
+            background-color: #FFF;
+            color: #466289;
         }
 
         .textBox {
             height: 20px;
             width: 25px;
             position: relative;
-            top: -20%;
-            left: 32%;
+            top: 20%;
+            left: 45%;
         }
 
         .footer-button {
@@ -90,7 +91,8 @@
             width: 500px;
             height: 400px;
             border: 1px solid #000;
-            background-color: #daa520;
+            background-color: #A0AEC1;
+            padding: 3px;
         }
     </style>
 </head>
@@ -120,7 +122,7 @@
                             <asp:Panel ID="panel1" runat="server" Height="500px"></asp:Panel>
                         </div>
                     </div>
-                    <div class="col-sm right" style="position: relative; left: 400px">
+                    <div class="col-sm right" style="position: relative; left: 400px;">
                         <asp:GridView ID="GridViewCustomers" runat="server"></asp:GridView>
                         <br />
                         <asp:Label ID="lblAddCust" Text="Enter Name and Party Number" runat="server"></asp:Label>
@@ -183,11 +185,9 @@
                 <asp:Button ID="exitBtn" Text="X" runat="server" Style="position: absolute; right: 0px; bottom: 0px" OnClick="closeViewReservation" />
             </div>
 
-            <div class="row footer-button">
-                <div class="span6" style="display: inline-block; width: 1000px">
+            <div class="row justify-content-center" style="margin-bottom: 75px;">
                     <asp:Button ID="viewBtn" runat="server" Text="View Current Reservations" OnClick="getReservationData" />
                     <asp:Button ID="makeBtn" runat="server" Text="Make a Reservation" OnClick="viewReservationDiv" />
-                </div>
             </div>
         </div>
         <asp:HiddenField ID="newReservation" runat="server" />
