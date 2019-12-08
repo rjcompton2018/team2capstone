@@ -14,19 +14,20 @@
             height: 80px;
             width: 100px;
             background-color: #555;
-            border-radius: 50%;
+            border-radius: 10%;
         }
 
         .table {
-            background: lightblue;
+            background-color: #FFF;
+            color: #466289;
         }
 
-        .textBox {
+       .textBox {
             height: 20px;
             width: 25px;
             position: relative;
-            top: -20%;
-            left:32%;
+            top: 20%;
+            left: 45%;
         }
 
         .footer-button {
@@ -98,6 +99,7 @@
             });
         });
     </script>
+
     <!--#include file="includes/footer.inc"-->
 </body>
 </html>

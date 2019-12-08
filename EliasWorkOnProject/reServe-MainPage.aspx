@@ -13,12 +13,10 @@
         <!--#include file="includes/imagebar.inc"-->
 
         <!-- Page content -->
-        <div class="row">
-            <div id="rs-about" class="col">
+        <div id="rs-about" class="row">
                 <p>
                     The worst aspect of visiting a restaurant is waiting for a seat — but that problem can be remedied with engineering and hard work. Over the course of this semester, we developed an application that will allow restaurants to manage their seating areas, allow customers to reserve seats, and notify them when it is ready for their arrival. We are going to decimate the amount of time customers must wait for their table, while making this improvement simple for the restaurant to manage.
                 </p>
-            </div>
         </div>
 
         <div id="rs-signups" class="row justify-content-center">

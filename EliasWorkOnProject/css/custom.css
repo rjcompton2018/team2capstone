@@ -41,10 +41,10 @@ body {
 
 #rs-topper {
     height: 300px;
-    background-image: url('../images/architecture-chairs-design-2894275.jpg');
+    background-image: url('../images/architecture-chairs-design-cropped.jpg');
     background-repeat: no-repeat;
-    background-position: top center;
-    background-size: 100% 100%;
+    background-position: center;
+    background-size: 100%;
     margin-bottom: 0px;
 }
 
@@ -53,14 +53,15 @@ body {
     border-radius: 20px;
     padding: 5px;
     color: #FFFFFF;
+    margin-top: 10px;
 }
 
 #rs-about {
-    padding: 50px;
     color: #466289;
     font-size: x-large;
     padding-left: 20%;
     padding-right: 20%;
+    padding-top: 50px;
     text-align: center;
 }
 
@@ -97,7 +98,7 @@ body {
 }
 
 #rs-signups {
-    margin-bottom: 100px;
+    margin-bottom: 75px;
 }
 
 rSignUpPg {
