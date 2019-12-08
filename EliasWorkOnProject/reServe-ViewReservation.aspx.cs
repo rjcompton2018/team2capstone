@@ -23,21 +23,16 @@ namespace ReServeAPI_v2._0
         protected void BindGrind()
         {
             string identification = Request.QueryString["ID"];
-            int ID1 = Convert.ToInt32(identification);
-            string identification2 = Request.QueryString["restID"];
-            int ID2 = Convert.ToInt32(identification2);
+            int User_ID = Convert.ToInt32(identification);
 
-            
             using (SqlConnection con = new SqlConnection(connectingString))
             {
                 con.Open();
 
-                string com = "SELECT Name FROM Restaurant WHERE Restaurant_ID= @value2 UNION SELECT DateTime FROM Reservation WHERE User_ID = @value1 ";
+                string com = "SELECT Restaurant_ID, DateTime FROM Reservation UNION SELECT Name FROM Restaurant WHERE Reservation.User_ID=" + User_ID;
 
                 SqlCommand cmd = new SqlCommand(com, con);
-                cmd.Parameters.AddWithValue("@value1", ID1);
-                cmd.Parameters.AddWithValue("@value2", ID2);
-                
+
                 SqlDataAdapter sda = new SqlDataAdapter();
                 DataTable dt = new DataTable();
 

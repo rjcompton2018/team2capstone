@@ -18,10 +18,8 @@ using Twilio.Rest.Api.V2010.Account;
 
 namespace ReServeAPI_v2._0
 {
-    
     public partial class reServe_MakeReservation : System.Web.UI.Page
     {
-        private int resturantID;
         string connectingString = @"Data Source=141.210.25.5;User ID=reserve;Password=Test123;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
         protected void Page_Load(object sender, EventArgs e)
@@ -40,19 +38,18 @@ namespace ReServeAPI_v2._0
             using (var conn = new SqlConnection(connectingString))
             {
                 conn.Open();
-                using (var cmd = new SqlCommand("SELECT Name, Restaurant_ID FROM Restaurant", conn))
+                using (var cmd = new SqlCommand("SELECT Name FROM Restaurant", conn))
                 {
                     using (var reader = cmd.ExecuteReader())
                     {
                         restaurantDdl.DataSource = reader;
-                        restaurantDdl.DataValueField = "Restaurant_ID";
+                        restaurantDdl.DataValueField = "Name";
                         restaurantDdl.DataTextField = "Name";
                         restaurantDdl.DataBind();
 
                     }
                 }
                 restaurantDdl.Items.Insert(0, new ListItem("<Select Restaurant>", "NA"));
-                
             }
         }
 
@@ -60,7 +57,7 @@ namespace ReServeAPI_v2._0
         {
             string identification = Request.QueryString["ID"];
             int User_ID = Convert.ToInt32(identification);
-            int ID1 = Convert.ToInt32(identification);
+
             string partyNum = partyNumTxt.Text;
             int partyNumInt = Convert.ToInt32(partyNum);
 
@@ -92,7 +89,7 @@ namespace ReServeAPI_v2._0
 
                 SqlCommand cmd = new SqlCommand(com, con);
 
-                cmd.Parameters.AddWithValue("@User_ID", ID1);
+                cmd.Parameters.AddWithValue("@User_ID", User_ID);
                 cmd.Parameters.AddWithValue("@Name", partyName);
                 cmd.Parameters.AddWithValue("@PartyNum", partyNumInt);
                 cmd.Parameters.AddWithValue("@Phone_Number", phoneNum);
@@ -146,8 +143,8 @@ namespace ReServeAPI_v2._0
                
 
             }
-            resturantID = Convert.ToInt32(restaurantDdl.SelectedValue);
-            Response.Redirect("reServe-ViewReservation.aspx?ID=" + ID1 + "&restID=" + resturantID);
+
+            Response.Redirect("reServe-ViewReservation.aspx?ID=" + User_ID);
 
         }
         protected void waitTime(int num)
