@@ -84,7 +84,7 @@ namespace ReServeAPI_v2._0
 
                 con.Close();
 
-                string com = "INSERT INTO Reservation (User_ID, Name, PartyNum, Phone_Number, Restaurant_ID, DateTime)" +
+                string com = "INSERT INTO Reservation (User_ID, Name, PartyNum, Phone_Number, Restaurant_ID, TimeOfReserv)" +
                     " VALUES (@User_ID, @Name, @PartyNum, @Phone_Number, @Restaurant_ID, @DateTime)";
 
                 SqlCommand cmd = new SqlCommand(com, con);

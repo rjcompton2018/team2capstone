@@ -27,9 +27,10 @@ namespace ReServeAPI_v2._0
 
             using (SqlConnection con = new SqlConnection(connectingString))
             {
+
                 con.Open();
 
-                string com = "SELECT Restaurant_ID, DateTime FROM Reservation UNION SELECT Name FROM Restaurant WHERE Reservation.User_ID=" + User_ID;
+                string com = "SELECT A.Restaurant_ID, A.TimeOfReserv, B.Name FROM Reservation A RIGHT JOIN Restaurant B on a.Restaurant_ID = b.Restaurant_ID WHERE A.User_ID=" + User_ID;
 
                 SqlCommand cmd = new SqlCommand(com, con);
 
